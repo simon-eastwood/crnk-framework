@@ -10,25 +10,16 @@ transferred to crnk.io. This includes:
 - crnk-security
 - crnk-ui
 
-Newly developed modules by crnk.io are:
+In the following modules:
 
-- crnk-operations
-- crnk-home
-- crnk-documentation
-- crnk-gen-typescript
-
-Parts of the following modules are originally developed byhttp://katharsis.io/. These are:
-
-- crnk-examples
 - crnk-core
-- crnk-rs
-- crnk-servlet
-- crnk-spring
+- crnk-spring testing and configuration packages
+- crnk-servlet testing and legacy packages
+- crnk-rs testing and legacy packages
+- crnk-examples
 
-More detailed information to follow shortly.
-
-
-
+There is still some code originally developed by http://katharsis.io/ and released under the same Apache License 
+v2. All the other modules are developments of crnk.io.
 
 
 
