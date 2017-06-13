@@ -40,3 +40,7 @@ sourceSets {
 jar {
 	duplicatesStrategy = 'exclude'
 }
+
+tasks.withType(Test) {
+	maxParallelForks = 2
+}
