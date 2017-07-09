@@ -86,13 +86,18 @@ gradle.beforeProject { Project project ->
 
 			def sourceDirs = rootProject.tasks.jacocoRootReport.sourceDirectories
 			def classDirs = rootProject.tasks.jacocoRootReport.classDirectories
+
+			def mainOutput = files(files(sourceSets.main.output).collect {
+				fileTree(dir: it, exclude: '**/legacy/**')
+			})
+
 			if(sourceDirs == null){
 				rootProject.tasks.jacocoRootReport.sourceDirectories = files(sourceSets.main.allSource.srcDirs)
-				rootProject.tasks.jacocoRootReport.classDirectories = files(sourceSets.main.output)
+				rootProject.tasks.jacocoRootReport.classDirectories = mainOutput
 
 			}else{
 				rootProject.tasks.jacocoRootReport.sourceDirectories = sourceDirs.plus(files(sourceSets.main.allSource.srcDirs))
-				rootProject.tasks.jacocoRootReport.classDirectories = classDirs.plus(files(sourceSets.main.output))
+				rootProject.tasks.jacocoRootReport.classDirectories = classDirs.plus(mainOutput)
 			}
 			rootProject.coveralls.sourceDirs.addAll(sourceSets.main.allSource.srcDirs.flatten())
 
@@ -249,6 +254,7 @@ task jacocoRootReport(type: JacocoReport, group: 'Coverage reports') {
 		html.enabled = true // human readable
 		xml.enabled = true // required by coveralls
 	}
+
 }
 
 
