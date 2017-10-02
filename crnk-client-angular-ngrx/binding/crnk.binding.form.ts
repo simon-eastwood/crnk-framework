@@ -125,7 +125,7 @@ export class FormBinding {
 		// we make use of share() to keep the this.config.resource$ subscription
 		// as long as there is at least subscriber on this.resource$.
 		this.resource$ = this.ngrxJsonApiService.selectOneResults(this.config.queryId, true)
-			.filter(it => !it.loading)
+			.filter(it => it && !it.loading)
 			.map(it => it.data as StoreResource)
 			.filter(it => !_.isEmpty(it)) // ignore deletions
 			.distinctUntilChanged(function (a, b) {
@@ -163,6 +163,10 @@ export class FormBinding {
 		if (this.formSubscription === null) {
 			// update store from value changes, for more information see
 			// https://embed.plnkr.co/9aNuw6DG9VM4X8vUtkAa?show=app%2Fapp.components.ts,preview
+
+			this.config.form.valueChanges.subscribe(it => console.log("valueChange", it));
+			this.config.form.statusChanges.subscribe(it => console.log("statusChange", it));
+
 			const formChanges$ = this.config.form.statusChanges
 				.filter(valid => valid === 'VALID')
 				.do(() => {
@@ -201,6 +205,12 @@ export class FormBinding {
 		const form = this.config.form;
 		if (this.primaryResourceId) {
 			const primaryResource = data[this.primaryResourceId.type][this.primaryResourceId.id];
+
+			if(!primaryResource){
+				// TODO only allow to delete from here and be more careful resp. eliminate this check?
+				// ignore deletions
+				return;
+			}
 
 			const newUnmappedErrors = [];
 			for (const resourceError of primaryResource.errors) {

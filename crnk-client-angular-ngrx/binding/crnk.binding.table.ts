@@ -66,6 +66,7 @@ export class DataTableBinding {
 
 		this.result$ = this.ngrxJsonApiService
 			.selectManyResults(this.config.queryId, true)
+			.filter(it => it != null)
 			.do(it => {
 				if (this.baseQuery === null) {
 					this.baseQuery = it.query;

@@ -21,6 +21,7 @@ import {
 } from '@angular/forms';
 import {CrnkControl} from './crnk.expression.form.model.base';
 import {ExpressionDefaultValueAccessorDirective} from './crnk.expression.form.model.accessor';
+import {Path} from '../crnk.expression';
 
 
 export function normalizeValidator(validator: ValidatorFn | Validator): ValidatorFn {
@@ -41,7 +42,7 @@ export function normalizeAsyncValidator(validator: AsyncValidatorFn | AsyncValid
 }
 
 export function looseIdentical(a: any, b: any): boolean {
-	return a === b || typeof a === 'number' && typeof b === 'number' && isNaN(a) && isNaN(b);
+	return a === b || _.isEqual(a, b) || typeof a === 'number' && typeof b === 'number' && isNaN(a) && isNaN(b);
 }
 
 export function isPresent(obj: any): boolean {
@@ -143,7 +144,10 @@ export function isPropertyUpdated(changes: { [key: string]: any }, viewModel: an
 	if (change.isFirstChange()) {
 		return true;
 	}
-	return !looseIdentical(viewModel, change.currentValue);
+	let currentPath = change.currentValue as Path<any>;
+	let currentValue = currentPath.getValue();
+	console.log("isPropertyUpdated2", change.isFirstChange(), viewModel, currentValue, looseIdentical(viewModel, currentValue));
+	return !looseIdentical(viewModel, currentValue);
 }
 
 const BUILTIN_ACCESSORS = [
