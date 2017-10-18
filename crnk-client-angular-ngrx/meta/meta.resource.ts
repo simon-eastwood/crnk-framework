@@ -1,7 +1,7 @@
 import {BeanPath, BooleanPath, StringPath} from '../expression/';
 import {MetaDataObject, QMetaDataObject} from './meta.data.object';
 import {MetaResourceBase} from './meta.resource.base';
-import {ManyQueryResult, OneQueryResult} from 'ngrx-json-api/src/interfaces';
+import {ManyQueryResult, OneQueryResult} from 'ngrx-json-api';
 
 export module MetaResource {
 	export interface Attributes extends MetaDataObject.Attributes {

@@ -2,7 +2,7 @@ import {BeanPath, BooleanPath, StringPath} from '../expression/';
 import {QTypedManyResourceRelationship, QTypedOneResourceRelationship} from '../stub/';
 import {MetaElement, QMetaElement} from './meta.element';
 import {MetaType, QMetaType} from './meta.type';
-import {ManyQueryResult, OneQueryResult, ResourceRelationship, TypedOneResourceRelationship} from 'ngrx-json-api/src/interfaces';
+import {ManyQueryResult, OneQueryResult, ResourceRelationship, TypedOneResourceRelationship} from 'ngrx-json-api';
 
 export module MetaAttribute {
 	export interface Relationships extends MetaElement.Relationships {

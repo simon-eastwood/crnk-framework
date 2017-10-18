@@ -3,7 +3,7 @@ import {QTypedManyResourceRelationship, QTypedOneResourceRelationship} from '../
 import {MetaDataObject, QMetaDataObject} from './meta.data.object';
 import {MetaElement, QMetaElement} from './meta.element';
 import {MetaResource, QMetaResource} from './meta.resource';
-import {ManyQueryResult, OneQueryResult, ResourceRelationship, TypedOneResourceRelationship} from 'ngrx-json-api/src/interfaces';
+import {ManyQueryResult, OneQueryResult, ResourceRelationship, TypedOneResourceRelationship} from 'ngrx-json-api';
 
 export module MetaResourceRepository {
 	export interface Relationships extends MetaElement.Relationships {

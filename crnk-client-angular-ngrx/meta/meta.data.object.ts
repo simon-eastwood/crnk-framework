@@ -6,7 +6,7 @@ import {MetaInterface, QMetaInterface} from './meta.interface';
 import {MetaKey, QMetaKey} from './meta.key';
 import {MetaPrimaryKey, QMetaPrimaryKey} from './meta.primary.key';
 import {MetaType, QMetaType} from './meta.type';
-import {ManyQueryResult, OneQueryResult, ResourceRelationship, TypedManyResourceRelationship, TypedOneResourceRelationship} from 'ngrx-json-api/src/interfaces';
+import {ManyQueryResult, OneQueryResult, ResourceRelationship, TypedManyResourceRelationship, TypedOneResourceRelationship} from 'ngrx-json-api';
 
 export module MetaDataObject {
 	export interface Relationships extends MetaType.Relationships {

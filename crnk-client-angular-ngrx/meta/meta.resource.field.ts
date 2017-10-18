@@ -1,6 +1,6 @@
 import {BeanPath, BooleanPath, StringPath} from '../expression/';
 import {MetaAttribute, QMetaAttribute} from './meta.attribute';
-import {ManyQueryResult, OneQueryResult} from 'ngrx-json-api/src/interfaces';
+import {ManyQueryResult, OneQueryResult} from 'ngrx-json-api';
 
 export module MetaResourceField {
 	export interface Attributes extends MetaAttribute.Attributes {
