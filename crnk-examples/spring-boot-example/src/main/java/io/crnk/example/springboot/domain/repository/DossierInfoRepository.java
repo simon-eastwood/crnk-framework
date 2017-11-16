@@ -80,7 +80,7 @@ public interface DossierInfoRepository extends ResourceRepositoryV2<DossierInfo,
 
 	}
 
-	class DossierInfoList extends ResourceListBase<Project, DossierInfoListMeta, DossierInfoListLinks> {
+	class DossierInfoList extends ResourceListBase<DossierInfo, DossierInfoListMeta, DossierInfoListLinks> {
 
 	}
 }
