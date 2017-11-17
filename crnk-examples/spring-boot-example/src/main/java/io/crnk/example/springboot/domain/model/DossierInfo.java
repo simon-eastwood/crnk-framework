@@ -38,7 +38,7 @@ public class DossierInfo {
 	}
 
 
-	@JsonApiToOne(opposite = "dossierinfo")
+	@JsonApiToOne(opposite = "dossierInfo")
 	private Dossier dossier;
 
 
