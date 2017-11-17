@@ -1,5 +1,5 @@
 
-package main.java.io.crnk.example.springboot.domain.model;
+package io.crnk.example.springboot.domain.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.crnk.core.resource.annotations.JsonApiId;
