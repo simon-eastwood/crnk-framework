@@ -40,7 +40,7 @@ public class DossierInfoRepositoryImpl extends ResourceRepositoryBase<DossierInf
 	public DossierInfoRepositoryImpl() {
 		super(DossierInfo.class);
 
-		save(new DossierInfo("121"));
+		// save(new DossierInfo("121"));
 
 	}
 
