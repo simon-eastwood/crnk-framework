@@ -18,29 +18,30 @@ package main.java.io.crnk.example.springboot.domain.repository;
 
 import io.crnk.core.queryspec.QuerySpec;
 import io.crnk.core.repository.ResourceRepositoryBase;
-import io.crnk.example.springboot.domain.model.DossierInfo;
+import io.crnk.example.springboot.domain.model.DossierAssociateFiling;
 import org.springframework.stereotype.Component;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicLong;
+
+
+// import main.java.io.crnk.example.springboot.domain.model.DossierAssociateFiling;
 
 /**
  * ResourceRepositoryBase-based example with the base class providing some base functionality.
  */
 @Component
-public class DossierInfoRepositoryImpl extends ResourceRepositoryBase<DossierInfo, String> implements DossierInfoRepository {
+public class DossierAssociateFilingRepositoryImpl extends ResourceRepositoryBase<DossierAssociateFiling, String> implements DossierAssociateFilingRepository {
 
 	private static final AtomicLong ID_GENERATOR = new AtomicLong(124);
 
-	private Map<String, DossierInfo> dossiers = new HashMap<>();
+	private Map<String, DossierAssociateFiling> dossiers = new HashMap<>();
 
-	public DossierInfoRepositoryImpl() {
-		super(DossierInfo.class);
+	public DossierAssociateFilingRepositoryImpl() {
+		super(DossierAssociateFiling.class);
 
-		save(new DossierInfo("121"));
+		save(new DossierAssociateFiling("121"));
 
 	}
 
@@ -50,20 +51,20 @@ public class DossierInfoRepositoryImpl extends ResourceRepositoryBase<DossierInf
 	}
 
 	@Override
-	public synchronized <D extends DossierInfo> D save(D dossier) {
-		if (dossier.getApplicationNumber() == null) {
+	public synchronized <D extends DossierAssociateFiling> D save(D dossier) {
+		if (dossier.getAssId() == null) {
 			Long l = ID_GENERATOR.getAndIncrement();
-			dossier.setApplicationNumber(l.toString());
+			dossier.setAssId(l.toString());
 		}
 		dossiers.put(dossier.getApplicationNumber(), dossier);
 		return dossier;
 	}
 
 	@Override
-	public synchronized DossierInfoList findAll(QuerySpec querySpec) {
-		DossierInfoList list = new DossierInfoList();
-		list.setMeta(new DossierInfoListMeta());
-		list.setLinks(new DossierInfoListLinks());
+	public synchronized DossierAssociateFilingList findAll(QuerySpec querySpec) {
+		DossierAssociateFilingList list = new DossierAssociateFilingList();
+		list.setMeta(new DossierAssociateFilingListMeta());
+		list.setLinks(new DossierAssociateFilingListLinks());
 		querySpec.apply(dossiers.values(), list);
 		return list;
 	}

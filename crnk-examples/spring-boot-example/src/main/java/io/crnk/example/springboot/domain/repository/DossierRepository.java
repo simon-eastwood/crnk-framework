@@ -5,14 +5,14 @@ import io.crnk.core.repository.ResourceRepositoryV2;
 import io.crnk.core.resource.links.PagedLinksInformation;
 import io.crnk.core.resource.list.ResourceListBase;
 import io.crnk.core.resource.meta.PagedMetaInformation;
-import io.crnk.example.springboot.domain.model.DossierInfo;
+import io.crnk.example.springboot.domain.model.Dossier;
 
-public interface DossierInfoRepository extends ResourceRepositoryV2<DossierInfo, String> {
+public interface DossierRepository extends ResourceRepositoryV2<Dossier, String> {
 
 	@Override
-	DossierInfoList findAll(QuerySpec querySpec);
+	DossierList findAll(QuerySpec querySpec);
 
-	class DossierInfoListMeta implements PagedMetaInformation {
+	class DossierListMeta implements PagedMetaInformation {
 
 		private Long totalResourceCount;
 
@@ -28,7 +28,7 @@ public interface DossierInfoRepository extends ResourceRepositoryV2<DossierInfo,
 
 	}
 
-	class DossierInfoListLinks implements PagedLinksInformation {
+	class DossierListLinks implements PagedLinksInformation {
 
 		private String first;
 
@@ -80,7 +80,7 @@ public interface DossierInfoRepository extends ResourceRepositoryV2<DossierInfo,
 
 	}
 
-	class DossierInfoList extends ResourceListBase<DossierInfo, DossierInfoListMeta, DossierInfoListLinks> {
+	class DossierList extends ResourceListBase<Dossier, DossierListMeta, DossierListLinks> {
 
 	}
 }
