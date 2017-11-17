@@ -4,6 +4,7 @@ package io.crnk.example.springboot.domain.model;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.crnk.core.resource.annotations.JsonApiId;
 import io.crnk.core.resource.annotations.JsonApiResource;
+import io.crnk.core.resource.annotations.JsonApiToOne;
 
 import java.util.Date;
 
@@ -22,6 +23,19 @@ public class Dossier {
 
 	@JsonProperty
 	private String lalTaskId;
+
+	@JsonApiToOne(opposite = "dossier")
+	private DossierInfo dossierInfo;
+
+
+
+	public DossierInfo getDossierInfo() {
+		return dossierInfo;
+	}
+
+	public void setDossierInfo(DossierInfo dossierInfo) {
+		this.dossierInfo = dossierInfo;
+	}
 
 	public String getLalTaskId() {
 		return lalTaskId;

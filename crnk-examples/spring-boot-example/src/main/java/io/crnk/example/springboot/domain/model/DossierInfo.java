@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import io.crnk.core.resource.annotations.JsonApiId;
 import io.crnk.core.resource.annotations.JsonApiResource;
 import io.crnk.core.resource.annotations.JsonApiToMany;
+import io.crnk.core.resource.annotations.JsonApiToOne;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,6 +38,8 @@ public class DossierInfo {
 	}
 
 
+	@JsonApiToOne(opposite = "dossierinfo")
+	private Dossier dossier;
 
 
 
