@@ -24,7 +24,7 @@ public class Dossier {
 	@JsonProperty
 	private String lalTaskId;
 
-	@JsonApiToOne(opposite = "dossier")
+	@JsonApiToOne
 	private DossierInfo dossierInfo;
 
 
