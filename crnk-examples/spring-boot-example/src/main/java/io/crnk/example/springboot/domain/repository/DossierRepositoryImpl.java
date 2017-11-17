@@ -38,7 +38,7 @@ public class DossierRepositoryImpl extends ResourceRepositoryBase<Dossier, Strin
 	public DossierRepositoryImpl() {
 		super(Dossier.class);
 
-		// save(new Dossier("121"));
+		save(new Dossier("121"));
 
 	}
 
