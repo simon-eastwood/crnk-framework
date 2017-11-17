@@ -12,7 +12,7 @@ import java.util.Date;
 
 
 
-@JsonApiResource(type = "dossierInfo")
+@JsonApiResource(type = "dossierinfo")
 public class DossierInfo {
 
 	@JsonApiId
