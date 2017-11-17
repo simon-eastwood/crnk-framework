@@ -38,8 +38,8 @@ public class DossierInfo {
 	}
 
 
-	@JsonApiToOne(opposite = "dossierInfo")
-	private Dossier dossier;
+	//@JsonApiToOne(opposite = "dossierInfo")
+	//private Dossier dossier;
 
 
 
