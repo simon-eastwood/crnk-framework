@@ -1,4 +1,4 @@
-package main.java.io.crnk.example.springboot.domain.repository;
+package io.crnk.example.springboot.domain.repository;
 
 import io.crnk.core.queryspec.QuerySpec;
 import io.crnk.core.repository.ResourceRepositoryV2;
