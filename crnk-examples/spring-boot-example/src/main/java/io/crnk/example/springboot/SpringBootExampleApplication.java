@@ -73,7 +73,7 @@ class MyFilter implements Filter {
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
 
-            chain.doFilter(request,response);
+
 
 		String path = ((javax.servlet.http.HttpServletRequest) request).getRequestURI();
 		
@@ -86,6 +86,8 @@ if (path.endsWith(".css") || path.endsWith(".js")  || path.endsWith(".ttf") || p
 			((javax.servlet.http.HttpServletResponse)response).addHeader("X-Cache-control", "public, max-age=31536000");
 }
 
+		
+		 chain.doFilter(request,response);
     }
 
     @Override
