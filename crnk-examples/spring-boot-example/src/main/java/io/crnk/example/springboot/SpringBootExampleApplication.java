@@ -75,7 +75,7 @@ class MyFilter implements Filter {
 
             chain.doFilter(request,response);
 
-		String path = ((HttpServletRequest) request).getRequestURI();
+		String path = ((javax.servlet.http.HttpServletRequest) request).getRequestURI();
 if (path.endsWith(".css") || path.endsWith(".js")  || path.endsWith(".ttf") || path.endsWith(".png") ) {
 			response.addHeader("Cache-control", "public, max-age=31536000");
 }
