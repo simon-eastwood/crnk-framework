@@ -62,7 +62,6 @@ public class SpringBootExampleApplication {
 @Order(Ordered.HIGHEST_PRECEDENCE)
 class MyFilter implements Filter {
 
-    private static final boolean CONDITION = true;
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
@@ -71,11 +70,13 @@ class MyFilter implements Filter {
 
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
-        if(CONDITION==true)
+
             chain.doFilter(request,response);
-        else{
-            ((HttpServletResponse)response).setStatus(HttpServletResponse.SC_BAD_REQUEST);
-        }
+
+		String path = ((HttpServletRequest) request).getRequestURI();
+if (path.endsWith(".css") || path.endsWith(".js")  || path.endsWith(".ttf") || path.endsWith(".png") ) {
+			response.addHeader("Cache-control", "public, max-age=31536000");
+}
 
     }
 
