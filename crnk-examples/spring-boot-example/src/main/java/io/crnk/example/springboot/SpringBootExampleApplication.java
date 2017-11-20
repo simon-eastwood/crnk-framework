@@ -41,6 +41,9 @@ public class SpringBootExampleApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBootExampleApplication.class, args);
 		System.out.println("visit http://127.0.0.1:8080/ resp. http://127.0.0.1:8080/browse/ in your browser");
+		System.out.println("If you want to serve static files from disk, pass in the location as command line parameter, for example (on windows):");
+		System.out.println(" --spring.resources.static-locations=file:///c:/portable/uiux/ ");
+		System.out.println("css, js, ttf files will be given very far future cache headers though, so make sure their file path contains a version nr.");
 	}
 
 	@RequestMapping("/resourcesInfo")
