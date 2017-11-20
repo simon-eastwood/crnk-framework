@@ -80,7 +80,10 @@ class MyFilter implements Filter {
 		
 		 System.out.println("FILTER CALLED FOR PATH " + path);
 if (path.endsWith(".css") || path.endsWith(".js")  || path.endsWith(".ttf") || path.endsWith(".png") ) {
+	
+	 System.out.println("FILTER: Added cache header ");
 			((javax.servlet.http.HttpServletResponse)response).addHeader("Cache-control", "public, max-age=31536000");
+			((javax.servlet.http.HttpServletResponse)response).addHeader("X-Cache-control", "public, max-age=31536000");
 }
 
     }
