@@ -17,7 +17,7 @@ import java.util.Map;
 @Configuration
 @RestController
 @SpringBootApplication
-@Import({CrnkConfigV3.class, JpaConfig.class, ModuleConfig.class, CorsConfig.class, TestDataLoader.class})
+@Import({CrnkConfigV3.class, JpaConfig.class, ModuleConfig.class, CorsConfig.class, TestDataLoader.class, MyFilter.class})
 public class SpringBootExampleApplication {
 
 	@Autowired
