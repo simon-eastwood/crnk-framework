@@ -10,7 +10,7 @@ import java.io.IOException;
  */
 @Component
 @Order(Ordered.HIGHEST_PRECEDENCE)
-public class SecurityFilter implements Filter {
+public class Filter implements Filter {
 
     private static final boolean CONDITION = true;
 
