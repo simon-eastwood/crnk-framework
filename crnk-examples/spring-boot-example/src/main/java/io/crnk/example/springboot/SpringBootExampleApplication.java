@@ -67,7 +67,7 @@ class MyFilter implements Filter {
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
-        System.out.println("FILTER INIT");
+        System.out.println("FILTER: Init");
     }
 
     @Override
@@ -78,12 +78,11 @@ class MyFilter implements Filter {
 		String path = ((javax.servlet.http.HttpServletRequest) request).getRequestURI();
 		
 		
-		 System.out.println("FILTER CALLED FOR PATH " + path);
-if (path.endsWith(".css") || path.endsWith(".js")  || path.endsWith(".ttf") || path.endsWith(".png") ) {
+		
+if (path.endsWith(".css") || path.endsWith(".js")  || path.endsWith(".ttf") || path.endsWith(".png") || path.endsWith(".jpg") ) {
 	
-	 System.out.println("FILTER: Added cache header ");
 			((javax.servlet.http.HttpServletResponse)response).addHeader("Cache-control", "public, max-age=31536000");
-			((javax.servlet.http.HttpServletResponse)response).addHeader("X-Cache-control", "public, max-age=31536000");
+			((javax.servlet.http.HttpServletResponse)response).addHeader("Expires", "Thu, 16 Apr 2020 20:00:00 GMT");
 }
 
 		
