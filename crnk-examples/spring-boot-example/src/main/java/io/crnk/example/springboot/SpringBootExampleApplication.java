@@ -41,36 +41,3 @@ public class SpringBootExampleApplication {
 }
 
 
-@Component
-@Order(1)
-public class MyFilter implements Filter {
-
-
-
-  @Override
-  public void init(final FilterConfig filterConfig) throws ServletException {
-    System.out.println("filter");
-  }
-
-  @Override
-  public void doFilter(final ServletRequest request, final ServletResponse response, final FilterChain chain) throws IOException, ServletException {
-    chain.doFilter(request, response);
-  }
-
-  @Override
-  public void destroy() {
-   ;
-  }
-}
-
-// Now, confgure the Filter implemented above in Spring configuration class. Take a look
-@Bean
-public FilterRegistrationBean myFilterBean() {
-  final FilterRegistrationBean filterRegBean = new FilterRegistrationBean();
-  filterRegBean.setFilter(new MyFilter());
-  filterRegBean.addUrlPatterns("/*");
-  filterRegBean.setEnabled(Boolean.TRUE);
-  filterRegBean.setName("Meu Filter");
-  filterRegBean.setAsyncSupported(Boolean.TRUE);
-  return filterRegBean;
-}
