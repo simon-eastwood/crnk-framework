@@ -30,7 +30,7 @@ import java.io.IOException;
 @Configuration
 @RestController
 @SpringBootApplication
-@Import({CrnkConfigV3.class, JpaConfig.class, ModuleConfig.class, CorsConfig.class, TestDataLoader.class, MyFilter.class})
+@Import({CrnkConfigV3.class, JpaConfig.class, ModuleConfig.class, CorsConfig.class, TestDataLoader.class})
 public class SpringBootExampleApplication {
 
 	@Autowired
@@ -60,7 +60,7 @@ public class SpringBootExampleApplication {
  */
 @Component
 @Order(Ordered.HIGHEST_PRECEDENCE)
-public class MyFilter implements Filter {
+class MyFilter implements Filter {
 
     private static final boolean CONDITION = true;
 
