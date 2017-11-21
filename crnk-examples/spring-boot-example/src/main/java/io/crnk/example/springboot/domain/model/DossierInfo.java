@@ -196,7 +196,7 @@ public class DossierInfo {
 	}
 
 	public void setApplicationNumber(String applicationNumber) {
-		throw new RuntimeException("cant set shadow id");
+		this.applicationNumber = applicationNumber;
 	}
 
 	public String getLalTaskId() {
