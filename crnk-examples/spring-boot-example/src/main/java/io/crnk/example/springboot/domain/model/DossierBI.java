@@ -1,7 +1,6 @@
 package io.crnk.example.springboot.domain.model;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.crnk.core.resource.annotations.JsonApiId;
-import io.crnk.core.resource.annotations.JsonIgnore;
 import io.crnk.core.resource.annotations.JsonApiResource;
 import io.crnk.core.resource.annotations.JsonApiToMany;
 import io.crnk.core.resource.annotations.JsonApiToOne;
@@ -149,8 +148,8 @@ public class DossierBI {
 	public boolean dossierRead;
 
 
-	@JsonIgnore
-	public List<Sticker> DossierIndicators = new ArrayList<Sticker>();
+	@JsonProperty
+	private List<Sticker> DossierIndicators = new ArrayList<Sticker>();
 	
 		@JsonProperty
 	public List<String> dummyList1;
