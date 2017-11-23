@@ -28,6 +28,8 @@ public class Dossier {
 	private DossierInfo dossierInfo;
 
 
+	@JsonProperty
+	public List<Sticker> DossierIndicators = new ArrayList<Sticker>();
 
 	public DossierInfo getDossierInfo() {
 		return dossierInfo;
