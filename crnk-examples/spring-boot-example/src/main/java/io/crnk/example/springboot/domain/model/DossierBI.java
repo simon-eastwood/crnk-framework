@@ -58,7 +58,7 @@ public class DossierBI {
 	private String leadDateType;
         
 	@JsonProperty(name="LeadLimitDateColor")
-	private String private leadDateColor;
+	private String leadDateColor;
         
 	@JsonProperty(name="Priority")
 	private String priority;
@@ -83,7 +83,7 @@ public class DossierBI {
 	private int targetMonth ;
         
 	@JsonProperty(name="targetMonthCalculatedColor")
-	private String private targetMonthColor;
+	private String targetMonthColor;
         
 	@JsonProperty(name="WorkflowStatusType")
 	private String workflowStatusType;
