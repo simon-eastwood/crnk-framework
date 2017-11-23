@@ -23,5 +23,5 @@ public class Sticker {
 	private String tooltip;
         
 	@JsonProperty("ShownOn")
-	private String shownOn) {};
+	private String shownOn;
 }
