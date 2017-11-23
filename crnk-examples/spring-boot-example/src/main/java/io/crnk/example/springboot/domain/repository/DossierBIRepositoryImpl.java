@@ -43,7 +43,7 @@ public class DossierBIRepositoryImpl extends ResourceRepositoryBase<DossierBI, S
 			Long l = ID_GENERATOR.getAndIncrement();
 			e.setJsonApiId(l.toString());
 		}
-		e.setEtag (System.currentTimeMillis().toString());
+		e.setEtag ( String.valueOf ( System.currentTimeMillis() )  );
 		myHashMap.put(e.getJsonApiId(), e);
 		return e;
 	}
