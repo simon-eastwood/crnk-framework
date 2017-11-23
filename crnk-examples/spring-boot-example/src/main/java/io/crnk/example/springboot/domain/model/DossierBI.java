@@ -35,7 +35,7 @@ public class DossierBI {
 	private String dossierPhase;
         
 	@JsonProperty("dossierPhaseLabel")
-	private String dossierPhaseLabel;
+	public String dossierPhaseLabel;
         
 	@JsonProperty("DoublureIndicator")
 	private String doublureIndicator;
@@ -48,7 +48,7 @@ public class DossierBI {
 	private String filingLanguage;
         
 	@JsonProperty("LeadClass")
-	private String leadClass;
+	public String leadClass;
         
 	@JsonProperty("LeadLimitDate")
 	private Date leadDate;
