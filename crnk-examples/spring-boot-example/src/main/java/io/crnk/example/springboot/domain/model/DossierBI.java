@@ -26,172 +26,172 @@ public class DossierBI {
 	public DossierBI() {};
         
 	@JsonProperty("ApplicationNumber")
-	private String applicationNumber;
+	public String applicationNumber;
         
 	@JsonProperty("DossierNumber")
-	private String dossierNumber;
+	public String dossierNumber;
         
 	@JsonProperty("dossierPhase")
-	private String dossierPhase;
+	public String dossierPhase;
         
 	@JsonProperty("dossierPhaseLabel")
 	public String dossierPhaseLabel;
         
 	@JsonProperty("DoublureIndicator")
-	private String doublureIndicator;
+	public String doublureIndicator;
         
 	@JsonProperty("FilingDate")
-	private Date filingDate;
+	public Date filingDate;
 
         
 	@JsonProperty("FilingLanguage")
-	private String filingLanguage;
+	public String filingLanguage;
         
 	@JsonProperty("LeadClass")
 	public String leadClass;
         
 	@JsonProperty("LeadLimitDate")
-	private Date leadDate;
+	public Date leadDate;
 
         
 	@JsonProperty("LeadLimitDateType")
-	private String leadDateType;
+	public String leadDateType;
         
 	@JsonProperty("LeadLimitDateColor")
-	private String leadDateColor;
+	public String leadDateColor;
         
 	@JsonProperty("Priority")
-	private String priority;
+	public String priority;
         
 	@JsonProperty("ProceduralLanguage")
-	private String proceduralLanguage;
+	public String proceduralLanguage;
         
 	@JsonProperty("ProcedureType")
-	private String procedureType;
+	public String procedureType;
         
 	@JsonProperty("ProcedureLabel")
-	private String procedureLabel;
+	public String procedureLabel;
         
 	@JsonProperty("Ranking")
-	private String ranking;
+	public String ranking;
         
 	@JsonProperty("ReceivingDate")
-	private Date receivingDate;
+	public Date receivingDate;
 
         
 	@JsonProperty("targetMonthCalculated")
-	private int targetMonth ;
+	public int targetMonth ;
         
 	@JsonProperty("targetMonthCalculatedColor")
-	private String targetMonthColor;
+	public String targetMonthColor;
         
 	@JsonProperty("WorkflowStatusType")
-	private String workflowStatusType;
+	public String workflowStatusType;
         
 	@JsonProperty("WorkflowStatusLabel")
-	private String workflowStatusLabel;
+	public String workflowStatusLabel;
         
 	@JsonProperty("CaseID")
-	private String caseId;
+	public String caseId;
         
 	@JsonProperty("taskTypeCode")
-	private String taskTypeCode;
+	public String taskTypeCode;
         
 	@JsonProperty("taskStatusCode")
-	private String taskStatusCode;
+	public String taskStatusCode;
         
 	@JsonProperty("TaskStatusLabel")
-	private String taskStatusLabel;
+	public String taskStatusLabel;
         
 	@JsonProperty("TitleOfInvention")
-	private String titleOfInvention;
+	public String titleOfInvention;
         
 	@JsonProperty("WorkflowStatusCode")
-	private String workflowStatusCode;
+	public String workflowStatusCode;
         
 	@JsonProperty("internalStatus")
-	private String internalStatus;
+	public String internalStatus;
         
 	@JsonProperty("TechnicallyAccepted")
-	private boolean technicallyAccepted;
+	public boolean technicallyAccepted;
 
         
 	@JsonProperty("technicalAcceptanceType")
-	private String technicalAcceptanceType;
+	public String technicalAcceptanceType;
         
 	@JsonProperty("Director")
-	private String director;
+	public String director;
         
 	@JsonProperty("Directorate")
-	private String directorate;
+	public String directorate;
         
 	@JsonProperty("DirectorateName")
-	private String directorateName;
+	public String directorateName;
         
 	@JsonProperty("DirectorCode")
-	private String directorCode;
+	public String directorCode;
         
 	@JsonProperty("SISUnit")
-	private String sisUnit;
+	public String sisUnit;
         
 	@JsonProperty("SISUnitCode")
-	private String sisUnitCode;
+	public String sisUnitCode;
         
 	@JsonProperty("eDossierInd")
-	private boolean eDossier;
+	public boolean eDossier;
 
         
 	@JsonProperty("dossierType")
-	private String dossierType;
+	public String dossierType;
         
 	@JsonProperty("DossierReadByUser")
-	private boolean dossierRead;
+	public boolean dossierRead;
 
 
 	@JsonProperty
-	private List<Sticker> DossierIndicators = new ArrayList<>();
+	public List<Sticker> DossierIndicators = new ArrayList<>();
         
 	@JsonProperty("A2LimitDate")
-	private Date a2Limit;
+	public Date a2Limit;
 
         
 	@JsonProperty("NumberOfClaims")
-	private int numberOfClaims ;
+	public int numberOfClaims ;
         
 	@JsonProperty("NumberOfPages")
-	private int numberOfPages ;
+	public int numberOfPages ;
         
 	@JsonProperty("DatePreallocated")
-	private Date datePreallocated;
+	public Date datePreallocated;
 
         
 	@JsonProperty("FullnamePre_AllocatedBy")
-	private String fullNamePreAllocatedBy;
+	public String fullNamePreAllocatedBy;
         
 	@JsonProperty("Preallocated")
-	private boolean isPreallocated;
+	public boolean isPreallocated;
 
         
 	@JsonProperty("INSP_MarkedToInspect")
-	private String markedForInspection;
+	public String markedForInspection;
         
 	@JsonProperty("INSP_DateMarked")
-	private Date dateMarked;
+	public Date dateMarked;
 
         
 	@JsonProperty("INSP_MarkedBy")
-	private String markedBy;
+	public String markedBy;
         
 	@JsonProperty("LAL_taskId")
-	private String lalTaskId;
+	public String lalTaskId;
         
 	@JsonProperty("DateTimeMarked")
-	private Date dateTimeMarked;
+	public Date dateTimeMarked;
 
         
 	@JsonProperty("InspectionComment")
-	private String inspectionComment;
+	public String inspectionComment;
         
 	@JsonProperty("MarkedByFullname")
-	private String markedByFullName;
+	public String markedByFullName;
 }
