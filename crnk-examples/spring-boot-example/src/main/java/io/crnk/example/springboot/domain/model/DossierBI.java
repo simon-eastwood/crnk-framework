@@ -26,7 +26,7 @@ public class DossierBI {
 	public DossierBI() {};
         
 	@JsonProperty("ApplicationNumber")
-	private String applicationNumber;
+	public String applicationNumber;
         
 	@JsonProperty("DossierNumber")
 	private String dossierNumber;
