@@ -7,6 +7,8 @@ import io.crnk.core.resource.annotations.JsonApiResource;
 import io.crnk.core.resource.annotations.JsonApiToOne;
 
 import java.util.Date;
+import java.util.ArrayList;
+import java.util.List;
 
 
 @JsonApiResource(type = "dossier")
