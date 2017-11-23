@@ -27,21 +27,21 @@ public class ReadDossierResponse {
     
 
 	@JsonProperty
-	public DossierBI[] public dossiers;
+	public DossierBI[] dossiers;
         
 
 	@JsonProperty
-	public DossierTimeLimit[] public timeLimits;
+	public DossierTimeLimit[] timeLimits;
         
 
 	@JsonProperty
-	public DossierInfoIndicator[] public indicators;
+	public DossierInfoIndicator[] indicators;
         
 
 	@JsonProperty
-	public DossierEvent[] public events;
+	public DossierEvent[] events;
         
 
 	@JsonProperty
-	public DossierInvolvement[] public involvements;
+	public DossierInvolvement[] involvements;
 }
