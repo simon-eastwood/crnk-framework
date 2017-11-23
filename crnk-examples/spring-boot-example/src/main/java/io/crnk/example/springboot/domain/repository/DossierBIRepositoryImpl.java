@@ -36,7 +36,7 @@ public class DossierBIRepositoryImpl extends ResourceRepositoryBase<DossierBI, S
 		s.shownOn= "preview";
 			
 		DossierBI b = new DossierBI("121");
-		b.DossierIndicators.add (s);
+		// b.DossierIndicators.add (s);
 		save(b);
 
 	}
