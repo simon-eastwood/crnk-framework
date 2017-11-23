@@ -14,11 +14,11 @@ public class PublicationNumber {
 	public PublicationNumber() {};
     
 
-	public String cc 
+	public String cc ;
 
-	public String sn 
+	public String sn ;
 
-	public String kc 
+	public String kc ;
 
-	public Date date) {};
+	public Date date;
 }
