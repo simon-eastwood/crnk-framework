@@ -15,7 +15,7 @@ public class DossierBI {
 	private String jsonApiId;
 	public String getJsonApiId() {return this.jsonApiId;}
 	public void setJsonApiId(String id) { this.jsonApiId = id;}
-	public DossierBI(String id) {this.jsonApiId = id};
+	public DossierBI(String id) {this.jsonApiId = id;}
 
 
 	@JsonProperty
