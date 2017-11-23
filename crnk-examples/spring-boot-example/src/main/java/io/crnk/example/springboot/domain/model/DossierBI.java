@@ -148,7 +148,7 @@ public class DossierBI {
 	public boolean dossierRead;
 
 
-	@JsonProperty
+	@JsonIgnore
 	public List<Sticker> DossierIndicators = new ArrayList<Sticker>();
 	
 		@JsonProperty
