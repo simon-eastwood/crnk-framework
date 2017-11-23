@@ -6,6 +6,7 @@ package io.crnk.example.springboot.domain.repository;
 import io.crnk.core.queryspec.QuerySpec;
 import io.crnk.core.repository.ResourceRepositoryBase;
 import io.crnk.example.springboot.domain.model.DossierBI;
+import io.crnk.example.springboot.domain.model.Sticker;
 import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
@@ -27,8 +28,16 @@ public class DossierBIRepositoryImpl extends ResourceRepositoryBase<DossierBI, S
 
 	public DossierBIRepositoryImpl() {
 		super(DossierBI.class);
-
-		save(new DossierBI("121"));
+		
+		Sticker s = new Sticker();
+		s.sticker = "sticker";
+		s.priority  = 99;
+		s.tooltip = "tot";
+		s.shownOn= "preview";
+			
+		DossierBI b = new DossierBI("121");
+		b.DossierIndicators.add (s);
+		save(b);
 
 	}
 
