@@ -149,7 +149,7 @@ public class DossierBI {
 
 
 	@JsonProperty
-	private List<Sticker> DossierIndicators = new ArrayList<Sticker>();
+	public List<Sticker> DossierIndicators = new ArrayList<Sticker>();
         
 	@JsonProperty("A2LimitDate")
 	private Date a2Limit;
