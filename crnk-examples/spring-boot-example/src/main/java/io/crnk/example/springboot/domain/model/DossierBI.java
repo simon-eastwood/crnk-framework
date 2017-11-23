@@ -21,7 +21,7 @@ public class DossierBI {
 	@JsonProperty
 	private String eTag = null;
 	public String getEtag() {return this.eTag;}
-	public void setEtag(String etag) { this.eTag  = eTag ;}
+	public void setEtag(String etag) { this.eTag  = etag ;}
 
 	public DossierBI() {};
         
