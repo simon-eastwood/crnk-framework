@@ -25,173 +25,173 @@ public class DossierBI {
 
 	public DossierBI() {};
         
-	@JsonProperty(name="ApplicationNumber")
+	@JsonProperty("ApplicationNumber")
 	private String applicationNumber;
         
-	@JsonProperty(name="DossierNumber")
+	@JsonProperty("DossierNumber")
 	private String dossierNumber;
         
-	@JsonProperty(name="dossierPhase")
+	@JsonProperty("dossierPhase")
 	private String dossierPhase;
         
-	@JsonProperty(name="dossierPhaseLabel")
+	@JsonProperty("dossierPhaseLabel")
 	private String dossierPhaseLabel;
         
-	@JsonProperty(name="DoublureIndicator")
+	@JsonProperty("DoublureIndicator")
 	private String doublureIndicator;
         
-	@JsonProperty(name="FilingDate")
+	@JsonProperty("FilingDate")
 	private Date filingDate;
 
         
-	@JsonProperty(name="FilingLanguage")
+	@JsonProperty("FilingLanguage")
 	private String filingLanguage;
         
-	@JsonProperty(name="LeadClass")
+	@JsonProperty("LeadClass")
 	private String leadClass;
         
-	@JsonProperty(name="LeadLimitDate")
+	@JsonProperty("LeadLimitDate")
 	private Date leadDate;
 
         
-	@JsonProperty(name="LeadLimitDateType")
+	@JsonProperty("LeadLimitDateType")
 	private String leadDateType;
         
-	@JsonProperty(name="LeadLimitDateColor")
+	@JsonProperty("LeadLimitDateColor")
 	private String leadDateColor;
         
-	@JsonProperty(name="Priority")
+	@JsonProperty("Priority")
 	private String priority;
         
-	@JsonProperty(name="ProceduralLanguage")
+	@JsonProperty("ProceduralLanguage")
 	private String proceduralLanguage;
         
-	@JsonProperty(name="ProcedureType")
+	@JsonProperty("ProcedureType")
 	private String procedureType;
         
-	@JsonProperty(name="ProcedureLabel")
+	@JsonProperty("ProcedureLabel")
 	private String procedureLabel;
         
-	@JsonProperty(name="Ranking")
+	@JsonProperty("Ranking")
 	private String ranking;
         
-	@JsonProperty(name="ReceivingDate")
+	@JsonProperty("ReceivingDate")
 	private Date receivingDate;
 
         
-	@JsonProperty(name="targetMonthCalculated")
+	@JsonProperty("targetMonthCalculated")
 	private int targetMonth ;
         
-	@JsonProperty(name="targetMonthCalculatedColor")
+	@JsonProperty("targetMonthCalculatedColor")
 	private String targetMonthColor;
         
-	@JsonProperty(name="WorkflowStatusType")
+	@JsonProperty("WorkflowStatusType")
 	private String workflowStatusType;
         
-	@JsonProperty(name="WorkflowStatusLabel")
+	@JsonProperty("WorkflowStatusLabel")
 	private String workflowStatusLabel;
         
-	@JsonProperty(name="CaseID")
+	@JsonProperty("CaseID")
 	private String caseId;
         
-	@JsonProperty(name="taskTypeCode")
+	@JsonProperty("taskTypeCode")
 	private String taskTypeCode;
         
-	@JsonProperty(name="taskStatusCode")
+	@JsonProperty("taskStatusCode")
 	private String taskStatusCode;
         
-	@JsonProperty(name="TaskStatusLabel")
+	@JsonProperty("TaskStatusLabel")
 	private String taskStatusLabel;
         
-	@JsonProperty(name="TitleOfInvention")
+	@JsonProperty("TitleOfInvention")
 	private String titleOfInvention;
         
-	@JsonProperty(name="WorkflowStatusCode")
+	@JsonProperty("WorkflowStatusCode")
 	private String workflowStatusCode;
         
-	@JsonProperty(name="internalStatus")
+	@JsonProperty("internalStatus")
 	private String internalStatus;
         
-	@JsonProperty(name="TechnicallyAccepted")
+	@JsonProperty("TechnicallyAccepted")
 	private boolean technicallyAccepted;
 
         
-	@JsonProperty(name="technicalAcceptanceType")
+	@JsonProperty("technicalAcceptanceType")
 	private String technicalAcceptanceType;
         
-	@JsonProperty(name="Director")
+	@JsonProperty("Director")
 	private String director;
         
-	@JsonProperty(name="Directorate")
+	@JsonProperty("Directorate")
 	private String directorate;
         
-	@JsonProperty(name="DirectorateName")
+	@JsonProperty("DirectorateName")
 	private String directorateName;
         
-	@JsonProperty(name="DirectorCode")
+	@JsonProperty("DirectorCode")
 	private String directorCode;
         
-	@JsonProperty(name="SISUnit")
+	@JsonProperty("SISUnit")
 	private String sisUnit;
         
-	@JsonProperty(name="SISUnitCode")
+	@JsonProperty("SISUnitCode")
 	private String sisUnitCode;
         
-	@JsonProperty(name="eDossierInd")
+	@JsonProperty("eDossierInd")
 	private boolean eDossier;
 
         
-	@JsonProperty(name="dossierType")
+	@JsonProperty("dossierType")
 	private String dossierType;
         
-	@JsonProperty(name="DossierReadByUser")
+	@JsonProperty("DossierReadByUser")
 	private boolean dossierRead;
 
 
 	@JsonProperty
 	private List<Sticker> DossierIndicators = new ArrayList<>();
         
-	@JsonProperty(name="A2LimitDate")
+	@JsonProperty("A2LimitDate")
 	private Date a2Limit;
 
         
-	@JsonProperty(name="NumberOfClaims")
+	@JsonProperty("NumberOfClaims")
 	private int numberOfClaims ;
         
-	@JsonProperty(name="NumberOfPages")
+	@JsonProperty("NumberOfPages")
 	private int numberOfPages ;
         
-	@JsonProperty(name="DatePreallocated")
+	@JsonProperty("DatePreallocated")
 	private Date datePreallocated;
 
         
-	@JsonProperty(name="FullnamePre_AllocatedBy")
+	@JsonProperty("FullnamePre_AllocatedBy")
 	private String fullNamePreAllocatedBy;
         
-	@JsonProperty(name="Preallocated")
+	@JsonProperty("Preallocated")
 	private boolean isPreallocated;
 
         
-	@JsonProperty(name="INSP_MarkedToInspect")
+	@JsonProperty("INSP_MarkedToInspect")
 	private String markedForInspection;
         
-	@JsonProperty(name="INSP_DateMarked")
+	@JsonProperty("INSP_DateMarked")
 	private Date dateMarked;
 
         
-	@JsonProperty(name="INSP_MarkedBy")
+	@JsonProperty("INSP_MarkedBy")
 	private String markedBy;
         
-	@JsonProperty(name="LAL_taskId")
+	@JsonProperty("LAL_taskId")
 	private String lalTaskId;
         
-	@JsonProperty(name="DateTimeMarked")
+	@JsonProperty("DateTimeMarked")
 	private Date dateTimeMarked;
 
         
-	@JsonProperty(name="InspectionComment")
+	@JsonProperty("InspectionComment")
 	private String inspectionComment;
         
-	@JsonProperty(name="MarkedByFullname")
-	private string markedByFullName;
+	@JsonProperty("MarkedByFullname")
+	private String markedByFullName;
 }
