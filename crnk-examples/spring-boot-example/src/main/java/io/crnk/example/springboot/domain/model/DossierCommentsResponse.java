@@ -19,5 +19,5 @@ public class DossierCommentsResponse {
                 
 
 	@JsonProperty
-	public DossierComment[] comments;) {}
+	public DossierComment[] comments;
 }
