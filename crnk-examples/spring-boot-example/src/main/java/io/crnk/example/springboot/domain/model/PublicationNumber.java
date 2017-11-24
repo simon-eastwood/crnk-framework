@@ -14,11 +14,11 @@ public class PublicationNumber {
 	public PublicationNumber() {};
     
 	@JsonProperty("cc")
-	public String cc 
+	public String cc ;
 	@JsonProperty("sn")
-	public String sn 
+	public String sn ;
 	@JsonProperty("kc")
-	public String kc 
+	public String kc ;
 	@JsonProperty("date")
 	public Date date;
 }
