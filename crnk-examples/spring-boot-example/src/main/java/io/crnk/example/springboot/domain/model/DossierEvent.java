@@ -13,12 +13,12 @@ public class DossierEvent {
 
 	public DossierEvent() {};
     
-
+	@JsonProperty("CompletedEventLabel")
 	public String label;
                 
-
+	@JsonProperty("KindOfEventCode")
 	public String code;
                 
-
+	@JsonProperty("DateTimeStamp")
 	public Date date;
 }

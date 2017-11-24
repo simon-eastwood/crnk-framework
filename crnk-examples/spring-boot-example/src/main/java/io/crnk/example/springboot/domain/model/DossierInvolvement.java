@@ -13,22 +13,22 @@ public class DossierInvolvement {
 
 	public DossierInvolvement() {};
     
-
+	@JsonProperty("dossierInvolvementAccountId")
 	public String dossierInvolvementAccountId;
         
-
+	@JsonProperty("accountFullname")
 	public String accountFullName;
         
-
+	@JsonProperty("dossierInvolvementType")
 	public String dossierInvolvementType;
         
-
+	@JsonProperty("roleTypeDescription")
 	public String roleTypeDescription;
         
-
+	@JsonProperty("dossierInvolvementStartDate")
 	public Date dossierInvolvementStartDate;
 
         
-
+	@JsonProperty("dossierInvolvementEndDate")
 	public Date dossierInvolvementEndDate;
 }

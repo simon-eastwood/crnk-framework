@@ -13,12 +13,12 @@ public class PublicationNumber {
 
 	public PublicationNumber() {};
     
-
-	public String cc ;
-
-	public String sn ;
-
-	public String kc ;
-
+	@JsonProperty("cc")
+	public String cc 
+	@JsonProperty("sn")
+	public String sn 
+	@JsonProperty("kc")
+	public String kc 
+	@JsonProperty("date")
 	public Date date;
 }

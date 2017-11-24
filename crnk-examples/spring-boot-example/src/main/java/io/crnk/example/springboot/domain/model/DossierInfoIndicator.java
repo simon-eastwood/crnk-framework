@@ -13,12 +13,12 @@ public class DossierInfoIndicator {
 
 	public DossierInfoIndicator() {};
     
-
+	@JsonProperty("dossierIndicatorType")
 	public String dossierIndicatorType;
         
-
+	@JsonProperty("dossierIndicatorLabel")
 	public String dossierIndicatorLabel;
         
-
+	@JsonProperty("dossierIndicatorValue")
 	public String dossierIndicatorDescription;
 }

@@ -13,15 +13,15 @@ public class Sticker {
 
 	public Sticker() {};
     
-
+	@JsonProperty("Sticker")
 	public String sticker;
         
-
+	@JsonProperty("Priority")
 	public int priority ;
         
-
+	@JsonProperty("Tooltip")
 	public String tooltip;
         
-
+	@JsonProperty("ShownOn")
 	public String shownOn;
 }
