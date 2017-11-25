@@ -49,6 +49,18 @@ public class Tray {
 	public boolean deputised;
 
 
+     @JsonApiToOne
+	private Worklist worklist;
+
+      
+	public String getWorklist() {
+		return worklist;
+	}
+
+	public void setWorklist(Worklist w) {
+		this.worklist= w;
+	}
+
 	public String getTrayKey() {
 		return trayKey;
 	}
