@@ -72,7 +72,7 @@ public class DossierSnippet {
 	@JsonProperty("workflowStatus")
 	public String workflowStatus;
                 
-	@JsonProperty("workflowStatus")
+	@JsonProperty("workflowStatusCode")
 	public String workflowStatusCode;
                 
 	@JsonProperty("targetMonthCalculated")
