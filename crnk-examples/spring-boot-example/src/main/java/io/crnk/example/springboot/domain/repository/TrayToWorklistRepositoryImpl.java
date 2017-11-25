@@ -18,16 +18,16 @@ package io.crnk.example.springboot.domain.repository;
 
 import io.crnk.core.repository.RelationshipRepositoryBase;
 import io.crnk.example.springboot.domain.model.Tray;
-import io.crnk.example.springboot.domain.model.Worklist;
+import io.crnk.example.springboot.domain.model.WorkList;
 import org.springframework.stereotype.Component;
 
 /**
  * Example based on RelationshipRepositoryBase which by default accesses the repositories on both sides.
  */
 @Component
-public class TrayToWorklistRepositoryImpl extends RelationshipRepositoryBase<Tray, String, Worklist, String> {
+public class TrayToWorkListRepositoryImpl extends RelationshipRepositoryBase<Tray, String, WorkList, String> {
 
-	public TrayToWorklistRepositoryImpl() {
-		super(Tray.class, Worklist.class);
+	public TrayToWorkListRepositoryImpl() {
+		super(Tray.class, WorkList.class);
 	}
 }

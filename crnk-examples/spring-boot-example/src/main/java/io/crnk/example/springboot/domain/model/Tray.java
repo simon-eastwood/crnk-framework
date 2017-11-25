@@ -50,15 +50,15 @@ public class Tray {
 
 
      @JsonApiToOne
-	private Worklist worklist;
+	private WorkList workList;
 
       
-	public String getWorklist() {
-		return worklist;
+	public String getWorkList() {
+		return this.workList;
 	}
 
-	public void setWorklist(Worklist w) {
-		this.worklist= w;
+	public void setWorkList(WorkList w) {
+		this.workList= w;
 	}
 
 	public String getTrayKey() {
