@@ -53,7 +53,7 @@ public class Tray {
 	private WorkList workList;
 
       
-	public String getWorkList() {
+	public WorkList getWorkList() {
 		return this.workList;
 	}
 
