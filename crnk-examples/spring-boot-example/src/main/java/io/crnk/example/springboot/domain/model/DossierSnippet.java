@@ -176,7 +176,7 @@ public class DossierSnippet {
 	@JsonProperty("alloc_timeLimitType")
 	public String allocTimeLimitType;
                 
-	@JsonProperty("alloc_timeLimitType")
+	@JsonProperty("alloc_timeLimitTypeCode")
 	public String allocTimeLimitTypeCode;
                  
 	@JsonProperty("tech_timeLimitStatus")
@@ -218,7 +218,7 @@ public class DossierSnippet {
 	@JsonProperty("tech_timeLimitType")
 	public String techTimeLimitType;
                 
-	@JsonProperty("tech_timeLimitType")
+	@JsonProperty("tech_timeLimitTypeCode")
 	public String techTimeLimitTypeCode;
                 
 	@JsonProperty("DateActionPerformed")
