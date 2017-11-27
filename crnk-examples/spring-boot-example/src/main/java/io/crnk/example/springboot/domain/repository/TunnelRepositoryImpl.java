@@ -28,6 +28,11 @@ public class TunnelRepositoryImpl extends ResourceRepositoryBase<Tunnel, String>
 	public TunnelRepositoryImpl() {
 		super(Tunnel.class);
 
+		String path = System.getenv("edossier.tunnel.path");
+		System.out.println ("Tunnel path is ");
+		System.out.println (path);
+	
+
 		save(new Tunnel("121"));
 
 	}
