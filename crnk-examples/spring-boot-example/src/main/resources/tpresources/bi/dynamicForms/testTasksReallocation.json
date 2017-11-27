@@ -1,0 +1,44 @@
+{
+  "taskgroup": {
+    "_links": {
+      "self": {
+        "href": "/BPRSearch/BPR_Search/195018/TestTasks"
+      },
+      "api_doc": {
+        "href": "/api-docs/BPRSearch/BPR_Search/195018/TestTasks"
+      }
+    },
+    "actions": [
+      {
+        "name": "frmUpdateWorkflow",
+        "title": "Form Update workflow",
+        "method": "POST",
+        "href": "/BPRSearch/frmUpdateWorkflow/195018"
+      },
+      {
+        "name": "tempUpdateTimeLimit",
+        "title": "TEST Time Limits",
+        "method": "POST",
+        "href": "/BPRSearch/tempUpdateTimeLimit/195018"
+      },
+      {
+        "name": "reallocation",
+        "title": "Reallocation",
+        "method": "POST",
+        "href": "/BPRSearch/reallocation/195018"
+      },
+      {
+        "name": "technicalacceptance",
+        "title": "Redistribution",
+        "method": "POST",
+        "href": "/BPRSearch/technicalacceptance/195018"
+      },
+      {
+        "name": "ta",
+        "title": "Technical acceptance",
+        "method": "POST",
+        "href": "/BPRSearch/ta/195018"
+      }
+    ]
+  }
+}

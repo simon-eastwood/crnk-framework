@@ -31,7 +31,12 @@ public class TunnelRepositoryImpl extends ResourceRepositoryBase<Tunnel, String>
 	public TunnelRepositoryImpl() {
 		super(Tunnel.class);
 
-		String path = System.getProperty("edossier.tunnel.path");
+
+		ClassLoader loader = Thread.currentThread().getContextClassLoader();
+		URL url = loader.getResource("tpresources");
+		String path = url.getPath();
+
+
 		System.out.println("Tunnel path is ");
 		System.out.println(path);
 

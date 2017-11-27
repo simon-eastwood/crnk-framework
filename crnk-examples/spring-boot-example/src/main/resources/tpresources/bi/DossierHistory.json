@@ -1,0 +1,119 @@
+{
+  "History": {
+    "label": "History",
+    "_links": {
+      "self": {
+        "href": "/BPRSearch/BPR_Search/60366/History"
+      },
+      "api_doc": {
+        "href": "/api-docs/BPRSearch/BPR_Search/60366/History"
+      }
+    },
+    "filter": [
+      {
+        "stringfilter": {
+          "param": "Username",
+          "label": "User"
+        }
+      },
+      {
+        "stringfilter": {
+          "param": "TypeOfLog",
+          "label": "Type of log"
+        }
+      },
+      {
+        "datefilter": {
+          "param": "DateOfLog",
+          "label": "Date of log"
+        }
+      }
+    ],
+    "paging": {
+      "totalresults": {
+        "@type": "number",
+        "#text": "2"
+      },
+      "pagesize": {
+        "param": "pagesize",
+        "currentpagesize": {
+          "@type": "number",
+          "#text": "25"
+        },
+        "option": [
+          {
+            "@type": "number",
+            "#text": "10"
+          },
+          {
+            "@type": "number",
+            "#text": "25"
+          },
+          {
+            "@type": "number",
+            "#text": "50"
+          }
+        ]
+      },
+      "param": "page",
+      "currentpage": {
+        "@type": "number",
+        "#text": "1"
+      },
+      "maxpages": {
+        "@type": "number",
+        "#text": "1"
+      }
+    },
+    "sorting": {
+      "param": "sort",
+      "currentsort": "DateTimeStamp asc",
+      "option": [
+        "DateTimeStamp",
+        "TypeOfLog",
+        "Description",
+        "Username"
+      ]
+    },
+    "_embedded": {
+      "results": [
+        {
+          "History": {
+            "_id": {
+              "@type": "number",
+              "#text": "2931663"
+            },
+            "_links": {
+              "self": {
+                "href": "/BPRSearch/BPR_Search/60366/History/2931663"
+              }
+            },
+            "DateTimeStamp": "2016-12-19 14:10:32",
+            "DateOfLog": "2016-12-19",
+            "TypeOfLog": "Event",
+            "Description": "Test history",
+            "Username": null
+          }
+        },
+        {
+          "History": {
+            "_id": {
+              "@type": "number",
+              "#text": "2931664"
+            },
+            "_links": {
+              "self": {
+                "href": "/BPRSearch/BPR_Search/60366/History/2931664"
+              }
+            },
+            "DateTimeStamp": "2016-12-20 14:14:01",
+            "DateOfLog": "2016-12-20",
+            "TypeOfLog": "Event",
+            "Description": "Test history 2",
+            "Username": null
+          }
+        }
+      ]
+    }
+  }
+}

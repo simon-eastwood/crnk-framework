@@ -1,0 +1,99 @@
+{
+    "docCodeInfoList": [{
+            "descEN": "desc AGRA ----------------------------------------------------",
+            "descDE": "Einverständnis auf die Ankündigung zur Erteilung eines Europäischen Patents ",
+            "descFR": "Accord quant à la notification annonçant l intention de délivrer un brevet européen ",
+            "urgency": false,
+            "msg": true,
+            "finalIxd": true,
+            "source": "Incomming",
+            "codeCheckedBy": "Eckert Grandl",
+            "docCodeCategory": {
+                "doccodecategoryId": 1,
+                "category": "EXAM DOCCODES",
+                "description": "EXAM DOCCODES"
+            },
+            "docCode": "AGRA"
+        },
+        {
+            "descEN": "desc AGRA31 ----------------------------------------------------------",
+            "descDE": "Einverständnis auf die Ankündigung zur Erteilung eines Europäischen Patents ",
+            "descFR": "Accord quant à la notification annonçant l intention de délivrer un brevet européen ",
+            "urgency": false,
+            "msg": true,
+            "finalIxd": true,
+            "source": "Incomming",
+            "codeCheckedBy": "Eckert Grandl",
+            "docCodeCategory": {
+                "doccodecategoryId": 1,
+                "category": "EXAM DOCCODES",
+                "description": "EXAM DOCCODES"
+            },
+            "docCode": "AGRA31"
+        },
+        {
+            "descEN": "desc AGRA32 --------------------------------------------------------",
+            "descDE": "Nichteinverständnis auf die Ankündigung zur Erteilung eines Europäischen Patents  ",
+            "descFR": "Désaccord quant à la notification annonçant lintention de délivrer un brevet européen",
+            "urgency": false,
+            "msg": true,
+            "finalIxd": true,
+            "source": "Incomming",
+            "codeCheckedBy": "Eckert Grandl",
+            "docCodeCategory": {
+                "doccodecategoryId": 2,
+                "category": "IB-Forms EPC2000-DOCCODES",
+                "description": "IB-Forms EPC2000-DOCCODES"
+            },
+            "docCode": "AGRA32"
+        },
+        {
+            "descEN": "desc AGRA33 -----------------------------------",
+            "descDE": "Nichteinverständnis auf die Ankündigung zur Erteilung eines Europäischen Patents  ",
+            "descFR": "Désaccord quant à la notification annonçant lintention de délivrer un brevet européen",
+            "urgency": false,
+            "msg": true,
+            "finalIxd": true,
+            "source": "Incomming",
+            "codeCheckedBy": "Eckert Grandl",
+            "docCodeCategory": {
+                "doccodecategoryId": 2,
+                "category": "IB-Forms EPC2000-DOCCODES",
+                "description": "IB-Forms EPC2000-DOCCODES"
+            },
+            "docCode": "AGRA33"
+        },
+        {
+            "descEN": "desc AGRABS ---------------------------------------------------------------",
+            "descDE": "Antwort auf die Ankündigung zur Erteilung eines Europäischen Patents und nachfolgende Dokumente  ",
+            "descFR": "Réponse à la notification annonçant lintention de délivrer un brevet européen et documents consécutifs ",
+            "urgency": false,
+            "msg": true,
+            "finalIxd": false,
+            "source": "INTERNAL",
+            "codeCheckedBy": "Eckert Grandl",
+            "docCodeCategory": {
+                "doccodecategoryId": 3,
+                "category": "CDR-DcocCodes",
+                "description": "CDR-DcocCodes"
+            },
+            "docCode": "AGRABS"
+        },
+        {
+            "descEN": "desc AGRABS1 ---------------------------------------------",
+            "descDE": "Antwort auf die Ankündigung zur Erteilung eines Europäischen Patents und nachfolgende Dokumente  ",
+            "descFR": "Réponse à la notification annonçant lintention de délivrer un brevet européen et documents consécutifs ",
+            "urgency": false,
+            "msg": true,
+            "finalIxd": false,
+            "source": "INTERNAL",
+            "codeCheckedBy": "Eckert Grandl",
+            "docCodeCategory": {
+                "doccodecategoryId": 3,
+                "category": "CDR-DcocCodes",
+                "description": "CDR-DcocCodes"
+            },
+            "docCode": "AGRABS1"
+        }
+    ]
+}

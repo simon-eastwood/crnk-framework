@@ -1,0 +1,116 @@
+{
+ "TR05GetSortingOptions": [ 
+  {
+   "Result": "OK",
+   "Explanation": ""
+  },
+  {
+   "code": "dossierType",
+   "label": "Application type"
+  },
+  {
+   "code": "EDossier",
+   "label": "eDossier/Paper dossier"
+  },
+  {
+   "code": "dossierNumber",
+   "label": "Dossier number"
+  },
+  {
+   "code": "titleOfInvention",
+   "label": "Title of invention"
+  },
+  {
+   "code": "proceduralLanguage",
+   "label": "Procedural language"
+  },
+  {
+   "code": "leadClass",
+   "label": "Lead class"
+  },
+  {
+   "code": "NumberOfPages",
+   "label": "Number of pages"
+  },
+  {
+   "code": "NumberOfClaims",
+   "label": "Number of claims"
+  },
+  {
+   "code": "applicantName",
+   "label": "Applicant name"
+  },
+  {
+   "code": "AssociatedFiling",
+   "label": "Associated filing"
+  },
+  {
+   "code": "dossierPhaseLabel",
+   "label": "Dossier phase"
+  },
+  {
+   "code": "workflowStatus",
+   "label": "Workflow status"
+  },
+  {
+   "code": "targetMonth",
+   "label": "Target month"
+  },
+  {
+   "code": "priority",
+   "label": "Priority"
+  },
+  {
+   "code": "ranking",
+   "label": "Ranking"
+  },
+  {
+   "code": "DossierIsRead",
+   "label": "Read / Unread dossier"
+  },
+  {
+   "code": "tech_expirationDate",
+   "label": "Technical acceptance limit date"
+  },
+  {
+   "code": "LeadLimitDate",
+   "label": "Lead limit date"
+  },
+  {
+   "code": "BlockedForAllocationType",
+   "label": "Blocked"
+  },
+  {
+   "code": "alloc_expirationDate",
+   "label": "Allocation limit date"
+  },
+  {
+   "code": "Proposed1stExaminerPresent",
+   "label": "Proposed 1st examiner"
+  },
+  {
+   "code": "LeadLimitDateType",
+   "label": "Lead limit date type"
+  },
+  {
+   "code": "TechnicallyAccepted",
+   "label": "Technically accepted"
+  },
+  {
+   "code": "taskName",
+   "label": "Task to be performed"
+  },
+  {
+   "code": "tech_taskProgress",
+   "label": "Task progress"
+  },
+  {
+   "code": "TaskStatus",
+   "label": "Task status"
+  },
+  {
+   "code": "techTimeLimitStatus",
+   "label": "Time limit status"
+  }
+ ]
+}
