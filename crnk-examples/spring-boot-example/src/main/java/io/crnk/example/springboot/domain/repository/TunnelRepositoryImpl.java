@@ -17,6 +17,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicLong;
 
+import java.net.URL;
+
 
 /**
  * ResourceRepositoryBase-based example with the base class providing some base functionality.
