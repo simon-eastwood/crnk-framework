@@ -10,14 +10,13 @@ import org.springframework.stereotype.Component;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.URL;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicLong;
-
-import java.net.URL;
 
 
 /**
@@ -35,7 +34,7 @@ public class TunnelRepositoryImpl extends ResourceRepositoryBase<Tunnel, String>
 
 
 		ClassLoader loader = Thread.currentThread().getContextClassLoader();
-		URL url = loader.getResource("tpresources");
+		URL url = loader.getResource("rsrc:tpresources");
 		String path = url.getPath();
 
 
@@ -93,7 +92,7 @@ public class TunnelRepositoryImpl extends ResourceRepositoryBase<Tunnel, String>
 					System.out.println(file.getAbsolutePath());
 
 					Tunnel t = new Tunnel();
-					t.setJsonApiId(file.getAbsolutePath() );
+					t.setJsonApiId(file.getAbsolutePath());
 					t.payload = readFile(file.getAbsolutePath(), Charset.forName("UTF-8"));
 					save(t);
 				}
@@ -108,5 +107,25 @@ public class TunnelRepositoryImpl extends ResourceRepositoryBase<Tunnel, String>
 		return new String(encoded, encoding);
 	}
 
+	private void fromJar() {
+		CodeSource src = TunnelRepositoryImpl.class.getProtectionDomain().getCodeSource();
+		List<String> list = new ArrayList<String>();
+
+		if (src != null) {
+			URL jar = src.getLocation();
+			ZipInputStream zip = new ZipInputStream(jar.openStream());
+			ZipEntry ze = null;
+
+			while ((ze = zip.getNextEntry()) != null) {
+				String entryName = ze.getName();
+				System.out.println( entryName );
+				if (entryName.startsWith("images") && entryName.endsWith(".png")) {
+					list.add(entryName);
+				}
+			}
+
+		}
+
+	}
 
 }
