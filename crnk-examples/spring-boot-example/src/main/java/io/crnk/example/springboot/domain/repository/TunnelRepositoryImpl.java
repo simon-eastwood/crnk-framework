@@ -52,15 +52,6 @@ public class TunnelRepositoryImpl extends ResourceRepositoryBase<Tunnel, String>
 		super(Tunnel.class);
 
 
-		/*ClassLoader loader = Thread.currentThread().getContextClassLoader();
-		URL url = loader.getResource("rsrc:tpresources");
-		String path = url.getPath();
-
-
-		System.out.println("Tunnel path is ");
-		System.out.println(path);
-		*/
-
 		try {
 
 			this.loadFromJar();
@@ -114,7 +105,7 @@ public class TunnelRepositoryImpl extends ResourceRepositoryBase<Tunnel, String>
                         System.out.println( entryName );
                         StringBuilder s = readTxtFile( zip );
 
-			Tunnel t = new Tunnel ();
+			Tunnel t = new Tunnel (entryName);
 			t.payload = s.toString()  ;
 			this.save (t);
                     }
