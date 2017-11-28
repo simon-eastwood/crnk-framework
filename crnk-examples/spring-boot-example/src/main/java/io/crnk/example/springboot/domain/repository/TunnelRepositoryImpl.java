@@ -114,8 +114,8 @@ public class TunnelRepositoryImpl extends ResourceRepositoryBase<Tunnel, String>
                         System.out.println( entryName );
                         StringBuilder s = readTxtFile( zip );
 
-			TunnelRepositoryImpl t = new TunnelRepositoryImpl ();
-			t.setPayload (s.toString() ) ;
+			Tunnel t = new Tunnel ();
+			t.payload = s.toString()  ;
 			this.save (t);
                     }
                 }
