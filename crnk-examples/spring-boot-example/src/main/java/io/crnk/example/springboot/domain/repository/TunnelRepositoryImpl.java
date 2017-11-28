@@ -23,6 +23,20 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
 
+import java.io.*;
+import java.net.URL;
+import java.security.CodeSource;
+import java.nio.charset.Charset;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.zip.ZipInputStream;
+import java.util.zip.ZipEntry;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.ArrayList;
+import java.util.List;
+
+
 
 /**
  * ResourceRepositoryBase-based example with the base class providing some base functionality.
@@ -49,7 +63,7 @@ public class TunnelRepositoryImpl extends ResourceRepositoryBase<Tunnel, String>
 
 		try {
 
-			this.fromJar();
+			this.loadFromJar();
 		} catch (Exception e) {
 			System.out.println("Cannot load any files from jar ");
 			System.out.println(e);
@@ -84,50 +98,46 @@ public class TunnelRepositoryImpl extends ResourceRepositoryBase<Tunnel, String>
 	}
 
 
-	private void loadFiles(String sDir) throws IOException {
-		File[] faFiles = new File(sDir).listFiles();
-		for (File file : faFiles) {
-			if (file != null) {
-				if (file.isDirectory()) {
-					loadFiles(file.getAbsolutePath());
-				} else if (file.getName().matches("(.*)")) {
-					System.out.println(file.getAbsolutePath());
+        private void loadFromJar() throws Exception {
+            CodeSource src = TunnelRepositoryImpl.class.getProtectionDomain().getCodeSource();
+            List<String> list = new ArrayList<String>();
 
-					Tunnel t = new Tunnel();
-					t.setJsonApiId(file.getAbsolutePath());
-					t.payload = readFile(file.getAbsolutePath(), Charset.forName("UTF-8"));
-					save(t);
-				}
+            if (src != null) {
+                URL jar = src.getLocation();
+                ZipInputStream zip = new ZipInputStream(jar.openStream());
+                ZipEntry ze = null;
 
-			}
-		}
-	}
+                while ((ze = zip.getNextEntry()) != null) {
+                    String entryName = ze.getName();
 
-	private String readFile(String path, Charset encoding)
-			throws IOException {
-		byte[] encoded = Files.readAllBytes(Paths.get(path));
-		return new String(encoded, encoding);
-	}
+                    if (entryName.startsWith("tpresources") && (entryName.endsWith(".json") || entryName.endsWith(".xml")) ) {
+                        System.out.println( entryName );
+                        StringBuilder s = readTxtFile( zip );
 
-	private void fromJar() throws Exception {
-		CodeSource src = TunnelRepositoryImpl.class.getProtectionDomain().getCodeSource();
-		List<String> list = new ArrayList<String>();
+			TunnelRepositoryImpl t = new TunnelRepositoryImpl ();
+			t.setPayload (s.toString() ) ;
+			this.save (t);
+                    }
+                }
 
-		if (src != null) {
-			URL jar = src.getLocation();
-			ZipInputStream zip = new ZipInputStream(jar.openStream());
-			ZipEntry ze = null;
+            }
 
-			while ((ze = zip.getNextEntry()) != null) {
-				String entryName = ze.getName();
-				System.out.println( entryName );
-				if (entryName.startsWith("images") && entryName.endsWith(".png")) {
-					list.add(entryName);
-				}
-			}
+        }
 
-		}
+        private  StringBuilder readTxtFile(InputStream in)  {
+            StringBuilder out = new StringBuilder();
+            BufferedReader reader = new BufferedReader(new InputStreamReader(in));
+            String line;
+            try {
+                while ((line = reader.readLine()) != null) {
+                    out.append(line);
+                }
+            } catch (IOException e) {
+                // do something, probably not a text file
+                e.printStackTrace();
+            }
+            return out;
+        }
 
-	}
 
 }
