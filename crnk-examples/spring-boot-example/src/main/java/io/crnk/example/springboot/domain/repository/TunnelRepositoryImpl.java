@@ -51,7 +51,7 @@ public class TunnelRepositoryImpl extends ResourceRepositoryBase<Tunnel, String>
 
 			this.fromJar();
 		} catch (Exception e) {
-			System.out.println("Cannot load any files from tunnel path " + path);
+			System.out.println("Cannot load any files from jar ");
 			System.out.println(e);
 		}
 		
