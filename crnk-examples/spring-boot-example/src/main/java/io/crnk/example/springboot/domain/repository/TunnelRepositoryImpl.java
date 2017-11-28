@@ -38,26 +38,23 @@ public class TunnelRepositoryImpl extends ResourceRepositoryBase<Tunnel, String>
 		super(Tunnel.class);
 
 
-		ClassLoader loader = Thread.currentThread().getContextClassLoader();
+		/*ClassLoader loader = Thread.currentThread().getContextClassLoader();
 		URL url = loader.getResource("rsrc:tpresources");
 		String path = url.getPath();
 
 
 		System.out.println("Tunnel path is ");
 		System.out.println(path);
+		*/
 
 		try {
 
-			if (path != null) {
-				loadFiles(path);
-			} else {
-				System.out.println("No tunnel path provided in properties or command-line. Not loading static json");
-			}
+			this.fromJar();
 		} catch (Exception e) {
 			System.out.println("Cannot load any files from tunnel path " + path);
 			System.out.println(e);
 		}
-
+		
 
 	}
 
@@ -112,7 +109,7 @@ public class TunnelRepositoryImpl extends ResourceRepositoryBase<Tunnel, String>
 		return new String(encoded, encoding);
 	}
 
-	private void fromJar() {
+	private void fromJar() throws Exception {
 		CodeSource src = TunnelRepositoryImpl.class.getProtectionDomain().getCodeSource();
 		List<String> list = new ArrayList<String>();
 
