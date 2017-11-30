@@ -81,8 +81,8 @@ class MyFilter implements Filter {
 		String path = ((javax.servlet.http.HttpServletRequest) request).getRequestURI();
 		
 		
-		
-if (path.endsWith(".css") || path.endsWith(".js")  || path.endsWith(".ttf") || path.endsWith(".png") || path.endsWith(".jpg") ) {
+		// long-cache static resource exception for the aotonly version because that is the baseline for performance comparison
+if ( (path.indexOf("aotonly") == -1)  && (path.endsWith(".css") || path.endsWith(".js")  || path.endsWith(".ttf") || path.endsWith(".png") || path.endsWith(".jpg")) ) {
 	
 			((javax.servlet.http.HttpServletResponse)response).addHeader("Cache-control", "public, max-age=31536000");
 			((javax.servlet.http.HttpServletResponse)response).addHeader("Expires", "Thu, 16 Apr 2020 20:00:00 GMT");
