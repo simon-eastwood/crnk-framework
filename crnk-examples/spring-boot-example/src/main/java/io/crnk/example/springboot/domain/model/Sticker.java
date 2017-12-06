@@ -1,12 +1,5 @@
 package io.crnk.example.springboot.domain.model;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import io.crnk.core.resource.annotations.JsonApiId;
-import io.crnk.core.resource.annotations.JsonApiResource;
-import io.crnk.core.resource.annotations.JsonApiToMany;
-import io.crnk.core.resource.annotations.JsonApiToOne;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Date;
 
 
 public class Sticker {
@@ -24,4 +17,36 @@ public class Sticker {
         
 	@JsonProperty("ShownOn")
 	public String shownOn;
+
+	public String getSticker() {
+		return sticker;
+	}
+
+	public void setSticker(String sticker) {
+		this.sticker = sticker;
+	}
+
+	public int getPriority() {
+		return priority;
+	}
+
+	public void setPriority(int priority) {
+		this.priority = priority;
+	}
+
+	public String getTooltip() {
+		return tooltip;
+	}
+
+	public void setTooltip(String tooltip) {
+		this.tooltip = tooltip;
+	}
+
+	public String getShownOn() {
+		return shownOn;
+	}
+
+	public void setShownOn(String shownOn) {
+		this.shownOn = shownOn;
+	}
 }
