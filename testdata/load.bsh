@@ -1,0 +1,18 @@
+for i in *-*.json 
+ do       
+TYPE=`echo "$i" | awk -F- '{print $1}'`
+echo "$i"
+echo "$TYPE"
+#curl -vX POST http://luu1278t:8080/api/"$TYPE" --data-binary @"$i" --header "Content-Type: application/vnd.api+json"
+curl -vX POST http://localhost:8080/api/"$TYPE" --data-binary @"$i" --header "Content-Type: application/vnd.api+json"
+done
+
+
+# Now set up the relations
+for i in rel_*_*.json 
+do
+TYPE=`echo "$i" | awk -F_ '{print $2}'`
+echo "$TYPE"
+ 
+curl -vX POST http://localhost:8080/api/"$TYPE" --data-binary @"$i" --header "Content-Type: application/vnd.api+json"
+done

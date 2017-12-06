@@ -1,0 +1,13 @@
+{
+  "data" : {
+    "id" : "FRA1670195",
+    "type" : "dossierkeymapping",
+    "attributes" : {
+   
+                  "ApplicationNumber":"FRA     1670195",
+                  "TrimmedApplicationNumber":"FRA1670195",
+		     "CaseID" : "1670195",
+                  "LAL_taskId":"EPA    13185007-EP     13185007-001"
+    }
+  }
+}

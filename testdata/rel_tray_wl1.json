@@ -1,0 +1,26 @@
+﻿{
+  "data" :  {
+    "id" : "14130",
+    "type" : "tray",
+
+    "relationships" : {
+
+      "workList" : {
+
+        "data" : {
+
+          "id" : "WORKMANAGER_789319_FALSE_1662_directorate_1_1st_Examiner",
+
+          "type" : "worklist"
+	  }
+
+        }
+
+      }
+
+    }
+
+
+
+  
+}

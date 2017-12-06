@@ -1,0 +1,17 @@
+﻿{
+
+"data" :  {
+
+    "id" : "122",
+
+    "type" : "dossierassociatefiling",
+
+    "attributes" : {	"ASS_ID":"3063387",
+			"ApplicationNumber":"USA201514840659",
+			"DateOfFiling":"2015-08-31",
+			"TypeOfAssociation":"earlierApplication",
+			"Parent":"false",
+			"FirstExaminer":"FirstExaminer3",
+			"SearchExaminer":"SearchExaminer3"}
+ }
+}
