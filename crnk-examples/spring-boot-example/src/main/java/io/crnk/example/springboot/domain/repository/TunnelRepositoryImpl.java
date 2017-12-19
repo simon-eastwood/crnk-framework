@@ -74,7 +74,7 @@ public class TunnelRepositoryImpl extends ResourceRepositoryBase<Tunnel, String>
 			Long l = ID_GENERATOR.getAndIncrement();
 			e.setJsonApiId(l.toString());
 		}
-		e.setEtag(String.valueOf(System.currentTimeMillis()));
+		e.seteTag(String.valueOf(System.currentTimeMillis()));
 		myHashMap.put(e.getJsonApiId(), e);
 		return e;
 	}
