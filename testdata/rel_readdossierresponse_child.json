@@ -1,8 +1,8 @@
 ﻿{
-  "data" : {
+  "data" :  {
     "id" : "FRA1670195",
     "type" : "readdossierresponse",
-    "attributes" : {
+	 "attributes" : {
 "involvements" : [
     {
       "dossierInvolvementAccountId": "EDOEX10",
@@ -78,8 +78,51 @@
       "TriggeredByEvent": "Update Time Limit"
     }
 ]
+   },
+    "relationships" : {
 
+      "dossierBi" : {
 
-   }
-  }
+        "data" : {
+
+          "id" : "dossierBi.json",
+
+          "type" : "tunnel"
+	  }
+
+        },
+		
+      "dossierBiblio" : {
+
+        "data" : {
+
+          "id" : "biblio.json",
+
+          "type" : "tunnel"
+	  }
+
+        },
+		 "dossierClass" : {
+
+        "data" : {
+
+          "id" : "getClasses.json",
+
+          "type" : "tunnel"
+	  }
+
+        },
+		"dossierAssociateFiling" : {
+
+        "data" : {
+
+          "id" : "associatedfilings.json",
+
+          "type" : "tunnel"
+	  }
+
+        }
+      }
+
+    }  
 }

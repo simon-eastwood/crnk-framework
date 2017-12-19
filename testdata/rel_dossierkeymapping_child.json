@@ -1,0 +1,68 @@
+﻿{
+  "data" : {
+    "id" : "FRA1670195",
+    "type" : "dossierkeymapping",
+    "attributes" : {   
+          "ApplicationNumber":"FRA     1670195",
+          "TrimmedApplicationNumber":"FRA1670195",
+		  "CaseID" : "1670195",
+          "LAL_taskId":"EPA    13185007-EP     13185007-001"
+    },
+    "relationships" : {
+
+      "testTasks" : {
+
+        "data" : {
+
+          "id" : "testTasks.json",
+
+          "type" : "tunnel"
+	  }
+
+        },
+		
+      "pdm" : {
+
+        "data" : {
+
+          "id" : "pdm.xml",
+
+          "type" : "tunnel"
+	  }
+
+        },
+		 "source" : {
+
+        "data" : {
+
+          "id" : "source.json",
+
+          "type" : "tunnel"
+	  }
+
+        },
+		"annotations" : {
+
+        "data" : {
+
+          "id" : "annotations.json",
+
+          "type" : "tunnel"
+	  }
+
+        },
+		"dossierCommentsResponse" : {
+
+        "data" : {
+
+          "id" : "comments.json",
+
+          "type" : "tunnel"
+	  }
+
+        }
+
+      }
+
+    }  
+}

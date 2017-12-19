@@ -3,33 +3,30 @@
  */
 package io.crnk.example.springboot.domain.repository;
 
-import io.crnk.core.queryspec.QuerySpec;
-import io.crnk.core.repository.ResourceRepositoryBase;
-import io.crnk.example.springboot.domain.model.DossierKeyMapping;
-import org.springframework.stereotype.Component;
-
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicLong;
 
+import org.springframework.stereotype.Component;
 
-
+import io.crnk.core.exception.ResourceNotFoundException;
+import io.crnk.core.queryspec.QuerySpec;
+import io.crnk.core.resource.list.ResourceList;
+import io.crnk.example.springboot.domain.model.DossierKeyMapping;
 
 /**
  * ResourceRepositoryBase-based example with the base class providing some base functionality.
  */
 @Component
-public class DossierKeyMappingRepositoryImpl extends ResourceRepositoryBase<DossierKeyMapping, String> implements DossierKeyMappingRepository {
+public class DossierKeyMappingRepositoryImpl implements DossierKeyMappingRepository {
 
 	private static final AtomicLong ID_GENERATOR = new AtomicLong(124);
 
 	private Map<String, DossierKeyMapping> myHashMap = new HashMap<>();
-
+	
 	public DossierKeyMappingRepositoryImpl() {
-		super(DossierKeyMapping.class);
-
-		save(new DossierKeyMapping("121"));
-
 	}
 
 	@Override
@@ -43,18 +40,45 @@ public class DossierKeyMappingRepositoryImpl extends ResourceRepositoryBase<Doss
 			Long l = ID_GENERATOR.getAndIncrement();
 			e.setJsonApiId(l.toString());
 		}
-		e.setEtag (String.valueOf ( System.currentTimeMillis() ) );
+		e.seteTag (String.valueOf ( System.currentTimeMillis() ) );
 		myHashMap.put(e.getJsonApiId(), e);
 		return e;
 	}
-
+	
 	@Override
-	public synchronized DossierKeyMappingList findAll(QuerySpec querySpec) {
-		DossierKeyMappingList list = new DossierKeyMappingList();
-		list.setMeta(new DossierKeyMappingListMeta());
-		list.setLinks(new DossierKeyMappingListLinks());
-		querySpec.apply(myHashMap.values(), list);
-		return list;
+	public ResourceList<DossierKeyMapping> findAll(QuerySpec querySpec) {
+		return querySpec.apply(myHashMap.values());
 	}
 
+	@Override
+	public ResourceList<DossierKeyMapping> findAll(Iterable<String> taskIds, QuerySpec querySpec) {
+		List<DossierKeyMapping> foundTasks = new ArrayList<>();
+		for (Map.Entry<String, DossierKeyMapping> entry : myHashMap.entrySet()) {
+			for (String id : taskIds) {
+				if (id.equals(entry.getKey())) {
+					foundTasks.add(entry.getValue());
+				}
+			}
+		}
+		return querySpec.apply(foundTasks);
+	}
+	
+	@Override
+	public <S extends DossierKeyMapping> S create(S entity) {
+		return save(entity);
+	}
+
+	@Override
+	public Class<DossierKeyMapping> getResourceClass() {
+		return DossierKeyMapping.class;
+	}
+
+	@Override
+	public DossierKeyMapping findOne(String id, QuerySpec querySpec) {
+		DossierKeyMapping dossierKeyMapping = myHashMap.get(id);
+		if (dossierKeyMapping == null) {
+			throw new ResourceNotFoundException("DossierKeyMapping not found!");
+		}
+		return dossierKeyMapping;
+	}
 }

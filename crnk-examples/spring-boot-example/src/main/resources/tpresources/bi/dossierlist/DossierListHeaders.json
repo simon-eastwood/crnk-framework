@@ -10,31 +10,33 @@
     },
     "filter": [
       {
-        "numberfilter": {
-          "param": "priority",
-          "label": "Priority"
-        }
-      },
-      {
         "choicefilter": {
-          "param": "technicalAccepted",
-          "label": "Technically accepted",
+          "param": "ActiveLimitDateType",
+          "label": "Active limit date type",
           "options": [
             {
-              "key": "TRUE",
+              "key": "a_ta",
               "count": {
                 "@type": "number",
                 "#text": "0"
               },
-              "label": "TRUE"
+              "label": "TA limit date"
             },
             {
-              "key": "FALSE",
+              "key": "b_allocation",
               "count": {
                 "@type": "number",
                 "#text": "0"
               },
-              "label": "FALSE"
+              "label": "Allocation limit date"
+            },
+            {
+              "key": "c_leadlimitdate",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Lead limit date"
             }
           ]
         }
@@ -46,485 +48,9 @@
         }
       },
       {
-        "stringfilter": {
-          "param": "leadClass",
-          "label": "Lead class"
-        }
-      },
-      {
-        "stringfilter": {
-          "param": "applicationNumber",
+        "numberfilter": {
+          "param": "ApplicationNumberNumeric",
           "label": "Application number"
-        }
-      },
-      {
-        "choicefilter": {
-          "param": "taskName",
-          "label": "Task name",
-          "options": [
-            {
-              "key": "SL_TTE_CompleteAllocationOfSearchDivision",
-              "count": {
-                "@type": "number",
-                "#text": "0"
-              },
-              "label": "Allocate complete search division"
-            },
-            {
-              "key": "SL_TTE_AllocationOfSearchDivision",
-              "count": {
-                "@type": "number",
-                "#text": "0"
-              },
-              "label": "Tech acceptance or allocation"
-            },
-            {
-              "key": "SL_TTE_Sign_offExaminersAction",
-              "count": {
-                "@type": "number",
-                "#text": "0"
-              },
-              "label": "Sign-off examiner's action"
-            },
-            {
-              "key": "SL_TTE_SearchActionCorrection",
-              "count": {
-                "@type": "number",
-                "#text": "0"
-              },
-              "label": "Search Action correction"
-            },
-            {
-              "key": "SL_TTE_CASECheck",
-              "count": {
-                "@type": "number",
-                "#text": "0"
-              },
-              "label": "CASE check"
-            },
-            {
-              "key": "SL_TTE_Search",
-              "count": {
-                "@type": "number",
-                "#text": "0"
-              },
-              "label": "Search"
-            },
-            {
-              "key": "SL_TTE_ApplicantsActionAwaited",
-              "count": {
-                "@type": "number",
-                "#text": "0"
-              },
-              "label": "Applicant's action awaited"
-            },
-            {
-              "key": "SL_TTE_ExaminersProductToBeProcessed",
-              "count": {
-                "@type": "number",
-                "#text": "0"
-              },
-              "label": "Examiner's product to be processed"
-            },
-            {
-              "key": "SL_TTE_NoCLARReplyReceived_Check",
-              "count": {
-                "@type": "number",
-                "#text": "0"
-              },
-              "label": "No CLAR reply received - check"
-            }
-          ]
-        }
-      },
-      {
-        "stringfilter": {
-          "param": "proceduralLanguage",
-          "label": "Procedural language"
-        }
-      },
-      {
-        "choicefilter": {
-          "param": "tech_TimeLimitStatus",
-          "label": "Time limit status",
-          "options": [
-            {
-              "key": "TLT_Started",
-              "count": {
-                "@type": "number",
-                "#text": "0"
-              },
-              "label": "Started"
-            },
-            {
-              "key": "TLT_Cancelled",
-              "count": {
-                "@type": "number",
-                "#text": "0"
-              },
-              "label": "Cancelled"
-            },
-            {
-              "key": "TLT_Closed",
-              "count": {
-                "@type": "number",
-                "#text": "0"
-              },
-              "label": "Closed"
-            },
-            {
-              "key": "TLT_NoTimeLimitStatus",
-              "count": {
-                "@type": "number",
-                "#text": "0"
-              },
-              "label": "No Time Limit Status"
-            },
-            {
-              "key": "TLT_Expired",
-              "count": {
-                "@type": "number",
-                "#text": "0"
-              },
-              "label": "Expired"
-            }
-          ]
-        }
-      },
-      {
-        "stringfilter": {
-          "param": "EDossier",
-          "label": "eDossier"
-        }
-      },
-      {
-        "choicefilter": {
-          "param": "workflowStatus",
-          "label": "Workflow status",
-          "options": [
-            {
-              "key": "ID_WSS_Initialised",
-              "count": {
-                "@type": "number",
-                "#text": "0"
-              },
-              "label": "Initialised"
-            },
-            {
-              "key": "ID_WSS_ApplicantsActionAwaited",
-              "count": {
-                "@type": "number",
-                "#text": "0"
-              },
-              "label": "Applicant's action awaited"
-            },
-            {
-              "key": "ID_WSS_ForExaminersCorrection",
-              "count": {
-                "@type": "number",
-                "#text": "0"
-              },
-              "label": "For examiner's correction"
-            },
-            {
-              "key": "ID_WSS_Processed_EndOfSearch",
-              "count": {
-                "@type": "number",
-                "#text": "0"
-              },
-              "label": "Processed - end of search"
-            },
-            {
-              "key": "ID_WSS_ReadyForAllocation",
-              "count": {
-                "@type": "number",
-                "#text": "0"
-              },
-              "label": "Ready for allocation"
-            },
-            {
-              "key": "ID_WSS_ReadyForCASECheck",
-              "count": {
-                "@type": "number",
-                "#text": "0"
-              },
-              "label": "Ready for CASE check"
-            },
-            {
-              "key": "ID_WSS_ReadyForSignOff",
-              "count": {
-                "@type": "number",
-                "#text": "0"
-              },
-              "label": "Ready for sign off"
-            },
-            {
-              "key": "ID_WSS_ReadyForSearch",
-              "count": {
-                "@type": "number",
-                "#text": "0"
-              },
-              "label": "Ready for search"
-            },
-            {
-              "key": "ID_WSS_ReadyForTechAcceptanceOrAllocation",
-              "count": {
-                "@type": "number",
-                "#text": "0"
-              },
-              "label": "Ready for tech acceptance or allocation"
-            },
-            {
-              "key": "ID_WSS_ReadyToBeProcessedFO",
-              "count": {
-                "@type": "number",
-                "#text": "0"
-              },
-              "label": "Ready to be processed /FO"
-            },
-            {
-              "key": "ID_WSS_ReadyToBeProcessedSISUnit",
-              "count": {
-                "@type": "number",
-                "#text": "0"
-              },
-              "label": "Ready to be processed /SIS unit"
-            }
-          ]
-        }
-      },
-      {
-        "choicefilter": {
-          "param": "dossierPhase",
-          "label": "Dossier phase",
-          "options": [
-            {
-              "key": "SL_DPE_EuropeanSearch",
-              "count": {
-                "@type": "number",
-                "#text": "0"
-              },
-              "label": "European Search"
-            },
-            {
-              "key": "SL_DPE_SupplementaryEuropeanSearch",
-              "count": {
-                "@type": "number",
-                "#text": "0"
-              },
-              "label": "Supplementary European Search"
-            },
-            {
-              "key": "SL_DPE_Examination",
-              "count": {
-                "@type": "number",
-                "#text": "0"
-              },
-              "label": "Examination"
-            },
-            {
-              "key": "SL_DPE_ExaminationAfterISAEPOrSISAEP",
-              "count": {
-                "@type": "number",
-                "#text": "0"
-              },
-              "label": "Examination after ISA=EP or SISA=EP"
-            },
-            {
-              "key": "SL_DPE_Opposition",
-              "count": {
-                "@type": "number",
-                "#text": "0"
-              },
-              "label": "Opposition"
-            },
-            {
-              "key": "SL_DPE_PCTISASearch",
-              "count": {
-                "@type": "number",
-                "#text": "0"
-              },
-              "label": "PCT ISA Search"
-            },
-            {
-              "key": "SL_DPE_PCTPreliminaryExamination",
-              "count": {
-                "@type": "number",
-                "#text": "0"
-              },
-              "label": "PCT Preliminary Examination"
-            },
-            {
-              "key": "SL_DPE_NationalSearch",
-              "count": {
-                "@type": "number",
-                "#text": "0"
-              },
-              "label": "National Search"
-            },
-            {
-              "key": "SL_DPE_RechercheSpciale",
-              "count": {
-                "@type": "number",
-                "#text": "0"
-              },
-              "label": "Recherche SpÃ©ciale"
-            },
-            {
-              "key": "SL_DPE_TravauxSpciales",
-              "count": {
-                "@type": "number",
-                "#text": "0"
-              },
-              "label": "Travaux SpÃ©ciales"
-            },
-            {
-              "key": "SL_DPE_EuropeanAdditionalSearch",
-              "count": {
-                "@type": "number",
-                "#text": "0"
-              },
-              "label": "European Additional Search"
-            },
-            {
-              "key": "SL_DPE_Rule112SearchEPC1973",
-              "count": {
-                "@type": "number",
-                "#text": "0"
-              },
-              "label": "Rule 112 Search (EPC1973)"
-            },
-            {
-              "key": "SL_DPE_LimitationRevocation",
-              "count": {
-                "@type": "number",
-                "#text": "0"
-              },
-              "label": "Limitation/Revocation"
-            },
-            {
-              "key": "SL_DPE_PCTSISSearch",
-              "count": {
-                "@type": "number",
-                "#text": "0"
-              },
-              "label": "PCT SIS Search"
-            }
-          ]
-        }
-      },
-      {
-        "choicefilter": {
-          "param": "tech_TaskProgress",
-          "label": "Task progress",
-          "options": [
-            {
-              "key": "TSK_InProgress",
-              "count": {
-                "@type": "number",
-                "#text": "0"
-              },
-              "label": "In progress"
-            },
-            {
-              "key": "TSK_PendingOverdue",
-              "count": {
-                "@type": "number",
-                "#text": "0"
-              },
-              "label": "Pending overdue"
-            },
-            {
-              "key": "TSK_Overdue",
-              "count": {
-                "@type": "number",
-                "#text": "0"
-              },
-              "label": "Overdue"
-            }
-          ]
-        }
-      },
-      {
-        "datefilter": {
-          "param": "tech_CreatedDate",
-          "label": "Target filing date"
-        }
-      },
-      {
-        "datefilter": {
-          "param": "tech_ExpirationDate",
-          "label": "Technical acceptance time limit"
-        }
-      },
-      {
-        "datefilter": {
-          "param": "alloc_ExpirationDate",
-          "label": "Allocation time limit"
-        }
-      },
-      {
-        "choicefilter": {
-          "param": "taskStatusCode",
-          "label": "Task status",
-          "options": [
-            {
-              "key": "SL_TSS_New",
-              "count": {
-                "@type": "number",
-                "#text": "0"
-              },
-              "label": "New"
-            },
-            {
-              "key": "SL_TSS_Paused",
-              "count": {
-                "@type": "number",
-                "#text": "0"
-              },
-              "label": "Paused"
-            },
-            {
-              "key": "SL_TSS_Returned",
-              "count": {
-                "@type": "number",
-                "#text": "0"
-              },
-              "label": "Returned"
-            },
-            {
-              "key": "SL_TSS_Completed",
-              "count": {
-                "@type": "number",
-                "#text": "0"
-              },
-              "label": "Completed"
-            },
-            {
-              "key": "SL_TSS_Aborted",
-              "count": {
-                "@type": "number",
-                "#text": "0"
-              },
-              "label": "Aborted"
-            },
-            {
-              "key": "SL_TSS_Active",
-              "count": {
-                "@type": "number",
-                "#text": "0"
-              },
-              "label": "Active"
-            },
-            {
-              "key": "SL_TSS_Finished",
-              "count": {
-                "@type": "number",
-                "#text": "0"
-              },
-              "label": "Finished"
-            }
-          ]
         }
       },
       {
@@ -726,6 +252,1120 @@
             }
           ]
         }
+      },
+      {
+        "choicefilter": {
+          "param": "AssociatedFilingsPresent",
+          "label": "Associated filing",
+          "options": [
+            {
+              "key": "true",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Yes"
+            },
+            {
+              "key": "false",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "No"
+            }
+          ]
+        }
+      },
+      {
+        "choicefilter": {
+          "param": "BlockedForAllocationType",
+          "label": "Blocked",
+          "options": [
+            {
+              "key": "NotBlocked",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Not blocked"
+            },
+            {
+              "key": "AllBlockers",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "All blockers"
+            },
+            {
+              "key": "MarkedUnderInspectionByAnyone",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Marked under inspection"
+            },
+            {
+              "key": "MarkedUnderInspectionByMe",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Marked under inspection by me"
+            },
+            {
+              "key": "MarkedUnderInspectionByOthers",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Marked under inspection by others"
+            },
+            {
+              "key": "FODONotDone",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "FODO not done"
+            }
+          ]
+        }
+      },
+      {
+        "choicefilter": {
+          "param": "DossierIsRead",
+          "label": "Read / unread dossier",
+          "options": [
+            {
+              "key": "TRUE",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Read"
+            },
+            {
+              "key": "FALSE",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Unread"
+            }
+          ]
+        }
+      },
+      {
+        "numberfilter": {
+          "param": "DossierNumberNumeric",
+          "label": "Dossier number"
+        }
+      },
+      {
+        "choicefilter": {
+          "param": "dossierPhase",
+          "label": "Dossier phase",
+          "options": [
+            {
+              "key": "SL_DPE_EuropeanSearch",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "European Search"
+            },
+            {
+              "key": "SL_DPE_SupplementaryEuropeanSearch",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Supplementary European Search"
+            },
+            {
+              "key": "SL_DPE_Examination",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Examination"
+            },
+            {
+              "key": "SL_DPE_ExaminationAfterISAEPOrSISAEP",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Examination after ISA=EP or SISA=EP"
+            },
+            {
+              "key": "SL_DPE_Opposition",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Opposition"
+            },
+            {
+              "key": "SL_DPE_PCTISASearch",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "PCT ISA Search"
+            },
+            {
+              "key": "SL_DPE_PCTPreliminaryExamination",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "PCT Preliminary Examination"
+            },
+            {
+              "key": "SL_DPE_NationalSearch",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "National Search"
+            },
+            {
+              "key": "SL_DPE_RechercheSpciale",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Recherche Spéciale"
+            },
+            {
+              "key": "SL_DPE_TravauxSpciales",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Travaux Spéciaux"
+            },
+            {
+              "key": "SL_DPE_EuropeanAdditionalSearch",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "European Additional Search"
+            },
+            {
+              "key": "SL_DPE_Rule112SearchEPC1973",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Rule 112 Search (EPC1973)"
+            },
+            {
+              "key": "SL_DPE_LimitationRevocation",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Limitation/Revocation"
+            },
+            {
+              "key": "SL_DPE_PCTSISSearch",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "PCT SIS Search"
+            }
+          ]
+        }
+      },
+      {
+        "choicefilter": {
+          "param": "EDossier",
+          "label": "eDossier/Paper dossier",
+          "options": [
+            {
+              "key": "TRUE",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "eDossier"
+            },
+            {
+              "key": "FALSE",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Paper dossier"
+            }
+          ]
+        }
+      },
+      {
+        "stringfilter": {
+          "param": "leadClass",
+          "label": "Lead class"
+        }
+      },
+      {
+        "choicefilter": {
+          "param": "LeadLimitDateType",
+          "label": "Lead limit date type",
+          "options": [
+            {
+              "key": "LEGAL",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Legal"
+            },
+            {
+              "key": "COMMITTED",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Committed"
+            },
+            {
+              "key": "INTERNAL",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Internal"
+            }
+          ]
+        }
+      },
+      {
+        "choicefilter": {
+          "param": "MarkedToInspectFilter",
+          "label": "Marked as under inspection",
+          "options": [
+            {
+              "key": "allMarkedAsInspected",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "All Marked as under Inspection"
+            },
+            {
+              "key": "myMarkedAsInspected",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "My Marked as under Inspection"
+            }
+          ]
+        }
+      },
+      {
+        "choicefilter": {
+          "param": "NumberOfClaimsRange",
+          "label": "Number of claims",
+          "options": [
+            {
+              "key": "e_15",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "< 15"
+            },
+            {
+              "key": "15_30",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "15 <= nb claims < 30"
+            },
+            {
+              "key": "30_50",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "30 <= nb claims < 50"
+            },
+            {
+              "key": "50_100",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "50 <= nb claims < 100"
+            },
+            {
+              "key": "100_e",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": ">= 100"
+            }
+          ]
+        }
+      },
+      {
+        "choicefilter": {
+          "param": "NumberOfPagesRange",
+          "label": "Number of pages range",
+          "options": [
+            {
+              "key": "e_35",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "< 35"
+            },
+            {
+              "key": "35_50",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "35 <= nb pages < 50"
+            },
+            {
+              "key": "50_100",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "50 <= nb pages < 100"
+            },
+            {
+              "key": "100_150",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "100 <= nb pages < 150"
+            },
+            {
+              "key": "150_e",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": ">= 150"
+            }
+          ]
+        }
+      },
+      {
+        "choicefilter": {
+          "param": "priority",
+          "label": "Priority",
+          "options": [
+            {
+              "key": "1",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "1"
+            },
+            {
+              "key": "2",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "2"
+            },
+            {
+              "key": "3",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "3"
+            },
+            {
+              "key": "4",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "4"
+            },
+            {
+              "key": "99",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "99"
+            }
+          ]
+        }
+      },
+      {
+        "choicefilter": {
+          "param": "proceduralLanguage",
+          "label": "Procedural language",
+          "options": [
+            {
+              "key": "DE",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "DE"
+            },
+            {
+              "key": "EN",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "EN"
+            },
+            {
+              "key": "FR",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "FR"
+            },
+            {
+              "key": "NL",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "NL"
+            }
+          ]
+        }
+      },
+      {
+        "choicefilter": {
+          "param": "Proposed1stExaminerPresent",
+          "label": "Proposed 1st examiner",
+          "options": [
+            {
+              "key": "TRUE",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Yes"
+            },
+            {
+              "key": "FALSE",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "No"
+            }
+          ]
+        }
+      },
+      {
+        "choicefilter": {
+          "param": "RedistributionIndicator",
+          "label": "Redistribution indicator (Type of technical acceptance)",
+          "options": [
+            {
+              "key": "ID_TAT_Automatic",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Automatic"
+            },
+            {
+              "key": "ID_TAT_Indirect",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Per redistribution"
+            },
+            {
+              "key": "ID_TAT_Direct",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Direct"
+            }
+          ]
+        }
+      },
+      {
+        "choicefilter": {
+          "param": "dossierIndicators",
+          "label": "Stickers",
+          "options": [
+            {
+              "key": "ANYSTICKER",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Any sticker"
+            },
+            {
+              "key": "NOSTICKERS",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "No stickers"
+            },
+            {
+              "key": "ADWI",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "ADWI"
+            },
+            {
+              "key": "BIOM",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "BIOM"
+            },
+            {
+              "key": "DEAD",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "DEAD"
+            },
+            {
+              "key": "DIVISIONAL",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "DIVISIONAL"
+            },
+            {
+              "key": "DOUBLURE",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "DOUBLURE"
+            },
+            {
+              "key": "NOAP",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "NOAP"
+            },
+            {
+              "key": "Non-Unity",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Non-Unity"
+            },
+            {
+              "key": "PD",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "PD"
+            },
+            {
+              "key": "PFEE",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "PFEE"
+            },
+            {
+              "key": "PPHI",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "PPHI"
+            },
+            {
+              "key": "PROT",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "PROT"
+            },
+            {
+              "key": "PUBLISHED",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "PUBLISHED"
+            },
+            {
+              "key": "RASE",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "RASE"
+            },
+            {
+              "key": "REFU",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "REFU"
+            },
+            {
+              "key": "SEQL",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "SEQL"
+            },
+            {
+              "key": "STAY",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "STAY"
+            },
+            {
+              "key": "SUSI",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "SUSI"
+            },
+            {
+              "key": "WAIVER",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "WAIVER"
+            }
+          ]
+        }
+      },
+      {
+        "choicefilter": {
+          "param": "TargetmonthRange",
+          "label": "Target month",
+          "options": [
+            {
+              "key": "e__5",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "<-5"
+            },
+            {
+              "key": "_5_1",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "-5 <= Target < 1"
+            },
+            {
+              "key": "1_2",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "1 <= Target < 2"
+            },
+            {
+              "key": "2_5",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "2 <= Target < 5"
+            },
+            {
+              "key": "5_e",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": ">= 5"
+            }
+          ]
+        }
+      },
+      {
+        "choicefilter": {
+          "param": "taskStatusCode",
+          "label": "Task status",
+          "options": [
+            {
+              "key": "SL_TSS_New",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "New"
+            },
+            {
+              "key": "SL_TSS_Paused",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Paused"
+            },
+            {
+              "key": "SL_TSS_Returned",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Returned"
+            },
+            {
+              "key": "SL_TSS_Completed",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Completed"
+            },
+            {
+              "key": "SL_TSS_Aborted",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Aborted"
+            },
+            {
+              "key": "SL_TSS_Active",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Active"
+            },
+            {
+              "key": "SL_TSS_Finished",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Finished"
+            }
+          ]
+        }
+      },
+      {
+        "choicefilter": {
+          "param": "taskName",
+          "label": "Task to be performed",
+          "options": [
+            {
+              "key": "SL_TTE_AllocationOfSearchDivision",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Tech acceptance or allocation"
+            },
+            {
+              "key": "SL_TTE_CompleteAllocationOfSearchDivision",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Allocate complete search division"
+            },
+            {
+              "key": "SL_TTE_ApplicantsActionAwaited",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Search Applicant's action awaited"
+            },
+            {
+              "key": "SL_TTE_NoCLARReplyReceived_Check",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "No CLAR reply received - check"
+            },
+            {
+              "key": "SL_TTE_CASECheck",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "CASE check"
+            },
+            {
+              "key": "SL_TTE_ExaminersProductToBeProcessed",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Examiner's product to be processed"
+            },
+            {
+              "key": "SL_TTE_SearchActionCorrection",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Search Action correction"
+            },
+            {
+              "key": "SL_TTE_Sign_offExaminersAction",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Sign-off examiner's action"
+            }
+          ]
+        }
+      },
+      {
+        "choicefilter": {
+          "param": "tech_taskProgress",
+          "label": "Task progress",
+          "options": [
+            {
+              "key": "TSK_InProgress",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "In progress"
+            },
+            {
+              "key": "TSK_PendingOverdue",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Pending overdue"
+            },
+            {
+              "key": "TSK_Overdue",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Overdue"
+            }
+          ]
+        }
+      },
+      {
+        "choicefilter": {
+          "param": "technicalAccepted",
+          "label": "Technically accepted",
+          "options": [
+            {
+              "key": "TRUE",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Yes"
+            },
+            {
+              "key": "FALSE",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "No"
+            }
+          ]
+        }
+      },
+      {
+        "choicefilter": {
+          "param": "tech_timeLimitStatus",
+          "label": "Time limit status",
+          "options": [
+            {
+              "key": "TLT_Started",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Started"
+            },
+            {
+              "key": "TLT_Cancelled",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Cancelled"
+            },
+            {
+              "key": "TLT_Closed",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Closed"
+            },
+            {
+              "key": "TLT_NoTimeLimitStatus",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "No Time Limit Status"
+            },
+            {
+              "key": "TLT_Expired",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Expired"
+            }
+          ]
+        }
+      },
+      {
+        "stringfilter": {
+          "param": "titleOfInvention",
+          "label": "Title of invention"
+        }
+      },
+      {
+        "choicefilter": {
+          "param": "workflowStatus",
+          "label": "Workflow status",
+          "options": [
+            {
+              "key": "ID_WSS_Initialised",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Initialised"
+            },
+            {
+              "key": "ID_WSS_ApplicantsActionAwaited",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Applicant's action awaited"
+            },
+            {
+              "key": "ID_WSS_ForExaminersCorrection",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "For examiner's correction"
+            },
+            {
+              "key": "ID_WSS_Processed_EndOfSearch",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Processed - end of search"
+            },
+            {
+              "key": "ID_WSS_ReadyForAllocation",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Ready for allocation"
+            },
+            {
+              "key": "ID_WSS_ReadyForCASECheck",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Ready for CASE check"
+            },
+            {
+              "key": "ID_WSS_ReadyForSignOff",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Ready for sign off"
+            },
+            {
+              "key": "ID_WSS_ReadyForSearch",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Ready for search"
+            },
+            {
+              "key": "ID_WSS_ReadyForTechAcceptanceOrAllocation",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Ready for tech acceptance or allocation"
+            },
+            {
+              "key": "ID_WSS_ReadyToBeProcessedFO",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Ready to be processed /FO"
+            },
+            {
+              "key": "ID_WSS_ReadyToBeProcessedSISUnit",
+              "count": {
+                "@type": "number",
+                "#text": "0"
+              },
+              "label": "Ready to be processed /SIS unit"
+            }
+          ]
+        }
       }
     ],
     "dynamicschema": {
@@ -829,12 +1469,12 @@
       ],
       "dossierPhase": [
         {
-          "code": "SL_DPE_EuropeanSearch",
-          "label": "European Search"
+          "code": "SL_DPE_EuropeanAdditionalSearch",
+          "label": "European Additional Search"
         },
         {
-          "code": "SL_DPE_SupplementaryEuropeanSearch",
-          "label": "Supplementary European Search"
+          "code": "SL_DPE_EuropeanSearch",
+          "label": "European Search"
         },
         {
           "code": "SL_DPE_Examination",
@@ -862,15 +1502,11 @@
         },
         {
           "code": "SL_DPE_RechercheSpciale",
-          "label": "Recherche SpÃ©ciale"
+          "label": "Recherche Spéciale"
         },
         {
           "code": "SL_DPE_TravauxSpciales",
-          "label": "Travaux SpÃ©ciales"
-        },
-        {
-          "code": "SL_DPE_EuropeanAdditionalSearch",
-          "label": "European Additional Search"
+          "label": "Travaux Spéciaux"
         },
         {
           "code": "SL_DPE_Rule112SearchEPC1973",
@@ -885,6 +1521,46 @@
           "label": "PCT SIS Search"
         }
       ],
+      "priority": [
+        {
+          "code": "1",
+          "label": "1"
+        },
+        {
+          "code": "2",
+          "label": "2"
+        },
+        {
+          "code": "3",
+          "label": "3"
+        },
+        {
+          "code": "4",
+          "label": "4"
+        },
+        {
+          "code": "99",
+          "label": "99"
+        }
+      ],
+      "proceduralLanguage": [
+        {
+          "code": "DE",
+          "label": "DE"
+        },
+        {
+          "code": "EN",
+          "label": "EN"
+        },
+        {
+          "code": "FR",
+          "label": "FR"
+        },
+        {
+          "code": "NL",
+          "label": "NL"
+        }
+      ],
       "woIndicator": [
         {
           "code": "TRUE",
@@ -897,40 +1573,36 @@
       ],
       "taskName": [
         {
-          "code": "SL_TTE_CompleteAllocationOfSearchDivision",
-          "label": "Allocate complete search division"
-        },
-        {
           "code": "SL_TTE_AllocationOfSearchDivision",
           "label": "Tech acceptance or allocation"
         },
         {
-          "code": "SL_TTE_Sign_offExaminersAction",
-          "label": "Sign-off examiner's action"
+          "code": "SL_TTE_CompleteAllocationOfSearchDivision",
+          "label": "Allocate complete search division"
         },
         {
-          "code": "SL_TTE_SearchActionCorrection",
-          "label": "Search Action correction"
+          "code": "SL_TTE_ApplicantsActionAwaited",
+          "label": "Search Applicant's action awaited"
+        },
+        {
+          "code": "SL_TTE_NoCLARReplyReceived_Check",
+          "label": "No CLAR reply received - check"
         },
         {
           "code": "SL_TTE_CASECheck",
           "label": "CASE check"
         },
         {
-          "code": "SL_TTE_Search",
-          "label": "Search"
-        },
-        {
-          "code": "SL_TTE_ApplicantsActionAwaited",
-          "label": "Applicant's action awaited"
-        },
-        {
           "code": "SL_TTE_ExaminersProductToBeProcessed",
           "label": "Examiner's product to be processed"
         },
         {
-          "code": "SL_TTE_NoCLARReplyReceived_Check",
-          "label": "No CLAR reply received - check"
+          "code": "SL_TTE_SearchActionCorrection",
+          "label": "Search Action correction"
+        },
+        {
+          "code": "SL_TTE_Sign_offExaminersAction",
+          "label": "Sign-off examiner's action"
         }
       ],
       "workflowStatus": [
@@ -939,36 +1611,32 @@
           "label": "Initialised"
         },
         {
-          "code": "ID_WSS_ApplicantsActionAwaited",
-          "label": "Applicant's action awaited"
-        },
-        {
-          "code": "ID_WSS_ForExaminersCorrection",
-          "label": "For examiner's correction"
-        },
-        {
-          "code": "ID_WSS_Processed_EndOfSearch",
-          "label": "Processed - end of search"
+          "code": "ID_WSS_ReadyForTechAcceptanceOrAllocation",
+          "label": "Ready for tech acceptance or allocation"
         },
         {
           "code": "ID_WSS_ReadyForAllocation",
           "label": "Ready for allocation"
         },
         {
-          "code": "ID_WSS_ReadyForCASECheck",
-          "label": "Ready for CASE check"
-        },
-        {
-          "code": "ID_WSS_ReadyForSignOff",
-          "label": "Ready for sign off"
-        },
-        {
           "code": "ID_WSS_ReadyForSearch",
           "label": "Ready for search"
         },
         {
-          "code": "ID_WSS_ReadyForTechAcceptanceOrAllocation",
-          "label": "Ready for tech acceptance or allocation"
+          "code": "ID_WSS_ApplicantsActionAwaited",
+          "label": "Applicant's action awaited"
+        },
+        {
+          "code": "ID_WSS_ReadyForCASECheck",
+          "label": "Ready for CASE check"
+        },
+        {
+          "code": "ID_WSS_ForExaminersCorrection",
+          "label": "For examiner's correction"
+        },
+        {
+          "code": "ID_WSS_ReadyForSignOff",
+          "label": "Ready for sign off"
         },
         {
           "code": "ID_WSS_ReadyToBeProcessedFO",
@@ -977,6 +1645,34 @@
         {
           "code": "ID_WSS_ReadyToBeProcessedSISUnit",
           "label": "Ready to be processed /SIS unit"
+        },
+        {
+          "code": "ID_WSS_Processed_EndOfSearch",
+          "label": "Processed - end of search"
+        }
+      ],
+      "LeadLimitDateType": [
+        {
+          "code": "LEGAL",
+          "label": "Legal"
+        },
+        {
+          "code": "COMMITTED",
+          "label": "Committed"
+        },
+        {
+          "code": "INTERNAL",
+          "label": "Internal"
+        }
+      ],
+      "EDossier": [
+        {
+          "code": "TRUE",
+          "label": "eDossier"
+        },
+        {
+          "code": "FALSE",
+          "label": "Paper dossier"
         }
       ],
       "taskStatusCode": [
@@ -1030,14 +1726,14 @@
       "technicalAccepted": [
         {
           "code": "TRUE",
-          "label": "TRUE"
+          "label": "Yes"
         },
         {
           "code": "FALSE",
-          "label": "FALSE"
+          "label": "No"
         }
       ],
-      "alloc_TimeLimitStatus": [
+      "alloc_timeLimitStatus": [
         {
           "code": "TLT_Started",
           "label": "Started"
@@ -1059,7 +1755,7 @@
           "label": "Expired"
         }
       ],
-      "alloc_TaskProgress": [
+      "alloc_taskProgress": [
         {
           "code": "TSK_InProgress",
           "label": "In progress"
@@ -1073,7 +1769,7 @@
           "label": "Overdue"
         }
       ],
-      "alloc_TimeLimitType": [
+      "alloc_timeLimitType": [
         {
           "code": "TLT_Allocation",
           "label": "Allocation"
@@ -1083,7 +1779,7 @@
           "label": "Technical acceptance"
         }
       ],
-      "tech_TimeLimitStatus": [
+      "tech_timeLimitStatus": [
         {
           "code": "TLT_Started",
           "label": "Started"
@@ -1105,7 +1801,7 @@
           "label": "Expired"
         }
       ],
-      "tech_TaskProgress": [
+      "tech_taskProgress": [
         {
           "code": "TSK_InProgress",
           "label": "In progress"
@@ -1119,7 +1815,7 @@
           "label": "Overdue"
         }
       ],
-      "tech_TimeLimitType": [
+      "tech_timeLimitType": [
         {
           "code": "TLT_Allocation",
           "label": "Allocation"
@@ -1127,6 +1823,118 @@
         {
           "code": "TLT_TechnicalAcceptance",
           "label": "Technical acceptance"
+        }
+      ],
+      "DossierIsRead": [
+        {
+          "code": "TRUE",
+          "label": "Read"
+        },
+        {
+          "code": "FALSE",
+          "label": "Unread"
+        }
+      ],
+      "dossierIndicators": [
+        {
+          "code": "ANYSTICKER",
+          "label": "Any sticker"
+        },
+        {
+          "code": "NOSTICKERS",
+          "label": "No stickers"
+        },
+        {
+          "code": "ADWI",
+          "label": "ADWI"
+        },
+        {
+          "code": "BIOM",
+          "label": "BIOM"
+        },
+        {
+          "code": "DEAD",
+          "label": "DEAD"
+        },
+        {
+          "code": "DIVISIONAL",
+          "label": "DIVISIONAL"
+        },
+        {
+          "code": "DOUBLURE",
+          "label": "DOUBLURE"
+        },
+        {
+          "code": "NOAP",
+          "label": "NOAP"
+        },
+        {
+          "code": "Non-Unity",
+          "label": "Non-Unity"
+        },
+        {
+          "code": "PD",
+          "label": "PD"
+        },
+        {
+          "code": "PFEE",
+          "label": "PFEE"
+        },
+        {
+          "code": "PPHI",
+          "label": "PPHI"
+        },
+        {
+          "code": "PROT",
+          "label": "PROT"
+        },
+        {
+          "code": "PUBLISHED",
+          "label": "PUBLISHED"
+        },
+        {
+          "code": "RASE",
+          "label": "RASE"
+        },
+        {
+          "code": "REFU",
+          "label": "REFU"
+        },
+        {
+          "code": "SEQL",
+          "label": "SEQL"
+        },
+        {
+          "code": "STAY",
+          "label": "STAY"
+        },
+        {
+          "code": "SUSI",
+          "label": "SUSI"
+        },
+        {
+          "code": "WAIVER",
+          "label": "WAIVER"
+        }
+      ],
+      "MarkedToInspectFilter": [
+        {
+          "code": "allMarkedAsInspected",
+          "label": "All Marked as under Inspection"
+        },
+        {
+          "code": "myMarkedAsInspected",
+          "label": "My Marked as under Inspection"
+        }
+      ],
+      "AssociatedFilingsPresent": [
+        {
+          "code": "true",
+          "label": "Yes"
+        },
+        {
+          "code": "false",
+          "label": "No"
         }
       ]
     },
@@ -1169,9 +1977,7 @@
     "sorting": {
       "param": "sort",
       "option": [
-        "AccountID",
         "ranking",
-        "taskId",
         "applicantName",
         "applicationNumber",
         "dossierNumber",
@@ -1179,35 +1985,23 @@
         "leadClass",
         "priority",
         "proceduralLanguage",
-        "targetMonth",
-        "CaseIdentifier",
+        "taskName",
+        "workflowStatus",
         "targetMonthCalculated",
         "LeadLimitDate",
         "LeadLimitDateType",
-        "Examiner1",
         "titleOfInvention",
-        "Examiner2",
-        "Chairman",
         "Proposed1stExaminer",
         "EDossier",
         "BlockedForAllocation",
-        "alloc_StatusDateTime",
-        "alloc_CreatedDateTime",
-        "alloc_CreatedDate",
-        "alloc_ExpirationDate",
-        "alloc_SignalDate",
-        "alloc_ChangeDateTime",
-        "alloc_LimitDateType",
-        "tech_StatusDateTime",
-        "tech_CreatedDateTime",
-        "tech_CreatedDate",
-        "tech_ExpirationDate",
-        "tech_SignalDate",
-        "tech_ChangeDateTime",
-        "tech_LimitDateType",
+        "taskStatusCode",
+        "technicalAcceptanceType",
+        "technicalAccepted",
+        "tech_statusDateTime",
+        "tech_taskProgress",
         "dossierPhaseLabel",
-        "READ_USERID",
-        "ExpandedTechnicalFieldRange"
+        "DossierIsRead",
+        "NumberOfClaims"
       ]
     },
     "_embedded": null

@@ -1,404 +1,91 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<teiCorpus subtype="simple" type="patentFamily">
-    <teiHeader>
-        <fileDesc>
-            <titleStmt>
-                <bibl subtype="simple" type="patentFamily">
-                    <idno type="familyId">097243172</idno>
-                </bibl>
-            </titleStmt>
-        </fileDesc>
-    </teiHeader>
-    <teiCorpus type="application">
-        <teiHeader>
-            <fileDesc>
-                <titleStmt>
-                    <bibl type="application">
-                        <idno notation="docdb" type="docNumber">2015402</idno>
-                        <authority>
-                            <orgName type="national">NL</orgName>
-                        </authority>
-                        <classCode scheme="kindCode">A</classCode>
-                        <date type="dateOfFiling" when="2015-04-14"/>
-                        <idno notation="docdb" type="docId">429216588</idno>
-                    </bibl>
-                </titleStmt>
-            </fileDesc>
-        </teiHeader>
-        <TEI availability="confidential" type="applicationDocument">
-            <teiHeader>
-                <fileDesc>
-                    <publicationStmt/>
-                    <sourceDesc/>
-                    <titleStmt>
-                        <title notation="docdba" type="invention" xml:id="_58dfba" xml:lang="nl">Stroller.</title>
-                        <title type="procedural" xml:id="_58dfba" xml:lang="nl">Stroller.</title>
-                        <funder role="applicant">
-                            <name notation="unknown">Maxi Miliaan B.V.</name>
-                        </funder>
-                    </titleStmt>
-                </fileDesc>
-                <profileDesc>
-                    <textClass>
-                        <classCode scheme="undetermined" type="preClassification">
-                            <ident type="classificationSymbol">A61F2/82</ident>
-                        </classCode>
-                    </textClass>
-                </profileDesc>
-                <revisionDesc>
-                    <listChange>
-                        <change xml:id="_58dfba"/>
-                    </listChange>
-                </revisionDesc>
-                <creation>
-                    <listChange>
-                        <change xml:id="0db54c5d8b7332d157dfd8391cdc1bc9">
-                            <date type="dateProduced">20130923</date>
-                            <orgName type="supplier">JOUVE</orgName>
-                            <idno type="formatSubtype">ST36XOCR</idno>
-                            <idno type="qualityLevel">02</idno>
-                            <language ident="NL"/>
-                            <idno type="section">C</idno>
-                        </change>
-                        <change xml:id="ebc9d281528d0cd977b018fd739da97c">
-                            <date type="dateProduced">20130923</date>
-                            <orgName type="supplier">JOUVE</orgName>
-                            <idno type="formatSubtype">ST36XOCR</idno>
-                            <idno type="qualityLevel">02</idno>
-                            <language ident="EN"/>
-                            <idno type="section">D</idno>
-                        </change>
-                    </listChange>
-                </creation>
-            </teiHeader>
-            <facsimile xml:id="EXGV0N2E1613255">
-                <surface n="1" type="page">
-                    <graphic url="/api/pre-publication/429216588/NL2015402A/facsimiles/RFVNTVkvRVhHVjBOMkUxNjEzMjU1/1"/>
-                    <zone type="abstract" xml:id="EXGV0N2E16132551"/>
-                </surface>
-            </facsimile>
-            <facsimile xml:id="EXGV0N2S8557255">
-                <surface n="1" type="page">
-                    <graphic url="/api/pre-publication/429216588/NL2015402A/facsimiles/RFVNTVkvRVhHVjBOMlM4NTU3MjU1/1"/>
-                    <zone type="description" xml:id="EXGV0N2S85572551"/>
-                </surface>
-                <surface n="2" type="page">
-                    <graphic url="/api/pre-publication/429216588/NL2015402A/facsimiles/RFVNTVkvRVhHVjBOMlM4NTU3MjU1/2"/>
-                    <zone type="description" xml:id="EXGV0N2S85572552"/>
-                </surface>
-                <surface n="3" type="page">
-                    <graphic url="/api/pre-publication/429216588/NL2015402A/facsimiles/RFVNTVkvRVhHVjBOMlM4NTU3MjU1/3"/>
-                    <zone type="description" xml:id="EXGV0N2S85572553"/>
-                </surface>
-                <surface n="4" type="page">
-                    <graphic url="/api/pre-publication/429216588/NL2015402A/facsimiles/RFVNTVkvRVhHVjBOMlM4NTU3MjU1/4"/>
-                    <zone type="description" xml:id="EXGV0N2S85572554"/>
-                </surface>
-                <surface n="5" type="page">
-                    <graphic url="/api/pre-publication/429216588/NL2015402A/facsimiles/RFVNTVkvRVhHVjBOMlM4NTU3MjU1/5"/>
-                    <zone type="description" xml:id="EXGV0N2S85572555"/>
-                </surface>
-                <surface n="6" type="page">
-                    <graphic url="/api/pre-publication/429216588/NL2015402A/facsimiles/RFVNTVkvRVhHVjBOMlM4NTU3MjU1/6"/>
-                    <zone type="description" xml:id="EXGV0N2S85572556"/>
-                </surface>
-                <surface n="7" type="page">
-                    <graphic url="/api/pre-publication/429216588/NL2015402A/facsimiles/RFVNTVkvRVhHVjBOMlM4NTU3MjU1/7"/>
-                    <zone type="description" xml:id="EXGV0N2S85572557"/>
-                </surface>
-                <surface n="8" type="page">
-                    <graphic url="/api/pre-publication/429216588/NL2015402A/facsimiles/RFVNTVkvRVhHVjBOMlM4NTU3MjU1/8"/>
-                    <zone type="description" xml:id="EXGV0N2S85572558"/>
-                </surface>
-                <surface n="9" type="page">
-                    <graphic url="/api/pre-publication/429216588/NL2015402A/facsimiles/RFVNTVkvRVhHVjBOMlM4NTU3MjU1/9"/>
-                    <zone type="description" xml:id="EXGV0N2S85572559"/>
-                </surface>
-                <surface n="10" type="page">
-                    <graphic url="/api/pre-publication/429216588/NL2015402A/facsimiles/RFVNTVkvRVhHVjBOMlM4NTU3MjU1/10"/>
-                    <zone type="description" xml:id="EXGV0N2S855725510"/>
-                </surface>
-                <surface n="11" type="page">
-                    <graphic url="/api/pre-publication/429216588/NL2015402A/facsimiles/RFVNTVkvRVhHVjBOMlM4NTU3MjU1/11"/>
-                    <zone type="description" xml:id="EXGV0N2S855725511"/>
-                </surface>
-                <surface n="12" type="page">
-                    <graphic url="/api/pre-publication/429216588/NL2015402A/facsimiles/RFVNTVkvRVhHVjBOMlM4NTU3MjU1/12"/>
-                    <zone type="description" xml:id="EXGV0N2S855725512"/>
-                </surface>
-                <surface n="13" type="page">
-                    <graphic url="/api/pre-publication/429216588/NL2015402A/facsimiles/RFVNTVkvRVhHVjBOMlM4NTU3MjU1/13"/>
-                    <zone type="description" xml:id="EXGV0N2S855725513"/>
-                </surface>
-                <surface n="14" type="page">
-                    <graphic url="/api/pre-publication/429216588/NL2015402A/facsimiles/RFVNTVkvRVhHVjBOMlM4NTU3MjU1/14"/>
-                    <zone type="description" xml:id="EXGV0N2S855725514"/>
-                </surface>
-                <surface n="15" type="page">
-                    <graphic url="/api/pre-publication/429216588/NL2015402A/facsimiles/RFVNTVkvRVhHVjBOMlM4NTU3MjU1/15"/>
-                    <zone type="description" xml:id="EXGV0N2S855725515"/>
-                </surface>
-            </facsimile>
-            <facsimile xml:id="EXGV0N3B9884255">
-                <surface n="1" type="page">
-                    <graphic url="/api/pre-publication/429216588/NL2015402A/facsimiles/RFVNTVkvRVhHVjBOM0I5ODg0MjU1/1"/>
-                    <zone type="claims" xml:id="EXGV0N3B98842551"/>
-                </surface>
-                <surface n="2" type="page">
-                    <graphic url="/api/pre-publication/429216588/NL2015402A/facsimiles/RFVNTVkvRVhHVjBOM0I5ODg0MjU1/2"/>
-                    <zone type="claims" xml:id="EXGV0N3B98842552"/>
-                </surface>
-                <surface n="3" type="page">
-                    <graphic url="/api/pre-publication/429216588/NL2015402A/facsimiles/RFVNTVkvRVhHVjBOM0I5ODg0MjU1/3"/>
-                    <zone type="claims" xml:id="EXGV0N3B98842553"/>
-                </surface>
-            </facsimile>
-            <facsimile xml:id="EXGV0N3O7825255">
-                <surface n="1" type="page">
-                    <graphic url="/api/pre-publication/429216588/NL2015402A/facsimiles/RFVNTVkvRVhHVjBOM083ODI1MjU1/1"/>
-                    <zone type="unknown" xml:id="EXGV0N3O78252551"/>
-                </surface>
-                <surface n="2" type="page">
-                    <graphic url="/api/pre-publication/429216588/NL2015402A/facsimiles/RFVNTVkvRVhHVjBOM083ODI1MjU1/2"/>
-                    <zone type="unknown" xml:id="EXGV0N3O78252552"/>
-                </surface>
-                <surface n="3" type="page">
-                    <graphic url="/api/pre-publication/429216588/NL2015402A/facsimiles/RFVNTVkvRVhHVjBOM083ODI1MjU1/3"/>
-                    <zone type="unknown" xml:id="EXGV0N3O78252553"/>
-                </surface>
-                <surface n="4" type="page">
-                    <graphic url="/api/pre-publication/429216588/NL2015402A/facsimiles/RFVNTVkvRVhHVjBOM083ODI1MjU1/4"/>
-                    <zone type="unknown" xml:id="EXGV0N3O78252554"/>
-                </surface>
-                <surface n="5" type="page">
-                    <graphic url="/api/pre-publication/429216588/NL2015402A/facsimiles/RFVNTVkvRVhHVjBOM083ODI1MjU1/5"/>
-                    <zone type="unknown" xml:id="EXGV0N3O78252555"/>
-                </surface>
-                <surface n="6" type="page">
-                    <graphic url="/api/pre-publication/429216588/NL2015402A/facsimiles/RFVNTVkvRVhHVjBOM083ODI1MjU1/6"/>
-                    <zone type="unknown" xml:id="EXGV0N3O78252556"/>
-                </surface>
-                <surface n="7" type="page">
-                    <graphic url="/api/pre-publication/429216588/NL2015402A/facsimiles/RFVNTVkvRVhHVjBOM083ODI1MjU1/7"/>
-                    <zone type="unknown" xml:id="EXGV0N3O78252557"/>
-                </surface>
-                <surface n="8" type="page">
-                    <graphic url="/api/pre-publication/429216588/NL2015402A/facsimiles/RFVNTVkvRVhHVjBOM083ODI1MjU1/8"/>
-                    <zone type="unknown" xml:id="EXGV0N3O78252558"/>
-                </surface>
-                <surface n="9" type="page">
-                    <graphic url="/api/pre-publication/429216588/NL2015402A/facsimiles/RFVNTVkvRVhHVjBOM083ODI1MjU1/9"/>
-                    <zone type="unknown" xml:id="EXGV0N3O78252559"/>
-                </surface>
-            </facsimile>
-            <text>
-                <group>
-                    <text change="0db54c5d8b7332d157dfd8391cdc1bc9">
-                        <body>
-                            <div facs="/api/pre-publication/429216588/NL2015402A/facsimiles/RFVNTVkvRVhHVjBOM0I5ODg0MjU1" type="claims" xml:id="f681f4a9be18a48cb1fb9ee3c7f93ea0"
-                                 xml:lang="nl">
-
-                                <div n="0001" type="claim" xml:id="_dc1bc90003">
-                                    <p xml:id="_dc1bc90004"><hi rend="subscript">1</hi>. Wandelwagen (1,<hi rend="subscript">41</hi>) die vouwbaar is van een uitgeklapte naar een
-                                        ingeklapte positie en vice versa, welke wandelwagen (1,<hi rend="subscript">41</hi>) is voorzien van ten minste een inklapbaar
-                                        vouwmechanisme, dat ten minste een duwstang (<hi rend="subscript">2</hi>,<hi rend="subscript">3</hi>) omvat die van een handvat (<hi
-                                                rend="subscript">4</hi>,<hi rend="subscript">5</hi>) is voorzien, welke duwstang (<hi rend="subscript">2</hi>,<hi rend="subscript">
-                                            3</hi>) scharnierbaar is om een eerste scharnieras (<hi rend="subscript">9</hi>, io) van het vouwmechanisme, welke vouwmechanisme verder
-                                        is voorzien van een aantal stangen, waarbij een eerste stang (<hi rend="subscript">19</hi>,<hi rend="subscript">20</hi>) van het aantal
-                                        stangen (<hi rend="subscript">22</hi>,<hi rend="subscript">23</hi>) scharnierbaar is om een tweede scharnieras (<hi rend="subscript">17</hi>
-                                        ,<hi rend="subscript">1</hi>8) van het vouwmechanisme, met het kenmerk, dat de eerste stang (<hi rend="subscript">19</hi>,<hi
-                                                rend="subscript">20</hi>) en de duwstang (<hi rend="subscript">2</hi>,<hi rend="subscript">3</hi>) zijn voorzien van samenwerkende
-                                        verbindingselementen (<hi rend="subscript">52</hi>,<hi rend="subscript">5</hi>6), welke verbindingselementen (<hi rend="subscript">52</hi>,
-                                        <hi rend="subscript">5</hi>6) met elkaar verbindbaar zijn door het scharnieren van de duwstang (<hi rend="subscript">2</hi>,<hi
-                                                rend="subscript">3</hi>) om de eerste scharnieras (<hi rend="subscript">9</hi>, io) naar een uitgeklapte positie van de duwstang (
-                                        <hi rend="subscript">2</hi>,<hi rend="subscript">3</hi>), waarbij in de uitgeklapte positie van de duwstang (<hi rend="subscript">2</hi>,<hi
-                                                rend="subscript">3</hi>), de verbindingselementen (<hi rend="subscript">52</hi>,<hi rend="subscript">5</hi>6) met elkaar
-                                        vergrendelbaar zijn door vergrendelmiddelen (<hi rend="subscript">57</hi>), terwijl na het ontgrendelen van de vergrendelmiddelen (<hi
-                                                rend="subscript">57</hi>) alsmede na het ontkoppelen van de verbindingselementen (<hi rend="subscript">52</hi>,<hi rend="subscript">
-                                            5</hi>6) door het scharnieren van de duwstang (<hi rend="subscript">2</hi>,<hi rend="subscript">3</hi>) om de eerste scharnieras (<hi
-                                                rend="subscript">9</hi>, io) naar de ingeklapte positie van de duwstang (<hi rend="subscript">2</hi>,<hi rend="subscript">3</hi>),
-                                        de eerste stang (<hi rend="subscript">19</hi>,<hi rend="subscript">20</hi>) scharnierbaar is om de tweede scharnieras (<hi rend="subscript">
-                                            17</hi>,<hi rend="subscript">19</hi>) om het vouwmechanisme toe te staan om in te klappen naar de ingeklapte positie van de wandelwagen
-                                        (<hi rend="subscript">1</hi>,<hi rend="subscript">41</hi>).
-                                    </p>
-                                </div>
-                                <div n="0002" type="claim" xml:id="_dc1bc90053">
-                                    <p xml:id="_dc1bc90054"><hi rend="subscript">2</hi>. Wandelwagen (1,<hi rend="subscript">41</hi>) volgens conclusie i, met het kenmerk, dat de
-                                        eerste en de tweede scharnierassen (<hi rend="subscript">9</hi>,<hi rend="subscript">10</hi>,<hi rend="subscript">17</hi>,<hi
-                                                rend="subscript">1</hi>8) zijn voorzien nabij een uiteinde van de tweede stang (11,<hi rend="subscript">12</hi>) die zich in
-                                        hoofdzaak parallel aan de duwstang (<hi rend="subscript">2</hi>,<hi rend="subscript">3</hi>) uitstrekt in de uitgeklapte positie van de
-                                        wandelwagen (1,<hi rend="subscript">41</hi>).
-                                    </p>
-                                </div>
-                                <div n="0003" type="claim" xml:id="_dc1bc90065">
-                                    <p xml:id="_dc1bc90066"><hi rend="subscript">3</hi>. Wandelwagen (1,<hi rend="subscript">41</hi>) volgens conclusie 1 of<hi rend="subscript">
-                                        2</hi>, met het kenmerk, dat aan beide zijden van de wandelwagen (1,<hi rend="subscript">41</hi>) een dergelijke duwstang (<hi
-                                            rend="subscript">2</hi>,<hi rend="subscript">3</hi>) is voorzien van het handvat (<hi rend="subscript">4</hi>,<hi rend="subscript">
-                                        5</hi>), een dergelijke eerste stang (<hi rend="subscript">19</hi>,<hi rend="subscript">20</hi>) alsmede een dergelijke
-                                        tweede stang (11,<hi rend="subscript">12</hi>) die zich in hoofdzaak parallel aan de duwstang in de uitgeklapte positie van de wandelwagen (
-                                        <hi rend="subscript">I</hi>,<hi rend="subscript">41</hi>), zijn gelegen.
-                                    </p>
-                                </div>
-                                <div n="0004" type="claim" xml:id="_dc1bc90080">
-                                    <p xml:id="crazyNesting">
-                                        <head><hi rend="bold">Hi <hi rend="underline">this is <hi rend="superscript">CRAZY</hi> but here's my number </hi> and call me, </hi> maybe</head>
-                                    </p>
-                                </div>
-                                <div n="0005" type="claim" xml:id="_dc1bc90091">
-                                    <p xml:id="_dc1bc90092"><hi rend="subscript">5</hi>. Wandelwagen (<hi rend="subscript">I</hi>,<hi rend="subscript">41</hi>) volgens een der
-                                        voorgaande conclusies, met het kenmerk, dat de vergrendelmiddelen (<hi rend="subscript">57</hi>) een pen (<hi rend="subscript">5</hi>8)
-                                        omvatten die schuifbaar is gelegen in de duwstang (<hi rend="subscript">2</hi>,<hi rend="subscript">3</hi>) welke pen (<hi rend="subscript">
-                                            5</hi>8) tegen veerkracht in verplaatsbaar is van een eerste vergrendelde positie, waarbij de pen (<hi rend="subscript">5</hi>8) is
-                                        gelegen in een doorgang (55) van de eerste stang (<hi rend="subscript">1</hi>9, 20) naar een tweede ontgrendelde positie, waarin de pen (58)
-                                        is verwijderd uit de doorgang (55) om de duwstang (<hi rend="subscript">2</hi>,<hi rend="subscript">3</hi>) toe te staan om te scharnieren
-                                        om de eerste scharnieras (<hi rend="subscript">9</hi>, io).
-                                    </p>
-                                </div>
-                                <div n="0006" type="claim" xml:id="_dc1bc90106">
-                                    <p xml:id="_dc1bc90107">6. Wandelwagen (1,<hi rend="subscript">41</hi>) volgens conclusie<hi rend="subscript">5</hi>, met het kenmerk, dat de
-                                        vergrendelmiddelen (<hi rend="subscript">57</hi>) ontgrendelmiddelen omvatten, welk ontgrendelmiddelen zijn voorzien van een kabel (6<hi
-                                                rend="subscript">0</hi>) die met een eerste uiteinde met de pen (58) en met een tweede uiteinde met een verplaatsbaar
-                                        bedieningselement (6<hi rend="subscript">1</hi>) die is gelegen op de duwstang (<hi rend="subscript">2</hi>,<hi rend="subscript">3</hi>),
-                                        bij voorkeur op het handvat (<hi rend="subscript">4</hi>,<hi rend="subscript">5</hi>) van de duwstang (2,3).
-                                    </p>
-                                </div>
-                                <div n="0007" type="claim" xml:id="_dc1bc90117">
-                                    <p xml:id="_dc1bc90118"><hi rend="subscript">7</hi>. Wandelwagen (1,<hi rend="subscript">41</hi>) volgens een der voorgaande conclusies, met het
-                                        kenmerk, dat de wandelwagen (1,<hi rend="subscript">41</hi>) is voorzien van een ondersteuning (<hi rend="subscript">13</hi>), ten minste
-                                        een voorwiel (<hi rend="subscript">14</hi>) die is verbonden met de ondersteuning (<hi rend="subscript">13</hi>) en ten minste een
-                                        achterwiel (<hi rend="subscript">24</hi>,<hi rend="subscript">25</hi>), welke wielen (<hi rend="subscript">14</hi>,<hi rend="subscript">
-                                            24</hi>,<hi rend="subscript">25</hi>) onderling zijn verbonden door middel van het vouwmechanisme, waarbij het vouwmechanisme een
-                                        kruisvormig koppelsysteem (<hi rend="subscript">51</hi>) omvat met ten minste een centrale koppeling (<hi rend="subscript">21</hi>) alsmede
-                                        de
-                                        eerste stang (<hi rend="subscript">19</hi>,<hi rend="subscript">20</hi>) en aanvullende stangen (<hi rend="subscript">22</hi>,<hi
-                                                rend="subscript">23</hi>) die zich van de centrale koppeling (<hi rend="subscript">21</hi>) uitstrekken, waarbij eerste uiteinden
-                                        van de eerste en de aanvullende stangen (<hi rend="subscript">19</hi>,<hi rend="subscript">20</hi>,<hi rend="subscript">22</hi>,<hi
-                                                rend="subscript">23</hi>) scharnierbaar zijn verbonden met de centrale koppeling (<hi rend="subscript">21</hi>), terwijl een tweede
-                                        uiteinde van een van de aanvullende stangen (<hi rend="subscript">22</hi>,<hi rend="subscript">23</hi>) op afstand van de centrale koppeling
-                                        (<hi rend="subscript">21</hi>) is verbonden met het achterwiel (<hi rend="subscript">24</hi>,<hi rend="subscript">2</hi>5) en een tweede
-                                        uiteinde van de eerste stang (<hi rend="subscript">19</hi>,<hi rend="subscript">20</hi>) op afstand van de centrale koppeling (<hi
-                                                rend="subscript">21</hi>) scharnierbaar is om de tweede scharnieras (<hi rend="subscript">17</hi>,<hi rend="subscript">1</hi>8) van
-                                        het vouwmechanisme, welke centrale koppeling (<hi rend="subscript">21</hi>) verplaatsbaar is met betrekking tot de ondersteuning (<hi
-                                                rend="subscript">13</hi>) over een as (<hi rend="subscript">30</hi>,<hi rend="subscript">42</hi>) die zich uitstrekt tussen de
-                                        centrale koppeling (<hi rend="subscript">21</hi>) en de ondersteuning (<hi rend="subscript">13</hi>) gedurende het uitklappen en inklappen
-                                        van de wandelwagen (<hi rend="subscript">1</hi>,<hi rend="subscript">41</hi>).
-                                    </p>
-                                </div>
-                                <div n="0008" type="claim" xml:id="_dc1bc90160">
-                                    <p xml:id="_dc1bc90161">8. Wandelwagen (<hi rend="subscript">I</hi>,<hi rend="subscript">41</hi>) volgens conclusies<hi rend="subscript">7</hi>,
-                                        met het kenmerk, dat het vouwmechanisme verder een stang (<hi rend="subscript">30</hi>) omvat die is verbonden met de ondersteuning (<hi
-                                                rend="subscript">13</hi>), welke centrale koppeling (<hi rend="subscript">21</hi>) schuifbaar is verbonden met de stang (<hi
-                                                rend="subscript">30</hi>) nabij een uiteinde op afstand van de ondersteuning (<hi rend="subscript">13</hi>), waarbij de as (<hi
-                                                rend="subscript">30</hi>) zich uitstrekt door de stang (<hi rend="subscript">30</hi>).
-                                    </p>
-                                </div>
-                                <div n="0009" type="claim" xml:id="_dc1bc90172">
-                                    <p xml:id="_dc1bc90173"><hi rend="subscript">9</hi>. Wandelwagen (<hi rend="subscript">I</hi>,<hi rend="subscript">41</hi>) volgens conclusies
-                                        8, met het kenmerk, dat centrale koppeling een bus (<hi rend="subscript">21</hi>) omvat, welke bus (<hi rend="subscript">21</hi>) schuifbaar
-                                        is over de stang (<hi rend="subscript">30</hi>) die is verbonden met de ondersteuning (<hi rend="subscript">13</hi>).
-                                    </p>
-                                </div>
-                                <div n="0010" type="claim" xml:id="_dc1bc90181">
-                                    <p xml:id="_dc1bc90182"><hi rend="subscript">10</hi>. Wandelwagen (<hi rend="subscript">I</hi>,<hi rend="subscript">41</hi>) volgens conclusies
-                                        <hi rend="subscript">7</hi>, met het kenmerk, dat de as (<hi rend="subscript">30</hi>,<hi rend="subscript">42</hi>) een imaginaire as (<hi
-                                                rend="subscript">42</hi>) is en die zich uitstrekt door de ondersteuning (<hi rend="subscript">13</hi>) en door de centrale
-                                        koppeling (<hi rend="subscript">21</hi>).
-                                    </p>
-                                </div>
-                            </div>
-                        </body>
-                    </text>
-                    <text change="ebc9d281528d0cd977b018fd739da97c">
-                        <body>
-                            <div facs="/api/pre-publication/429216588/NL2015402A/facsimiles/RFVNTVkvRVhHVjBOMlM4NTU3MjU1" type="description"
-                                 xml:id="14ad61815594e10338faeb9c8c76130d" xml:lang="en">
-                                <head xml:id="_9da97c0003">Stroller</head>
-                                <p n="0001" xml:id="_9da97c0004">The invention relates to a stroller being foldable from an erect position to a collapsed position, and vice versa,
+<?xml version="1.0" encoding="UTF-8"?><div data-role="container">
+<div facs="/api/pre-publication/429216588/NL2015402A/facsimiles/RFVNTVkvRVhHVjBOMlM4NTU3MjU1" type="description" xml:id="14ad61815594e10338faeb9c8c76130d" xml:lang="en" data-pdm="div" class="pdm-div" data-id="14ad61815594e10338faeb9c8c76130d" name="14ad61815594e10338faeb9c8c76130d">
+                                <h3 xml:id="_9da97c0003" data-id="_9da97c0003" name="_9da97c0003">Stroller</h3>
+                                <div n="0001" xml:id="_9da97c0004" data-pdm="p" class="pdm-p" data-id="_9da97c0004" name="_9da97c0004">The invention relates to a stroller being foldable from an erect position to a collapsed position, and vice versa,
                                     which stroller comprising at least a collapsible folding mechanism, provided with at least one push rod fitted with a handle, which push rod is
                                     pivotable about a first pivot axis of the folding mechanism, which folding mechanism is further provided with a number of rods, wherein a first
                                     rod of said number of rods is pivotable about a second pivot axis of the folding mechanism.
-                                </p>
-                                <p n="0002" xml:id="_9da97c0005">Such a stroller, which is known from EP<hi rend="subscript">14</hi>66<hi rend="subscript">8</hi>io<hi
-                                        rend="subscript">A</hi>-i of applicant, is being folded by collapsing the folding mechanism wherein the push rod is being pivoted about the
+                                </div>
+                                <div n="0002" xml:id="_9da97c0005" data-pdm="p" class="pdm-p" data-id="_9da97c0005" name="_9da97c0005">Such a stroller, which is known from EP<sub>14</sub>66<sub>8</sub>io<sub>A</sub>-i of applicant, is being folded by collapsing the folding mechanism wherein the push rod is being pivoted about the
                                     first pivot axis and the first rod is being pivoted about the second pivot axis. In the erect position undesirable collapsing of the folding
                                     mechanism and folding of the stroller is prevented by several locking means.
-                                </p>
-                                <p n="0003" xml:id="_9da97c0009">EP
-                                    <hi rend="subscript">1466810A1</hi>
+                                </div>
+                                <div n="0003" xml:id="_9da97c0009" data-pdm="p" class="pdm-p" data-id="_9da97c0009" name="_9da97c0009">EP
+                                    <sub>1466810A1</sub>
                                     does not disclose detailed information about the locking means.
-                                </p>
-                                <p n="0004" xml:id="_9da97c0011">The object of the invention is to provide a stroller wherein pivoting of the push rod about the first pivot axis as
+                                </div>
+                                <div n="0004" xml:id="_9da97c0011" data-pdm="p" class="pdm-p" data-id="_9da97c0011" name="_9da97c0011">The object of the invention is to provide a stroller wherein pivoting of the push rod about the first pivot axis as
                                     well as pivoting of the first rod about the second pivot axis in the erect position of the stroller are easily being prevented, whilst allowing
                                     the stroller to collapse is relatively easy as well.
-                                </p>
-                                <p n="0005" xml:id="_9da97c0012">This object is accomplished with the stroller according to the invention in that the first rod and the pushrod are
+                                </div>
+                                <div n="0005" xml:id="_9da97c0012" data-pdm="p" class="pdm-p" data-id="_9da97c0012" name="_9da97c0012">This object is accomplished with the stroller according to the invention in that the first rod and the pushrod are
                                     provided with cooperating connecting elements, which connecting elements being connectable to each other by pivoting the pushrod about the first
                                     pivot axis to an erect position of the push rod, wherein in the erect position of the push rod, the connecting elements are lockable to each
                                     other by locking means, whilst after unlocking the locking means as well as after disconnecting the connecting elements by pivoting the pushrod
                                     about the first pivot axis towards a collapsed position of the push rod, the first rod is pivotable about the second pivot axis to allow the
                                     folding mechanism to collapse into the collapsed position of the stroller.
-                                </p>
+                                </div>
 
-                                <p n="0006" xml:id="_9da97c0013">In the erect position, the connecting elements of the push rod and first rod are connected to each other. Undesired
+                                <div n="0006" xml:id="_9da97c0013" data-pdm="p" class="pdm-p" data-id="_9da97c0013" name="_9da97c0013">In the erect position, the connecting elements of the push rod and first rod are connected to each other. Undesired
                                     disconnecting of the connecting elements is being prevented by the locking means. When the locking means are unlocked and the connecting
                                     elements are still connected to each other, the connecting means prevent the first rod to be able to pivot about the second pivot axis. This is
                                     an additional safety feature, so that even if the unlocking means are unlocked the first rod can not pivot and the folding mechanism can not
                                     collapse. To disconnect the connecting elements, the push rod is being pivoted about the first pivot axis, due to which the connecting element
                                     of the push rod is being moved away from the connecting element of the first rod. As soon as the connecting elements are disconnected, the first
                                     rod can be pivoted about the second pivot axis and the folding mechanism can be collapsed.
-                                </p>
-                                <p n="0007" xml:id="_9da97c0014">If a user wants to fully collapse the stroller, he only needs to unlock the locking means, after which by pivoting
+                                </div>
+                                <div n="0007" xml:id="_9da97c0014" data-pdm="p" class="pdm-p" data-id="_9da97c0014" name="_9da97c0014">If a user wants to fully collapse the stroller, he only needs to unlock the locking means, after which by pivoting
                                     the push rod to the collapsed position of the push rod, the connecting means are automatically being disconnected, so that the first rod can be
                                     pivoted about the second axis and the folding mechanism can further be collapsed. If a user wants to erect the stroller, he unfolds the folding
                                     mechanism, whereby at the end of the unfolding process the push rod is being pivoted from the collapsed position of the push rod to the erect
                                     position of the push rod, wherein the connecting means of the push rod and first rod are being connected to each other. Once the connecting
                                     means are being coupled, the locking means are being activated, to prevent undesired uncoupling of the connecting means.
-                                </p>
-                                <p n="0008" xml:id="_9da97c0015">An embodiment of the stroller according to the invention is characterized in that the first and second pivot axes
+                                </div>
+                                <div n="0008" xml:id="_9da97c0015" data-pdm="p" class="pdm-p" data-id="_9da97c0015" name="_9da97c0015">An embodiment of the stroller according to the invention is characterized in that the first and second pivot axes
                                     are provided near an end of a second rod extending substantially parallel to the push rod in the erect position of the stroller.
-                                </p>
-                                <p n="0009" xml:id="_9da97c0016">The second rod form part of the folding mechanism as well. Such second rod may be connected at a side remote from
+                                </div>
+                                <div n="0009" xml:id="_9da97c0016" data-pdm="p" class="pdm-p" data-id="_9da97c0016" name="_9da97c0016">The second rod form part of the folding mechanism as well. Such second rod may be connected at a side remote from
                                     the pivot axes, to a wheel, for example a front wheel of the stroller. By having the first and second pivot axes on the same component, like the
                                     second rod, the distance between the first and second pivot
                                     axes is fixed, ensuring that the relative positions of the connecting elements of the push rod and first rod are well defined. The first and
                                     second axis may extend parallel or may be inclined with respect to each other.
-                                </p>
-                                <p n="0010" xml:id="_9da97c0017">Another embodiment of the stroller according to the invention is characterized in that on both sides of the
+                                </div>
+                                <div n="0010" xml:id="_9da97c0017" data-pdm="p" class="pdm-p" data-id="_9da97c0017" name="_9da97c0017">Another embodiment of the stroller according to the invention is characterized in that on both sides of the
                                     stroller, such a push rod fitted with said handle, such a first rod as well as such a second rod, extending substantially parallel to the push
                                     rod in the erect position of the stroller are located.
-                                </p>
-                                <p n="0011" xml:id="_9da97c0018">On both sides the push rod and first rod are provided with cooperating connecting elements, wherein in the erect
+                                </div>
+                                <div n="0011" xml:id="_9da97c0018" data-pdm="p" class="pdm-p" data-id="_9da97c0018" name="_9da97c0018">On both sides the push rod and first rod are provided with cooperating connecting elements, wherein in the erect
                                     position of the stroller, pivoting of the push rods about the first pivot axes is being prevented by the locking means. In this manner a stable
                                     folding mechanism is being obtained.
-                                </p>
-                                <p n="0012" xml:id="_9da97c0019">It is possible to unlock the locking means on each side independently from each other so that on each side the
+                                </div>
+                                <div n="0012" xml:id="_9da97c0019" data-pdm="p" class="pdm-p" data-id="_9da97c0019" name="_9da97c0019">It is possible to unlock the locking means on each side independently from each other so that on each side the
                                     connecting means can independently being unlocked. It is however also possible that the connecting means on both sides can simultaneously being
                                     unlocked, rendering the operation of the stroller more easily.
-                                </p>
-                                <p n="0013" xml:id="_9da97c0020">Another embodiment of the stroller according to the invention is characterized in that a first of said connecting
+                                </div>
+                                <div n="0013" xml:id="_9da97c0020" data-pdm="p" class="pdm-p" data-id="_9da97c0020" name="_9da97c0020">Another embodiment of the stroller according to the invention is characterized in that a first of said connecting
                                     elements comprises a protrusion, whilst a second of said connecting elements comprises a hook, which is positioned over the protrusion, when the
                                     connecting elements are connected to each other.
-                                </p>
-                                <p n="0014" xml:id="_9da97c0021">Such a protrusion-hook combination can easily be provided on the stroller. If the protrusion is located in the hook
+                                </div>
+                                <div n="0014" xml:id="_9da97c0021" data-pdm="p" class="pdm-p" data-id="_9da97c0021" name="_9da97c0021">Such a protrusion-hook combination can easily be provided on the stroller. If the protrusion is located in the hook
                                     a good connection between the connecting elements is obtained.
-                                </p>
-                                <p n="0015" xml:id="_9da97c0022">Another embodiment of the stroller according to the invention is characterized in that the locking means comprises
+                                </div>
+                                <div n="0015" xml:id="_9da97c0022" data-pdm="p" class="pdm-p" data-id="_9da97c0022" name="_9da97c0022">Another embodiment of the stroller according to the invention is characterized in that the locking means comprises
                                     a pen being slidably located in the push rod, which pen is movable against spring force from a first locked position wherein the pen is located
                                     in a passage of the first rod, to a second unlocked position wherein the pen is removed from the passage to allow the push rod to pivot about
                                     the first pivot axis.
-                                </p>
-                                <p n="0016" xml:id="_9da97c0023">Such a locking means is relatively simple to manufacture and to operate.</p>
+                                </div>
+                                <div n="0016" xml:id="_9da97c0023" data-pdm="p" class="pdm-p" data-id="_9da97c0023" name="_9da97c0023">Such a locking means is relatively simple to manufacture and to operate.</div>
 
-                                <p n="0017" xml:id="_9da97c0024">Another embodiment of the stroller according to the invention is characterized in that the locking means comprises
+                                <div n="0017" xml:id="_9da97c0024" data-pdm="p" class="pdm-p" data-id="_9da97c0024" name="_9da97c0024">Another embodiment of the stroller according to the invention is characterized in that the locking means comprises
                                     unlocking means, which unlocking means comprises a cable connected with a first end to the pen and with a second end to a movable operating
                                     element located on the push rod, preferably on the handle of the push rod.
-                                </p>
-                                <p n="0018" xml:id="_9da97c0025">Such a cable, for example a bowden cable, makes it possible to connect the pen to an operating element located at
+                                </div>
+                                <div n="0018" xml:id="_9da97c0025" data-pdm="p" class="pdm-p" data-id="_9da97c0025" name="_9da97c0025">Such a cable, for example a bowden cable, makes it possible to connect the pen to an operating element located at
                                     any desired location on the stroller. In case that the operating element is located on the handle, a user can simply move the operating element
                                     to unlock the locking means after which the user can maintain its hands on the handle to pivot the push rod provided with the handle about the
                                     first pivot axis.
-                                </p>
-                                <p n="0019" xml:id="_9da97c0026">Another embodiment of the stroller according to the invention is characterized in that stroller comprises a
+                                </div>
+                                <div n="0019" xml:id="_9da97c0026" data-pdm="p" class="pdm-p" data-id="_9da97c0026" name="_9da97c0026">Another embodiment of the stroller according to the invention is characterized in that stroller comprises a
                                     support, at least one front wheel connected to the support and at least one rear wheel, which wheels are interconnected by means of the folding
                                     mechanism, wherein the folding mechanism comprises a cross shaped linkage system having at least one central joint as well as the first rod and
                                     additional rods extending from said central joint, wherein first ends of the first and the additional rods are pivotally connected to the
@@ -406,695 +93,790 @@
                                     of the first rod remote from the central joint is pivotable about the second pivot axis of the folding mechanism, which central joint being
                                     movable with respect to the support over an axis extending between the central joint and the support during erection and collapsion of the
                                     stroller.
-                                </p>
-                                <p n="0020" xml:id="_9da97c0027">Such a cross shaped linkage system, which is known from EP<hi rend="subscript">14</hi>66<hi rend="subscript">8</hi>
-                                    io<hi rend="subscript">A</hi>-i of applicant, renders it possible to obtain a compact stable foldable stroller, with a relatively low numbers of
+                                </div>
+                                <div n="0020" xml:id="_9da97c0027" data-pdm="p" class="pdm-p" data-id="_9da97c0027" name="_9da97c0027">Such a cross shaped linkage system, which is known from EP<sub>14</sub>66<sub>8</sub>
+                                    io<sub>A</sub>-i of applicant, renders it possible to obtain a compact stable foldable stroller, with a relatively low numbers of
                                     rods, which can be folded in three dimensions. The stroller can easily be folded from the erect position to the collapsed position, and vice
                                     versa, by moving the central joint and the support connected to the front
                                     wheel relative to each other over said axis, as it were. Said axis may be a physical axis, in the form of a rod, or an imaginary axis.
-                                </p>
-                                <p n="0021" xml:id="_9da97c0031">The folding mechanism may collapse by moving the central joint towards the support and be erected by moving the
+                                </div>
+                                <div n="0021" xml:id="_9da97c0031" data-pdm="p" class="pdm-p" data-id="_9da97c0031" name="_9da97c0031">The folding mechanism may collapse by moving the central joint towards the support and be erected by moving the
                                     central joint away from the support. It is also possible to collapse the folding mechanism by moving the central joint away from the support and
                                     to erect it by moving the central joint towards from the support.
-                                </p>
-                                <p n="0022" xml:id="_9da97c0032">Another embodiment of the stroller according to the invention is characterized in that the folding mechanism
+                                </div>
+                                <div n="0022" xml:id="_9da97c0032" data-pdm="p" class="pdm-p" data-id="_9da97c0032" name="_9da97c0032">Another embodiment of the stroller according to the invention is characterized in that the folding mechanism
                                     furthermore comprises a rod connected to the support, which central joint is slidably connected to the rod near an end remote from the support,
                                     wherein said axis extends through said rod.
-                                </p>
-                                <p n="0023" xml:id="_9da97c0033">The slidably interconnected rod and central joint ensure a strong connection between a front side and the rear side
+                                </div>
+                                <div n="0023" xml:id="_9da97c0033" data-pdm="p" class="pdm-p" data-id="_9da97c0033" name="_9da97c0033">The slidably interconnected rod and central joint ensure a strong connection between a front side and the rear side
                                     of the stroller.
-                                </p>
-                                <p n="0024" xml:id="_9da97c0034">Another embodiment of the stroller according to the invention is characterized in that the central joint comprises
+                                </div>
+                                <div n="0024" xml:id="_9da97c0034" data-pdm="p" class="pdm-p" data-id="_9da97c0034" name="_9da97c0034">Another embodiment of the stroller according to the invention is characterized in that the central joint comprises
                                     a bushing, which bushing is slidably over the rod connected to the support.
-                                </p>
-                                <p n="0025" xml:id="_9da97c0035">In this way the rod connected to the front wheel can be supported in the bushing in a simple manner, whilst the
+                                </div>
+                                <div n="0025" xml:id="_9da97c0035" data-pdm="p" class="pdm-p" data-id="_9da97c0035" name="_9da97c0035">In this way the rod connected to the front wheel can be supported in the bushing in a simple manner, whilst the
                                     rods extending from said central joint can easily be pivotable connected to the bushing in a simple manner.
-                                </p>
-                                <p n="0026" xml:id="_9da97c0036">Another embodiment of the stroller according to the invention is characterized in that said axis is an imaginary
+                                </div>
+                                <div n="0026" xml:id="_9da97c0036" data-pdm="p" class="pdm-p" data-id="_9da97c0036" name="_9da97c0036">Another embodiment of the stroller according to the invention is characterized in that said axis is an imaginary
                                     axis which extends through the support and through the central joint.
-                                </p>
-                                <p n="0027" xml:id="_9da97c0037">Together with the support, the ends of the rods remote from the central joint form an imaginary pyramid, with the
+                                </div>
+                                <div n="0027" xml:id="_9da97c0037" data-pdm="p" class="pdm-p" data-id="_9da97c0037" name="_9da97c0037">Together with the support, the ends of the rods remote from the central joint form an imaginary pyramid, with the
                                     support forming the top and the surface defined by the ends of the rods remote from the central joint forming the base. The central joint of the
                                     cross-shaped linkage system lies on a line which extends through the support and the centre of said surface. By moving the central joint with
                                     respect to the support over the imaginary axis an easily collapsible folding mechanism is obtained. Upon collapsing, the ends of the rods are
                                     moved together in an even manner.
-                                </p>
+                                </div>
 
-                                <p n="0028" xml:id="_9da97c0038">The invention will be explained hereinafter with reference to the drawings, in which:
-                                    <list type="bulleted" xml:id="_9da97c0039">
-                                        <item>figures 1A-1C are a side view, a perspective view and a rear view, respectively, of a first embodiment of a stroller according to the
+                                <div n="0028" xml:id="_9da97c0038" data-pdm="p" class="pdm-p" data-id="_9da97c0038" name="_9da97c0038">The invention will be explained hereinafter with reference to the drawings, in which:
+                                    <ul data-pdm="list" type="bulleted" xml:id="_9da97c0039" data-id="_9da97c0039" name="_9da97c0039">
+                                        <li data-pdm="item">figures 1A-1C are a side view, a perspective view and a rear view, respectively, of a first embodiment of a stroller according to the
                                             invention, showing the stroller in an erect position thereof;
-                                        </item>
-                                        <item>figures<hi rend="subscript">2</hi>A and<hi rend="subscript">2</hi>B are a side view and a perspective view of the stroller that is
+                                        </li>
+                                        <li data-pdm="item">figures<sub>2</sub>A and<sub>2</sub>B are a side view and a perspective view of the stroller that is
                                             shown in figures iA-iC, showing the stroller in a partially collapsed position;
-                                        </item>
-                                        <item>figures<hi rend="subscript">3</hi>A and<hi rend="subscript">3</hi>B are a side view and a perspective view of the stroller that is
+                                        </li>
+                                        <li data-pdm="item">figures<sub>3</sub>A and<sub>3</sub>B are a side view and a perspective view of the stroller that is
                                             shown in figures iA-iC, showing the stroller in a further stage of being collapsed;
-                                        </item>
-                                        <item>figures<hi rend="subscript">4</hi>A and<hi rend="subscript">4</hi>B are a side view and a perspective view of the stroller that is
+                                        </li>
+                                        <li data-pdm="item">figures<sub>4</sub>A and<sub>4</sub>B are a side view and a perspective view of the stroller that is
                                             shown in figures 1A-1C, showing the stroller in a fully collapsed position;
-                                        </item>
-                                        <item>figures<hi rend="subscript">5</hi>A-<hi rend="subscript">5</hi>C are a side view, a perspective view and a rear view, respectively, of
+                                        </li>
+                                        <li data-pdm="item">figures<sub>5</sub>A-<sub>5</sub>C are a side view, a perspective view and a rear view, respectively, of
                                             a second embodiment of the stroller according to the invention in an erect position;
-                                        </item>
-                                        <item>figure 6 shows a detailed side view of the stroller as shown in figures 1A-1C;</item>
-                                        <item>figure
-                                            <hi rend="subscript">7</hi>
+                                        </li>
+                                        <li data-pdm="item">figure 6 shows a detailed side view of the stroller as shown in figures 1A-1C;</li>
+                                        <li data-pdm="item">figure
+                                            <sub>7</sub>
                                             shows a side view of a part of the stroller as shown in figure 6, with connected and locked connecting elements;
-                                        </item>
-                                        <item>figure 8 shows a side view of a part of the stroller as shown in figure 6, with unlocked and disconnected connecting elements.</item>
-                                        <item>figures<hi rend="subscript">9</hi>A-<hi rend="subscript">9</hi>B show side views of another embodiment of the stroller according to
+                                        </li>
+                                        <li data-pdm="item">figure 8 shows a side view of a part of the stroller as shown in figure 6, with unlocked and disconnected connecting elements.</li>
+                                        <li data-pdm="item">figures<sub>9</sub>A-<sub>9</sub>B show side views of another embodiment of the stroller according to
                                             the invention respectively with connected and locked connecting elements and with unlocked and disconnected connecting elements;
-                                        </item>
-                                        <item>figures 10A-10B show side views of a further embodiment of the stroller according to the invention respectively with connected and
+                                        </li>
+                                        <li data-pdm="item">figures 10A-10B show side views of a further embodiment of the stroller according to the invention respectively with connected and
                                             locked connecting elements and with unlocked and disconnected connecting elements.
-                                        </item>
-                                    </list>
-                                </p>
-                                <p n="0029" xml:id="_9da97c0061">In the figures, like parts are indicated by the same numerals.</p>
-                                <p n="0030" xml:id="_9da97c0062">Figures 1A-1C are a side view, a perspective view and a rear view of a first embodiment of a stroller
-                                    <hi rend="subscript">1</hi>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div n="0029" xml:id="_9da97c0061" data-pdm="p" class="pdm-p" data-id="_9da97c0061" name="_9da97c0061">In the figures, like parts are indicated by the same numerals.</div>
+                                <div n="0030" xml:id="_9da97c0062" data-pdm="p" class="pdm-p" data-id="_9da97c0062" name="_9da97c0062">Figures 1A-1C are a side view, a perspective view and a rear view of a first embodiment of a stroller
+                                    <sub>1</sub>
                                     according to the invention. For reasons of clarity of the drawing, the stroller
-                                    <hi rend="subscript">1</hi>
+                                    <sub>1</sub>
                                     is not provided with a seat for an infant to be transported by means of the stroller. The stroller
-                                    <hi rend="subscript">1</hi>
-                                    comprises two push rods<hi rend="subscript">2</hi>,
-                                    <hi rend="subscript">3</hi>
+                                    <sub>1</sub>
+                                    comprises two push rods<sub>2</sub>,
+                                    <sub>3</sub>
                                     extending parallel
-                                    to each other, which are fitted with a handle<hi rend="subscript">4</hi>,
-                                    <hi rend="subscript">5</hi>
-                                    at one end. Two pivotally interconnected rods<hi rend="subscript">7</hi>, 8, which can be interlocked by means of a locking element 6, extend
-                                    between the handles<hi rend="subscript">4</hi>,<hi rend="subscript">5</hi>. At their ends remote from the handles<hi rend="subscript">4</hi>,<hi
-                                            rend="subscript">5</hi>, the push rods<hi rend="subscript">2</hi>,
-                                    <hi rend="subscript">3</hi>
-                                    are pivotally connected to rods<hi rend="subscript">11</hi>,
-                                    <hi rend="subscript">12</hi>
-                                    about first pivot axis<hi rend="subscript">9</hi>,<hi rend="subscript">10</hi>. At their ends remote from the push rods<hi rend="subscript">
-                                        2</hi>,<hi rend="subscript">3</hi>, the rods<hi rend="subscript">11</hi>,
-                                    <hi rend="subscript">12</hi>
-                                    are interconnected by means of a support<hi rend="subscript">13</hi>, to which a front wheel
-                                    <hi rend="subscript">14</hi>
-                                    is pivotally connected about a vertically extending axis. The first pivot axis<hi rend="subscript">9</hi>, 10 are each provided on an end part
-                                    <hi rend="subscript">15</hi>,<hi rend="subscript">1</hi>6 of the rods<hi rend="subscript">11</hi>,<hi rend="subscript">12</hi>. On the end parts
-                                    <hi rend="subscript">15</hi>,<hi rend="subscript">1</hi>6 of the rods<hi rend="subscript">11</hi>,
-                                    <hi rend="subscript">12</hi>
-                                    are furthermore provided second pivot axis 17,<hi rend="subscript">1</hi>8, to which ends of J-shaped rods<hi rend="subscript">19</hi>,<hi
-                                            rend="subscript">2</hi>o are connected. The J-shaped rods<hi rend="subscript">19</hi>,<hi rend="subscript">2</hi>o are pivotally
-                                    connected at their ends remote from the second pivot axis<hi rend="subscript">17</hi>,<hi rend="subscript">1</hi>8 to a bushing
-                                    <hi rend="subscript">21</hi>
-                                    forming a central joint. Two wheel supporting rods<hi rend="subscript">22</hi>,
-                                    <hi rend="subscript">23</hi>
-                                    are pivotally connected to the bushing<hi rend="subscript">21</hi>. Each wheel supporting rod<hi rend="subscript">22</hi>,
-                                    <hi rend="subscript">23</hi>
-                                    has a rear wheel<hi rend="subscript">24</hi>,
-                                    <hi rend="subscript">25</hi>
-                                    mounted thereto at the end remote from the bushing<hi rend="subscript">21</hi>, which rear wheels are rotatable about a horizontally extending
-                                    axis. The wheel supporting rods<hi rend="subscript">22</hi>,
-                                    <hi rend="subscript">23</hi>
-                                    are furthermore pivotally connected to intermediate rods<hi rend="subscript">2</hi>6,
-                                    <hi rend="subscript">27</hi>
-                                    at their ends remote from the bushing<hi rend="subscript">21</hi>, which intermediate rods<hi rend="subscript">2</hi>6,
-                                    <hi rend="subscript">27</hi>
-                                    are pivotally attached to the rods<hi rend="subscript">11</hi>,
-                                    <hi rend="subscript">12</hi>
-                                    about third pivot axes<hi rend="subscript">2</hi>8,
-                                    <hi rend="subscript">29</hi>
-                                    remote from the rear wheels<hi rend="subscript">24</hi>, 25, near the support<hi rend="subscript">1</hi>3. The support<hi rend="subscript">
-                                        1</hi>3, which is positioned near the front wheel<hi rend="subscript">14</hi>, is connected to an end of a rod
-                                    <hi rend="subscript">30</hi>
+                                    to each other, which are fitted with a handle<sub>4</sub>,
+                                    <sub>5</sub>
+                                    at one end. Two pivotally interconnected rods<sub>7</sub>, 8, which can be interlocked by means of a locking element 6, extend
+                                    between the handles<sub>4</sub>,<sub>5</sub>. At their ends remote from the handles<sub>4</sub>,<sub>5</sub>, the push rods<sub>2</sub>,
+                                    <sub>3</sub>
+                                    are pivotally connected to rods<sub>11</sub>,
+                                    <sub>12</sub>
+                                    about first pivot axis<sub>9</sub>,<sub>10</sub>. At their ends remote from the push rods<sub>
+                                        2</sub>,<sub>3</sub>, the rods<sub>11</sub>,
+                                    <sub>12</sub>
+                                    are interconnected by means of a support<sub>13</sub>, to which a front wheel
+                                    <sub>14</sub>
+                                    is pivotally connected about a vertically extending axis. The first pivot axis<sub>9</sub>, 10 are each provided on an end part
+                                    <sub>15</sub>,<sub>1</sub>6 of the rods<sub>11</sub>,<sub>12</sub>. On the end parts
+                                    <sub>15</sub>,<sub>1</sub>6 of the rods<sub>11</sub>,
+                                    <sub>12</sub>
+                                    are furthermore provided second pivot axis 17,<sub>1</sub>8, to which ends of J-shaped rods<sub>19</sub>,<sub>2</sub>o are connected. The J-shaped rods<sub>19</sub>,<sub>2</sub>o are pivotally
+                                    connected at their ends remote from the second pivot axis<sub>17</sub>,<sub>1</sub>8 to a bushing
+                                    <sub>21</sub>
+                                    forming a central joint. Two wheel supporting rods<sub>22</sub>,
+                                    <sub>23</sub>
+                                    are pivotally connected to the bushing<sub>21</sub>. Each wheel supporting rod<sub>22</sub>,
+                                    <sub>23</sub>
+                                    has a rear wheel<sub>24</sub>,
+                                    <sub>25</sub>
+                                    mounted thereto at the end remote from the bushing<sub>21</sub>, which rear wheels are rotatable about a horizontally extending
+                                    axis. The wheel supporting rods<sub>22</sub>,
+                                    <sub>23</sub>
+                                    are furthermore pivotally connected to intermediate rods<sub>2</sub>6,
+                                    <sub>27</sub>
+                                    at their ends remote from the bushing<sub>21</sub>, which intermediate rods<sub>2</sub>6,
+                                    <sub>27</sub>
+                                    are pivotally attached to the rods<sub>11</sub>,
+                                    <sub>12</sub>
+                                    about third pivot axes<sub>2</sub>8,
+                                    <sub>29</sub>
+                                    remote from the rear wheels<sub>24</sub>, 25, near the support<sub>1</sub>3. The support<sub>
+                                        1</sub>3, which is positioned near the front wheel<sub>14</sub>, is connected to an end of a rod
+                                    <sub>30</sub>
                                     which is slidably accommodated in the bushing
-                                    <hi rend="subscript">21</hi>
-                                    with an end remote from the support<hi rend="subscript">13</hi>. The J-shaped rods<hi rend="subscript">19</hi>,<hi rend="subscript">2</hi>o and
-                                    the wheel supporting rods<hi rend="subscript">22</hi>,
-                                    <hi rend="subscript">23</hi>
-                                    together form a cross-shaped linkage system, the rods of which are pivotally connected to the central joint formed by the bushing<hi
-                                            rend="subscript">21</hi>.
-                                </p>
-                                <p n="0031" xml:id="_9da97c0135">Only a frame of the stroller 1 is shown in figures<hi rend="subscript">lA</hi>-<hi rend="subscript">4</hi>B. A seat
+                                    <sub>21</sub>
+                                    with an end remote from the support<sub>13</sub>. The J-shaped rods<sub>19</sub>,<sub>2</sub>o and
+                                    the wheel supporting rods<sub>22</sub>,
+                                    <sub>23</sub>
+                                    together form a cross-shaped linkage system, the rods of which are pivotally connected to the central joint formed by the bushing<sub>21</sub>.
+                                </div>
+                                <div n="0031" xml:id="_9da97c0135" data-pdm="p" class="pdm-p" data-id="_9da97c0135" name="_9da97c0135">Only a frame of the stroller 1 is shown in figures<sub>lA</sub>-<sub>4</sub>B. A seat
                                     for an infant may be mounted in the frame by means that are known per se. This seat may be a non-folding bucket-type seat, in which case the
                                     seat must be removed from the frame prior to the stroller
-                                    <hi rend="subscript">1</hi>
-                                    being collapsed. This seat may also be made of a cloth, for example, which is secured to the rods<hi rend="subscript">2</hi>,<hi
-                                            rend="subscript">3</hi>,<hi rend="subscript">11</hi>,
-                                    <hi rend="subscript">12</hi>
-                                    and which may be folded and remain attached to the frame upon collapsing of the stroller<hi rend="subscript">1</hi>.
-                                </p>
-
-                                <p n="0032" xml:id="_9da97c0144">Figures<hi rend="subscript">5</hi>A-<hi rend="subscript">5</hi>C are a side view, perspective view and rear view of
-                                    a second embodiment of the stroller
-                                    <hi rend="subscript">41</hi>
-                                    according to the invention. For reasons of clarity of the drawing, the stroller
-                                    <hi rend="subscript">41</hi>
-                                    is not provided with a seat for an infant to be transported by means of the stroller. The stroller
-                                    <hi rend="subscript">41</hi>
-                                    differs from the stroller
-                                    <hi rend="subscript">1</hi>
-                                    in that instead of a rod<hi rend="subscript">30</hi>, the stroller
-                                    <hi rend="subscript">41</hi>
-                                    is provided with an imaginary axis
-                                    <hi rend="subscript">42</hi>
-                                    which extends through the support
-                                    <hi rend="subscript">13</hi>
-                                    and through the central joint<hi rend="subscript">43</hi>. The central joint
-                                    <hi rend="subscript">43</hi>
-                                    is movable towards and away from the support
-                                    <hi rend="subscript">13</hi>
-                                    over the imaginary axis 42 during folding and unfolding of the stroller<hi rend="subscript">41</hi>.
-                                </p>
-                                <p n="0033" xml:id="_9da97c0159">It is also possible to move the central joint
-                                    <hi rend="subscript">43</hi>
-                                    away from the support
-                                    <hi rend="subscript">13</hi>
-                                    to collapse the stroller
-                                    <hi rend="subscript">41</hi>
-                                    and to move the central joint
-                                    <hi rend="subscript">43</hi>
-                                    towards the support to erect the stroller<hi rend="subscript">41</hi>.
-                                </p>
-                                <p n="0034" xml:id="_9da97c0165">The strollers<hi rend="subscript">1</hi>,
-                                    <hi rend="subscript">41</hi>
-                                    described so far are similar to the strollers as disclosed in EP
-                                    <hi rend="subscript">1466810A1</hi>
-                                    of applicant.
-                                </p>
-                                <p n="0035" xml:id="_9da97c0169">Figures 6,
-                                    <hi rend="subscript">7</hi>
-                                    and 8 show detailed views of the left side (seen in the driving direction of the stroller) of the stroller i.
-                                </p>
-                                <p n="0036" xml:id="_9da97c0171">The rod
-                                    <hi rend="subscript">19</hi>
-                                    forms a first rod, whilst the rod
-                                    <hi rend="subscript">11</hi>
-                                    forms a second rod. The second rod 11 extends substantially parallel to the push rod
-                                    <hi rend="subscript">2</hi>
-                                    in the erect position of the stroller
-                                    <hi rend="subscript">1</hi>
-                                    (figures 6 and<hi rend="subscript">7</hi>).
-                                </p>
-                                <p n="0037" xml:id="_9da97c0177">As can now be more clearly seen, the rod
-                                    <hi rend="subscript">19</hi>
-                                    of the cross shaped linkage system
-                                    <hi rend="subscript">51</hi>
-                                    is provided with a protrusion
-                                    <hi rend="subscript">52</hi>
-                                    extending from an end 53 of the rod
-                                    <hi rend="subscript">19</hi>
-                                    towards the handle
-                                    <hi rend="subscript">4</hi>
-                                    of the push rod<hi rend="subscript">2</hi>. The protrusion
-                                    <hi rend="subscript">52</hi>
-                                    forms a first connecting element. The protrusion
-                                    <hi rend="subscript">52</hi>
-                                    comprises a bevelled edge
-                                    <hi rend="subscript">54</hi>
-                                    provided with a passage<hi rend="subscript">55</hi>. The passage
-                                    <hi rend="subscript">55</hi>
-                                    extends parallel to the push rod
-                                    <hi rend="subscript">2</hi>
-                                    in the erect position of the stroller i.
-                                </p>
-                                <p n="0038" xml:id="_9da97c0190">The push rod
-                                    <hi rend="subscript">2</hi>
-                                    is provided with a hook<hi rend="subscript">5</hi>6 located between the first pivot axis
-                                    <hi rend="subscript">9</hi>
-                                    and the handle . The hook<hi rend="subscript">5</hi>6 forms a second connecting element. The bevelled edge
-                                    <hi rend="subscript">54</hi>
-                                    of the protrusion
-                                    <hi rend="subscript">52</hi>
-                                    is located inside the hook<hi rend="subscript">5</hi>6 in the erect position of the stroller<hi rend="subscript">1</hi>.
-                                </p>
-
-                                <p n="0039" xml:id="_9da97c0199">As can also be seen the stroller
-                                    <hi rend="subscript">1</hi>
-                                    is provided with a locking means
-                                    <hi rend="subscript">57</hi>
-                                    comprising a pen<hi rend="subscript">5</hi>8 being slidably located in the push rod<hi rend="subscript">2</hi>. The pen<hi rend="subscript">
-                                        5</hi>8 is movable against spring force of a spring
-                                    <hi rend="subscript">59</hi>
-                                    in a direction indicated by arrow P<hi rend="subscript">7</hi>.
-                                </p>
-                                <p n="0040" xml:id="_9da97c0207">The locking means
-                                    <hi rend="subscript">57</hi>
-                                    also comprises a cable 6<hi rend="subscript">0</hi>. The cable 6
-                                    <hi rend="subscript">0</hi>
-                                    is connected with a first end to the pen<hi rend="subscript">5</hi>8 and with a second end to a movable operating element 6
-                                    <hi rend="subscript">1</hi>
-                                    located on the handle
-                                    <hi rend="subscript">4</hi>
-                                    of the push rod<hi rend="subscript">2</hi>. The cable 60 and operating element 6
-                                    <hi rend="subscript">1</hi>
-                                    form unlocking means.
-                                </p>
-                                <p n="0041" xml:id="_9da97c0216">The protrusion<hi rend="subscript">52</hi>, the hook<hi rend="subscript">5</hi>6 and the locking means are also
-                                    provided on the right side of the stroller
-                                    <hi rend="subscript">1</hi>
-                                    on the rod 20 and push rod<hi rend="subscript">3</hi>.
-                                </p>
-                                <p n="0042" xml:id="_9da97c0221">Figures 1A-1C show the stroller
-                                    <hi rend="subscript">1</hi>
-                                    in the fully erect position. Figures<hi rend="subscript">4</hi>A and<hi rend="subscript">4</hi>B show the stroller
-                                    <hi rend="subscript">1</hi>
-                                    in the fully collapsed position. The collapsing of the erected stroller
-                                    <hi rend="subscript">1</hi>
-                                    starts from the erect position shown in figures<hi rend="subscript">l</hi>A-<hi rend="subscript">l</hi>C by disconnecting the locking element 6
-                                    as a result of which the rods<hi rend="subscript">7</hi>, 8 positioned on either side of the locking element 6 can pivot with respect to each
-                                    other. The user will than move the operating element 6
-                                    <hi rend="subscript">1</hi>
-                                    so that the cable 6
-                                    <hi rend="subscript">0</hi>
-                                    will pull the pen<hi rend="subscript">5</hi>8 against spring force of the spring
-                                    <hi rend="subscript">59</hi>
-                                    from a first locked position (as shown in figures 6 and<hi rend="subscript">7</hi>) wherein the pen<hi rend="subscript">5</hi>8 is located in
-                                    the passage
-                                    <hi rend="subscript">55</hi>
-                                    of the rod<hi rend="subscript">19</hi>, to a second unlocked position wherein the pen<hi rend="subscript">5</hi>8 is removed from the passage
-                                    <hi rend="subscript">55</hi>
-                                    and is fully located inside the push rod<hi rend="subscript">2</hi>. The protrusion
-                                    <hi rend="subscript">52</hi>
-                                    and the hook<hi rend="subscript">5</hi>6 are still connected to each other so the hook<hi rend="subscript">5</hi>6 prevents the rod
-                                    <hi rend="subscript">19</hi>
-                                    to pivot about the second pivot axis<hi rend="subscript">17</hi>,<hi rend="subscript">1</hi>8. The first and second axis 9,
-                                    <hi rend="subscript">17</hi>
-                                    extend under an angle with each other. Since the rod
-                                    <hi rend="subscript">19</hi>
-                                    can not be pivoted about the second pivot axis<hi rend="subscript">17</hi>,<hi rend="subscript">1</hi>8, the cross-shaped linkage
-                                    <hi rend="subscript">51</hi>
-                                    can not collapse.
-                                </p>
-                                <p n="0043" xml:id="_9da97c0252">By pivoting the push rods<hi rend="subscript">2</hi>,
-                                    <hi rend="subscript">3</hi>
-                                    about the pivot axes<hi rend="subscript">9</hi>, 10 in the direction as indicated by arrow P1, the hook<hi rend="subscript">5</hi>6 will be
-                                    moved away from the protrusion
-                                    <hi rend="subscript">52</hi>
-                                    as can be seen in figure 8 allowing the rods<hi rend="subscript">19</hi>,
-                                    <hi rend="subscript">20</hi>
-                                    to pivot about the second pivot axes<hi rend="subscript">17</hi>,<hi rend="subscript">1</hi>8 in the direction indicated by arrow P
-                                    <hi rend="subscript">3</hi>
-                                    so that the bushing
-                                    <hi rend="subscript">21</hi>
-                                    of the central joint of the cross-shaped linkage
-                                    <hi rend="subscript">51</hi>
-                                    can be moved over the rod
-                                    <hi rend="subscript">30</hi>
-                                    in the direction indicated by the arrow P
-                                    <hi rend="subscript">2</hi>
-                                    towards the support
-                                    <hi rend="subscript">13</hi>
-                                    that is connected to the front wheel<hi rend="subscript">14</hi>. As a result, the J-shaped rods<hi rend="subscript">19</hi>,
-                                    <hi rend="subscript">20</hi>
-                                    pivot about the second pivot axes<hi rend="subscript">17</hi>,
-                                    18 in the direction indicated by the arrow P
-                                    <hi rend="subscript">3</hi>
-                                    and also in the direction indicated by the arrow P
-                                    <hi rend="subscript">4</hi>
-                                    with respect to the bushing<hi rend="subscript">21</hi>. At the same time, the wheel supporting rods<hi rend="subscript">22</hi>,
-                                    <hi rend="subscript">23</hi>
-                                    pivot with respect to the bushing
-                                    <hi rend="subscript">21</hi>
-                                    in the direction indicated by the arrow P<hi rend="subscript">5</hi>. The intermediate rods<hi rend="subscript">25</hi>,<hi rend="subscript">
-                                        2</hi>6 pivot about the third pivot axes<hi rend="subscript">2</hi>8,
-                                    <hi rend="subscript">29</hi>
-                                    in the direction indicated by the arrow P6 towards the support<hi rend="subscript">13</hi>. The bushing
-                                    <hi rend="subscript">21</hi>
-                                    is moved over the rod
-                                    <hi rend="subscript">30</hi>
-                                    in the direction indicated by the arrow P
-                                    <hi rend="subscript">2</hi>
-                                    until the stroller
-                                    <hi rend="subscript">1</hi>
-                                    has reached the collapsed position that is shown in figures<hi rend="subscript">4</hi>A and<hi rend="subscript">4</hi>B. The dimension L
-                                    <hi rend="subscript">1</hi>
-                                    of the collapsed stroller
-                                    <hi rend="subscript">1</hi>
-                                    is practically the same as the dimension L
-                                    <hi rend="subscript">2</hi>
-                                    of the stroller
-                                    <hi rend="subscript">1</hi>
-                                    in the erect position, said dimension L
-                                    <hi rend="subscript">2</hi>
-                                    being the distance between the front side of the front wheel
-                                    <hi rend="subscript">14</hi>
-                                    and the rear side of the rear wheel<hi rend="subscript">24</hi>. In thcpis case L
-                                    <hi rend="subscript">2</hi>
-                                    is e.g.<hi rend="subscript">5</hi>8 cm, whilst L
-                                    <hi rend="subscript">l</hi>
-                                    is 6
-                                    <hi rend="subscript">5</hi>
-                                    cm. The height H1 (e.g.
-                                    <hi rend="subscript">25</hi>
-                                    cm) of the collapsed stroller
-                                    <hi rend="subscript">1</hi>
-                                    is slightly greater than the diameter (e.g.
-                                    <hi rend="subscript">15</hi>
-                                    cm) of the front wheel<hi rend="subscript">14</hi>, whilst the width B
-                                    <hi rend="subscript">l</hi>
-                                    (e.g.
-                                    <hi rend="subscript">22</hi>
-                                    cm) of the collapsed stroller
-                                    <hi rend="subscript">1</hi>
-                                    is about three times the width b
-                                    <hi rend="subscript">l</hi>
-                                    (e.g. 6 cm) of the rear wheels<hi rend="subscript">24</hi>. The user will pivot the push rods<hi rend="subscript">2</hi>,
-                                    <hi rend="subscript">3</hi>
-                                    in the direction indicated by the arrow P1, until the push rods<hi rend="subscript">2</hi>,
-                                    <hi rend="subscript">3</hi>
-                                    will be positioned parallel to the rods<hi rend="subscript">11</hi>,
-                                    <hi rend="subscript">12</hi>
-                                    (Subsequently shown in figures<hi rend="subscript">2</hi>A-<hi rend="subscript">2</hi>B;<hi rend="subscript">3</hi>A-<hi rend="subscript">3</hi>
-                                    B;<hi rend="subscript">4</hi>A-<hi rend="subscript">4</hi>B).
-                                </p>
-                                <p n="0044" xml:id="_9da97c0322">To erect the stroller
-                                    <hi rend="subscript">1</hi>
-                                    from the collapsed position, the bushing
-                                    <hi rend="subscript">21</hi>
-                                    is being moved away from the support<hi rend="subscript">13</hi>. After the bushing
-                                    <hi rend="subscript">21</hi>
-                                    is in its erect position, the push rods<hi rend="subscript">2</hi>,
-                                    <hi rend="subscript">3</hi>
-                                    are being pivoted about the first pivot axes<hi rend="subscript">9</hi>, 10 in a direction opposite to the direction indicated by arrow P1,
-                                    until the hook<hi rend="subscript">5</hi>6 is being positioned over the protrusion<hi rend="subscript">52</hi>. The rod
-                                    <hi rend="subscript">19</hi>
-                                    and the push rod<hi rend="subscript">2</hi>,
-                                    <hi rend="subscript">3</hi>
-                                    are now connected to each other by means of the connecting elements formed by the hook<hi rend="subscript">5</hi>6 and protrusion<hi
-                                            rend="subscript">52</hi>. Next, the connecting elements formed by the hook<hi rend="subscript">5</hi>6 and protrusion
-                                    <hi rend="subscript">52</hi>
-                                    are locked to each other by the locking means<hi rend="subscript">57</hi>.
-                                </p>
-                                <p n="0045" xml:id="_9da97c0340">The stroller
-                                    <hi rend="subscript">41</hi>
-                                    is provided with the same connecting elements and locking means as the stroller 1.
-                                </p>
-                                <p n="0046" xml:id="_9da97c0342">Figures<hi rend="subscript">9</hi>A-<hi rend="subscript">9</hi>B show side views of another embodiment of the
-                                    stroller
-                                    <hi rend="subscript">1</hi>
-                                    according to the invention which differs from the stroller
-                                    <hi rend="subscript">1</hi>
-                                    as shown in figure 6 that it comprises locking means
-                                    <hi rend="subscript">157</hi>
-                                    instead of locking means<hi rend="subscript">57</hi>.
-                                </p>
-
-                                <p n="0047" xml:id="_9da97c0349">The locking means
-                                    <hi rend="subscript">157</hi>
-                                    comprising a slide<hi rend="subscript">1</hi>6
-                                    <hi rend="subscript">0</hi>
-                                    being slidably located in the push rod<hi rend="subscript">2</hi>. The slide<hi rend="subscript">1</hi>6
-                                    <hi rend="subscript">0</hi>
-                                    is movable against spring force of a spring
-                                    <hi rend="subscript">159</hi>
-                                    in a direction indicated by arrow P<hi rend="subscript">7</hi>. The locking means
-                                    <hi rend="subscript">157</hi>
-                                    also comprises the cable 6
-                                    <hi rend="subscript">0</hi>
-                                    in the same manner as the locking means<hi rend="subscript">57</hi>. The slide<hi rend="subscript">1</hi>6
-                                    <hi rend="subscript">0</hi>
-                                    is provided with a pen<hi rend="subscript">15</hi>8 which cooperates with a passage
-                                    <hi rend="subscript">155</hi>
-                                    located in a disc-shaped part<hi rend="subscript">1</hi>6
-                                    <hi rend="subscript">1</hi>
-                                    of the rod
-                                    <hi rend="superscript">11.</hi>
-                                </p>
-                                <p n="0048" xml:id="_9da97c0368">To operate the locking means<hi rend="subscript">157</hi>, a user will move the operating element 6
-                                    <hi rend="subscript">1</hi>
-                                    so that the cable 6
-                                    <hi rend="subscript">0</hi>
-                                    will pull the slide<hi rend="subscript">1</hi>6
-                                    <hi rend="subscript">0</hi>
-                                    together with the pen<hi rend="subscript">15</hi>8 against spring force of the spring
-                                    <hi rend="subscript">159</hi>
-                                    from a first locked position (as shown in figure<hi rend="subscript">9</hi>A) wherein the pen<hi rend="subscript">15</hi>8 is located in the
-                                    passage
-                                    <hi rend="subscript">155</hi>
-                                    of the rod 11, to a second unlocked position (as shown in figure<hi rend="subscript">9</hi>B) wherein the pen<hi rend="subscript">15</hi>8 is
-                                    removed from the passage
-                                    <hi rend="subscript">155</hi>
-                                    and is fully located inside the push rod<hi rend="subscript">2</hi>.
-                                </p>
-                                <p n="0049" xml:id="_9da97c0383">In the position as shown in figure<hi rend="subscript">9</hi>B an end of the pen<hi rend="subscript">15</hi>8 avert
-                                    of the slide<hi rend="subscript">1</hi>6
-                                    <hi rend="subscript">0</hi>
-                                    rests against an outer side of the disc-shaped part<hi rend="subscript">1</hi>6<hi rend="subscript">1</hi>, which prevents the slide<hi
-                                            rend="subscript">1</hi>6
-                                    <hi rend="subscript">0</hi>
-                                    as well as the pen<hi rend="subscript">15</hi>8 to move under spring force in the direction opposite to the direction indicated by arrow P<hi
-                                            rend="subscript">7</hi>. When moving the stroller
-                                    <hi rend="subscript">1</hi>
-                                    back to the erect position, the pen<hi rend="subscript">15</hi>8 will be moved under spring force in the direction opposite to the direction
-                                    indicated by arrow P
-                                    <hi rend="subscript">7</hi>
-                                    into the passage
-                                    <hi rend="subscript">155</hi>
-                                    as soon as the pen<hi rend="subscript">15</hi>8 and the passage
-                                    <hi rend="subscript">155</hi>
-                                    are aligned.
-                                </p>
-                                <p n="0050" xml:id="_9da97c0400">Figures ioA-ioB show side views of a further embodiment of the stroller
-                                    <hi rend="subscript">1</hi>
-                                    according to the invention which differs from the stroller
-                                    <hi rend="subscript">1</hi>
-                                    as shown in figure 6 that it comprises locking means
-                                    <hi rend="subscript">257</hi>
-                                    instead of locking means<hi rend="subscript">57</hi>.
-                                </p>
-                                <p n="0051" xml:id="_9da97c0405">The locking means
-                                    <hi rend="subscript">257</hi>
-                                    comprising a slide<hi rend="subscript">2</hi>6o being slidably located in the push rod<hi rend="subscript">2</hi>. The slide<hi
-                                            rend="subscript">2</hi>6
-                                    <hi rend="subscript">0</hi>
-                                    is movable against spring force of a spring
-                                    <hi rend="subscript">159</hi>
-                                    in a direction indicated by arrow P<hi rend="subscript">7</hi>. The locking means
-                                    <hi rend="subscript">257</hi>
-                                    also comprises the cable 6
-                                    <hi rend="subscript">0</hi>
-                                    in the same manner as the locking means<hi rend="subscript">57</hi>. The slide<hi rend="subscript">2</hi>6
-                                    <hi rend="subscript">0</hi>
-                                    is provided with a pen<hi rend="subscript">15</hi>8 which cooperates with a passage
-                                    <hi rend="subscript">155</hi>
-                                    located in a disc-shaped part<hi rend="subscript">1</hi>6
-                                    <hi rend="subscript">1</hi>
-                                    of the rod 11. The slide<hi rend="subscript">2</hi>6
-                                    <hi rend="subscript">0</hi>
-                                    is also provided with a pen<hi rend="subscript">25</hi>8 which cooperates with a passage
-                                    <hi rend="subscript">255</hi>
-                                    located in the J-shaped rod<hi rend="subscript">19</hi>.
-                                </p>
-
-                                <p n="0052" xml:id="_9da97c0427">To operate the locking means<hi rend="subscript">257</hi>, a user will move the operating element 6
-                                    <hi rend="subscript">1</hi>
-                                    so that the cable 6
-                                    <hi rend="subscript">0</hi>
-                                    will pull the slide<hi rend="subscript">2</hi>6
-                                    <hi rend="subscript">0</hi>
-                                    together with the pens<hi rend="subscript">15</hi>8,<hi rend="subscript">25</hi>8 against spring force of the spring
-                                    <hi rend="subscript">159</hi>
-                                    from a first locked position (as shown in figure ioA) wherein the pen<hi rend="subscript">15</hi>8 is located in the passage
-                                    <hi rend="subscript">155</hi>
-                                    of the rod 11 and the pen<hi rend="subscript">25</hi>8 is located in the passage
-                                    <hi rend="subscript">255</hi>
-                                    of the rod<hi rend="subscript">19</hi>, to a second unlocked position (as shown in figure ioB). In the second unlocked position the pens<hi
-                                            rend="subscript">15</hi>8,<hi rend="subscript">25</hi>8 are removed from the respective passages<hi rend="subscript">155</hi>,
-                                    <hi rend="subscript">255</hi>
-                                    and are fully located inside the push rod<hi rend="subscript">2</hi>.
-                                </p>
-                                <p n="0053" xml:id="_9da97c0446">In the position as shown in figure 10B an end of the pen<hi rend="subscript">15</hi>8 avert of the slide<hi
-                                        rend="subscript">1</hi>6
-                                    <hi rend="subscript">0</hi>
-                                    rests against an outer side of the disc-shaped part<hi rend="subscript">1</hi>6<hi rend="subscript">1</hi>, which prevents the slide<hi
-                                            rend="subscript">2</hi>6o as well as the pens<hi rend="subscript">15</hi>8,<hi rend="subscript">25</hi>8 to move under spring force in
-                                    the direction opposite to the direction indicated by arrow P<hi rend="subscript">7</hi>. When moving the stroller
-                                    <hi rend="subscript">1</hi>
-                                    back to the erect position, the pens<hi rend="subscript">15</hi>8,<hi rend="subscript">25</hi>8 will be moved under spring force in the
-                                    direction opposite to the direction indicated by arrow P
-                                    <hi rend="subscript">7</hi>
-                                    into the respective passages<hi rend="subscript">155</hi>,
-                                    <hi rend="subscript">255</hi>
-                                    as soon as the pens<hi rend="subscript">15</hi>8,<hi rend="subscript">25</hi>8 and the passages<hi rend="subscript">155</hi>,
-                                    <hi rend="subscript">255</hi>
-                                    are aligned.
-                                </p>
-                                <figure xml:id="inlineFigure">
-                                    <graphic
-                                            url="/api/text/C1EP00000COYFNBL/emi/MTMxODU1NjItMTA4MjE4MjEtMDAwMi50aWY"/>
-                                </figure>
-                                <div type="abstractFigures">
-                                    <figure n="9" resp="#applicant" sortKey="1"/>
-                                    <figure xml:id="_024629">
-                                        <graphic url="./EP2011154276A/imgaf001.tif"/>
-                                    </figure>
+                                    <sub>1</sub>
+                                    being collapsed. This seat may also be made of a cloth, for example, which is secured to the rods<sub>2</sub>,<sub>3</sub>,<sub>11</sub>,
+                                    <sub>12</sub>
+                                    and which may be folded and remain attached to the frame upon collapsing of the stroller<sub>1</sub>.
                                 </div>
-                                <p n="0054" xml:id="_9da97c0466">It is also possible let the pens and passages of the locking means extend in a direction perpendicular to the
-                                    direction indicated by arrow P<hi rend="subscript">7</hi>, wherein additional means are provided to transfer the movement of the cable 6o in the
+
+                                <div n="0032" xml:id="_9da97c0144" data-pdm="p" class="pdm-p" data-id="_9da97c0144" name="_9da97c0144">Figures<sub>5</sub>A-<sub>5</sub>C are a side view, perspective view and rear view of
+                                    a second embodiment of the stroller
+                                    <sub>41</sub>
+                                    according to the invention. For reasons of clarity of the drawing, the stroller
+                                    <sub>41</sub>
+                                    is not provided with a seat for an infant to be transported by means of the stroller. The stroller
+                                    <sub>41</sub>
+                                    differs from the stroller
+                                    <sub>1</sub>
+                                    in that instead of a rod<sub>30</sub>, the stroller
+                                    <sub>41</sub>
+                                    is provided with an imaginary axis
+                                    <sub>42</sub>
+                                    which extends through the support
+                                    <sub>13</sub>
+                                    and through the central joint<sub>43</sub>. The central joint
+                                    <sub>43</sub>
+                                    is movable towards and away from the support
+                                    <sub>13</sub>
+                                    over the imaginary axis 42 during folding and unfolding of the stroller<sub>41</sub>.
+                                </div>
+                                <div n="0033" xml:id="_9da97c0159" data-pdm="p" class="pdm-p" data-id="_9da97c0159" name="_9da97c0159">It is also possible to move the central joint
+                                    <sub>43</sub>
+                                    away from the support
+                                    <sub>13</sub>
+                                    to collapse the stroller
+                                    <sub>41</sub>
+                                    and to move the central joint
+                                    <sub>43</sub>
+                                    towards the support to erect the stroller<sub>41</sub>.
+                                </div>
+                                <div n="0034" xml:id="_9da97c0165" data-pdm="p" class="pdm-p" data-id="_9da97c0165" name="_9da97c0165">The strollers<sub>1</sub>,
+                                    <sub>41</sub>
+                                    described so far are similar to the strollers as disclosed in EP
+                                    <sub>1466810A1</sub>
+                                    of applicant.
+                                </div>
+                                <div n="0035" xml:id="_9da97c0169" data-pdm="p" class="pdm-p" data-id="_9da97c0169" name="_9da97c0169">Figures 6,
+                                    <sub>7</sub>
+                                    and 8 show detailed views of the left side (seen in the driving direction of the stroller) of the stroller i.
+                                </div>
+                                <div n="0036" xml:id="_9da97c0171" data-pdm="p" class="pdm-p" data-id="_9da97c0171" name="_9da97c0171">The rod
+                                    <sub>19</sub>
+                                    forms a first rod, whilst the rod
+                                    <sub>11</sub>
+                                    forms a second rod. The second rod 11 extends substantially parallel to the push rod
+                                    <sub>2</sub>
+                                    in the erect position of the stroller
+                                    <sub>1</sub>
+                                    (figures 6 and<sub>7</sub>).
+                                </div>
+                                <div n="0037" xml:id="_9da97c0177" data-pdm="p" class="pdm-p" data-id="_9da97c0177" name="_9da97c0177">As can now be more clearly seen, the rod
+                                    <sub>19</sub>
+                                    of the cross shaped linkage system
+                                    <sub>51</sub>
+                                    is provided with a protrusion
+                                    <sub>52</sub>
+                                    extending from an end 53 of the rod
+                                    <sub>19</sub>
+                                    towards the handle
+                                    <sub>4</sub>
+                                    of the push rod<sub>2</sub>. The protrusion
+                                    <sub>52</sub>
+                                    forms a first connecting element. The protrusion
+                                    <sub>52</sub>
+                                    comprises a bevelled edge
+                                    <sub>54</sub>
+                                    provided with a passage<sub>55</sub>. The passage
+                                    <sub>55</sub>
+                                    extends parallel to the push rod
+                                    <sub>2</sub>
+                                    in the erect position of the stroller i.
+                                </div>
+                                <div n="0038" xml:id="_9da97c0190" data-pdm="p" class="pdm-p" data-id="_9da97c0190" name="_9da97c0190">The push rod
+                                    <sub>2</sub>
+                                    is provided with a hook<sub>5</sub>6 located between the first pivot axis
+                                    <sub>9</sub>
+                                    and the handle . The hook<sub>5</sub>6 forms a second connecting element. The bevelled edge
+                                    <sub>54</sub>
+                                    of the protrusion
+                                    <sub>52</sub>
+                                    is located inside the hook<sub>5</sub>6 in the erect position of the stroller<sub>1</sub>.
+                                </div>
+
+                                <div n="0039" xml:id="_9da97c0199" data-pdm="p" class="pdm-p" data-id="_9da97c0199" name="_9da97c0199">As can also be seen the stroller
+                                    <sub>1</sub>
+                                    is provided with a locking means
+                                    <sub>57</sub>
+                                    comprising a pen<sub>5</sub>8 being slidably located in the push rod<sub>2</sub>. The pen<sub>
+                                        5</sub>8 is movable against spring force of a spring
+                                    <sub>59</sub>
+                                    in a direction indicated by arrow P<sub>7</sub>.
+                                </div>
+                                <div n="0040" xml:id="_9da97c0207" data-pdm="p" class="pdm-p" data-id="_9da97c0207" name="_9da97c0207">The locking means
+                                    <sub>57</sub>
+                                    also comprises a cable 6<sub>0</sub>. The cable 6
+                                    <sub>0</sub>
+                                    is connected with a first end to the pen<sub>5</sub>8 and with a second end to a movable operating element 6
+                                    <sub>1</sub>
+                                    located on the handle
+                                    <sub>4</sub>
+                                    of the push rod<sub>2</sub>. The cable 60 and operating element 6
+                                    <sub>1</sub>
+                                    form unlocking means.
+                                </div>
+                                <div n="0041" xml:id="_9da97c0216" data-pdm="p" class="pdm-p" data-id="_9da97c0216" name="_9da97c0216">The protrusion<sub>52</sub>, the hook<sub>5</sub>6 and the locking means are also
+                                    provided on the right side of the stroller
+                                    <sub>1</sub>
+                                    on the rod 20 and push rod<sub>3</sub>.
+                                </div>
+                                <div n="0042" xml:id="_9da97c0221" data-pdm="p" class="pdm-p" data-id="_9da97c0221" name="_9da97c0221">Figures 1A-1C show the stroller
+                                    <sub>1</sub>
+                                    in the fully erect position. Figures<sub>4</sub>A and<sub>4</sub>B show the stroller
+                                    <sub>1</sub>
+                                    in the fully collapsed position. The collapsing of the erected stroller
+                                    <sub>1</sub>
+                                    starts from the erect position shown in figures<sub>l</sub>A-<sub>l</sub>C by disconnecting the locking element 6
+                                    as a result of which the rods<sub>7</sub>, 8 positioned on either side of the locking element 6 can pivot with respect to each
+                                    other. The user will than move the operating element 6
+                                    <sub>1</sub>
+                                    so that the cable 6
+                                    <sub>0</sub>
+                                    will pull the pen<sub>5</sub>8 against spring force of the spring
+                                    <sub>59</sub>
+                                    from a first locked position (as shown in figures 6 and<sub>7</sub>) wherein the pen<sub>5</sub>8 is located in
+                                    the passage
+                                    <sub>55</sub>
+                                    of the rod<sub>19</sub>, to a second unlocked position wherein the pen<sub>5</sub>8 is removed from the passage
+                                    <sub>55</sub>
+                                    and is fully located inside the push rod<sub>2</sub>. The protrusion
+                                    <sub>52</sub>
+                                    and the hook<sub>5</sub>6 are still connected to each other so the hook<sub>5</sub>6 prevents the rod
+                                    <sub>19</sub>
+                                    to pivot about the second pivot axis<sub>17</sub>,<sub>1</sub>8. The first and second axis 9,
+                                    <sub>17</sub>
+                                    extend under an angle with each other. Since the rod
+                                    <sub>19</sub>
+                                    can not be pivoted about the second pivot axis<sub>17</sub>,<sub>1</sub>8, the cross-shaped linkage
+                                    <sub>51</sub>
+                                    can not collapse.
+                                </div>
+                                <div n="0043" xml:id="_9da97c0252" data-pdm="p" class="pdm-p" data-id="_9da97c0252" name="_9da97c0252">By pivoting the push rods<sub>2</sub>,
+                                    <sub>3</sub>
+                                    about the pivot axes<sub>9</sub>, 10 in the direction as indicated by arrow P1, the hook<sub>5</sub>6 will be
+                                    moved away from the protrusion
+                                    <sub>52</sub>
+                                    as can be seen in figure 8 allowing the rods<sub>19</sub>,
+                                    <sub>20</sub>
+                                    to pivot about the second pivot axes<sub>17</sub>,<sub>1</sub>8 in the direction indicated by arrow P
+                                    <sub>3</sub>
+                                    so that the bushing
+                                    <sub>21</sub>
+                                    of the central joint of the cross-shaped linkage
+                                    <sub>51</sub>
+                                    can be moved over the rod
+                                    <sub>30</sub>
+                                    in the direction indicated by the arrow P
+                                    <sub>2</sub>
+                                    towards the support
+                                    <sub>13</sub>
+                                    that is connected to the front wheel<sub>14</sub>. As a result, the J-shaped rods<sub>19</sub>,
+                                    <sub>20</sub>
+                                    pivot about the second pivot axes<sub>17</sub>,
+                                    18 in the direction indicated by the arrow P
+                                    <sub>3</sub>
+                                    and also in the direction indicated by the arrow P
+                                    <sub>4</sub>
+                                    with respect to the bushing<sub>21</sub>. At the same time, the wheel supporting rods<sub>22</sub>,
+                                    <sub>23</sub>
+                                    pivot with respect to the bushing
+                                    <sub>21</sub>
+                                    in the direction indicated by the arrow P<sub>5</sub>. The intermediate rods<sub>25</sub>,<sub>
+                                        2</sub>6 pivot about the third pivot axes<sub>2</sub>8,
+                                    <sub>29</sub>
+                                    in the direction indicated by the arrow P6 towards the support<sub>13</sub>. The bushing
+                                    <sub>21</sub>
+                                    is moved over the rod
+                                    <sub>30</sub>
+                                    in the direction indicated by the arrow P
+                                    <sub>2</sub>
+                                    until the stroller
+                                    <sub>1</sub>
+                                    has reached the collapsed position that is shown in figures<sub>4</sub>A and<sub>4</sub>B. The dimension L
+                                    <sub>1</sub>
+                                    of the collapsed stroller
+                                    <sub>1</sub>
+                                    is practically the same as the dimension L
+                                    <sub>2</sub>
+                                    of the stroller
+                                    <sub>1</sub>
+                                    in the erect position, said dimension L
+                                    <sub>2</sub>
+                                    being the distance between the front side of the front wheel
+                                    <sub>14</sub>
+                                    and the rear side of the rear wheel<sub>24</sub>. In thcpis case L
+                                    <sub>2</sub>
+                                    is e.g.<sub>5</sub>8 cm, whilst L
+                                    <sub>l</sub>
+                                    is 6
+                                    <sub>5</sub>
+                                    cm. The height H1 (e.g.
+                                    <sub>25</sub>
+                                    cm) of the collapsed stroller
+                                    <sub>1</sub>
+                                    is slightly greater than the diameter (e.g.
+                                    <sub>15</sub>
+                                    cm) of the front wheel<sub>14</sub>, whilst the width B
+                                    <sub>l</sub>
+                                    (e.g.
+                                    <sub>22</sub>
+                                    cm) of the collapsed stroller
+                                    <sub>1</sub>
+                                    is about three times the width b
+                                    <sub>l</sub>
+                                    (e.g. 6 cm) of the rear wheels<sub>24</sub>. The user will pivot the push rods<sub>2</sub>,
+                                    <sub>3</sub>
+                                    in the direction indicated by the arrow P1, until the push rods<sub>2</sub>,
+                                    <sub>3</sub>
+                                    will be positioned parallel to the rods<sub>11</sub>,
+                                    <sub>12</sub>
+                                    (Subsequently shown in figures<sub>2</sub>A-<sub>2</sub>B;<sub>3</sub>A-<sub>3</sub>
+                                    B;<sub>4</sub>A-<sub>4</sub>B).
+                                </div>
+                                <div n="0044" xml:id="_9da97c0322" data-pdm="p" class="pdm-p" data-id="_9da97c0322" name="_9da97c0322">To erect the stroller
+                                    <sub>1</sub>
+                                    from the collapsed position, the bushing
+                                    <sub>21</sub>
+                                    is being moved away from the support<sub>13</sub>. After the bushing
+                                    <sub>21</sub>
+                                    is in its erect position, the push rods<sub>2</sub>,
+                                    <sub>3</sub>
+                                    are being pivoted about the first pivot axes<sub>9</sub>, 10 in a direction opposite to the direction indicated by arrow P1,
+                                    until the hook<sub>5</sub>6 is being positioned over the protrusion<sub>52</sub>. The rod
+                                    <sub>19</sub>
+                                    and the push rod<sub>2</sub>,
+                                    <sub>3</sub>
+                                    are now connected to each other by means of the connecting elements formed by the hook<sub>5</sub>6 and protrusion<sub>52</sub>. Next, the connecting elements formed by the hook<sub>5</sub>6 and protrusion
+                                    <sub>52</sub>
+                                    are locked to each other by the locking means<sub>57</sub>.
+                                </div>
+                                <div n="0045" xml:id="_9da97c0340" data-pdm="p" class="pdm-p" data-id="_9da97c0340" name="_9da97c0340">The stroller
+                                    <sub>41</sub>
+                                    is provided with the same connecting elements and locking means as the stroller 1.
+                                </div>
+                                <div n="0046" xml:id="_9da97c0342" data-pdm="p" class="pdm-p" data-id="_9da97c0342" name="_9da97c0342">Figures<sub>9</sub>A-<sub>9</sub>B show side views of another embodiment of the
+                                    stroller
+                                    <sub>1</sub>
+                                    according to the invention which differs from the stroller
+                                    <sub>1</sub>
+                                    as shown in figure 6 that it comprises locking means
+                                    <sub>157</sub>
+                                    instead of locking means<sub>57</sub>.
+                                </div>
+
+                                <div n="0047" xml:id="_9da97c0349" data-pdm="p" class="pdm-p" data-id="_9da97c0349" name="_9da97c0349">The locking means
+                                    <sub>157</sub>
+                                    comprising a slide<sub>1</sub>6
+                                    <sub>0</sub>
+                                    being slidably located in the push rod<sub>2</sub>. The slide<sub>1</sub>6
+                                    <sub>0</sub>
+                                    is movable against spring force of a spring
+                                    <sub>159</sub>
+                                    in a direction indicated by arrow P<sub>7</sub>. The locking means
+                                    <sub>157</sub>
+                                    also comprises the cable 6
+                                    <sub>0</sub>
+                                    in the same manner as the locking means<sub>57</sub>. The slide<sub>1</sub>6
+                                    <sub>0</sub>
+                                    is provided with a pen<sub>15</sub>8 which cooperates with a passage
+                                    <sub>155</sub>
+                                    located in a disc-shaped part<sub>1</sub>6
+                                    <sub>1</sub>
+                                    of the rod
+                                    <sup>11.</sup>
+                                </div>
+                                <div n="0048" xml:id="_9da97c0368" data-pdm="p" class="pdm-p" data-id="_9da97c0368" name="_9da97c0368">To operate the locking means<sub>157</sub>, a user will move the operating element 6
+                                    <sub>1</sub>
+                                    so that the cable 6
+                                    <sub>0</sub>
+                                    will pull the slide<sub>1</sub>6
+                                    <sub>0</sub>
+                                    together with the pen<sub>15</sub>8 against spring force of the spring
+                                    <sub>159</sub>
+                                    from a first locked position (as shown in figure<sub>9</sub>A) wherein the pen<sub>15</sub>8 is located in the
+                                    passage
+                                    <sub>155</sub>
+                                    of the rod 11, to a second unlocked position (as shown in figure<sub>9</sub>B) wherein the pen<sub>15</sub>8 is
+                                    removed from the passage
+                                    <sub>155</sub>
+                                    and is fully located inside the push rod<sub>2</sub>.
+                                </div>
+                                <div n="0049" xml:id="_9da97c0383" data-pdm="p" class="pdm-p" data-id="_9da97c0383" name="_9da97c0383">In the position as shown in figure<sub>9</sub>B an end of the pen<sub>15</sub>8 avert
+                                    of the slide<sub>1</sub>6
+                                    <sub>0</sub>
+                                    rests against an outer side of the disc-shaped part<sub>1</sub>6<sub>1</sub>, which prevents the slide<sub>1</sub>6
+                                    <sub>0</sub>
+                                    as well as the pen<sub>15</sub>8 to move under spring force in the direction opposite to the direction indicated by arrow P<sub>7</sub>. When moving the stroller
+                                    <sub>1</sub>
+                                    back to the erect position, the pen<sub>15</sub>8 will be moved under spring force in the direction opposite to the direction
+                                    indicated by arrow P
+                                    <sub>7</sub>
+                                    into the passage
+                                    <sub>155</sub>
+                                    as soon as the pen<sub>15</sub>8 and the passage
+                                    <sub>155</sub>
+                                    are aligned.
+                                </div>
+                                <div n="0050" xml:id="_9da97c0400" data-pdm="p" class="pdm-p" data-id="_9da97c0400" name="_9da97c0400">Figures ioA-ioB show side views of a further embodiment of the stroller
+                                    <sub>1</sub>
+                                    according to the invention which differs from the stroller
+                                    <sub>1</sub>
+                                    as shown in figure 6 that it comprises locking means
+                                    <sub>257</sub>
+                                    instead of locking means<sub>57</sub>.
+                                </div>
+                                <div n="0051" xml:id="_9da97c0405" data-pdm="p" class="pdm-p" data-id="_9da97c0405" name="_9da97c0405">The locking means
+                                    <sub>257</sub>
+                                    comprising a slide<sub>2</sub>6o being slidably located in the push rod<sub>2</sub>. The slide<sub>2</sub>6
+                                    <sub>0</sub>
+                                    is movable against spring force of a spring
+                                    <sub>159</sub>
+                                    in a direction indicated by arrow P<sub>7</sub>. The locking means
+                                    <sub>257</sub>
+                                    also comprises the cable 6
+                                    <sub>0</sub>
+                                    in the same manner as the locking means<sub>57</sub>. The slide<sub>2</sub>6
+                                    <sub>0</sub>
+                                    is provided with a pen<sub>15</sub>8 which cooperates with a passage
+                                    <sub>155</sub>
+                                    located in a disc-shaped part<sub>1</sub>6
+                                    <sub>1</sub>
+                                    of the rod 11. The slide<sub>2</sub>6
+                                    <sub>0</sub>
+                                    is also provided with a pen<sub>25</sub>8 which cooperates with a passage
+                                    <sub>255</sub>
+                                    located in the J-shaped rod<sub>19</sub>.
+                                </div>
+
+                                <div n="0052" xml:id="_9da97c0427" data-pdm="p" class="pdm-p" data-id="_9da97c0427" name="_9da97c0427">To operate the locking means<sub>257</sub>, a user will move the operating element 6
+                                    <sub>1</sub>
+                                    so that the cable 6
+                                    <sub>0</sub>
+                                    will pull the slide<sub>2</sub>6
+                                    <sub>0</sub>
+                                    together with the pens<sub>15</sub>8,<sub>25</sub>8 against spring force of the spring
+                                    <sub>159</sub>
+                                    from a first locked position (as shown in figure ioA) wherein the pen<sub>15</sub>8 is located in the passage
+                                    <sub>155</sub>
+                                    of the rod 11 and the pen<sub>25</sub>8 is located in the passage
+                                    <sub>255</sub>
+                                    of the rod<sub>19</sub>, to a second unlocked position (as shown in figure ioB). In the second unlocked position the pens<sub>15</sub>8,<sub>25</sub>8 are removed from the respective passages<sub>155</sub>,
+                                    <sub>255</sub>
+                                    and are fully located inside the push rod<sub>2</sub>.
+                                </div>
+                                <div n="0053" xml:id="_9da97c0446" data-pdm="p" class="pdm-p" data-id="_9da97c0446" name="_9da97c0446">In the position as shown in figure 10B an end of the pen<sub>15</sub>8 avert of the slide<sub>1</sub>6
+                                    <sub>0</sub>
+                                    rests against an outer side of the disc-shaped part<sub>1</sub>6<sub>1</sub>, which prevents the slide<sub>2</sub>6o as well as the pens<sub>15</sub>8,<sub>25</sub>8 to move under spring force in
+                                    the direction opposite to the direction indicated by arrow P<sub>7</sub>. When moving the stroller
+                                    <sub>1</sub>
+                                    back to the erect position, the pens<sub>15</sub>8,<sub>25</sub>8 will be moved under spring force in the
+                                    direction opposite to the direction indicated by arrow P
+                                    <sub>7</sub>
+                                    into the respective passages<sub>155</sub>,
+                                    <sub>255</sub>
+                                    as soon as the pens<sub>15</sub>8,<sub>25</sub>8 and the passages<sub>155</sub>,
+                                    <sub>255</sub>
+                                    are aligned.
+                                </div>
+                                <div xml:id="inlineFigure" data-pdm="figure" class="pdm-figure" data-id="inlineFigure" name="inlineFigure">
+                                    <div data-image-wrapper="">
+<img data-pdm="graphic" src="https://tp-test.sparkbit.pl:443/teampatent-development/api/dsl/api/text/C1EP00000COYFNBL/emi/MTMxODU1NjItMTA4MjE4MjEtMDAwMi50aWY?format=image/png"/>
+</div>
+                                </div>
+                                <div type="abstractFigures" data-pdm="div" class="pdm-div">
+                                    <div n="9" resp="#applicant" sortKey="1" data-pdm="figure" class="pdm-figure"/>
+                                    <div xml:id="_024629" data-pdm="figure" class="pdm-figure" data-id="_024629" name="_024629">
+                                        <div data-image-wrapper="">
+<img data-pdm="graphic" src="https://tp-test.sparkbit.pl:443/teampatent-development/api/dsl/api/drawings/EP2011154276A/imgaf001.tif?format=image/png"/>
+</div>
+                                    </div>
+                                </div>
+                                <div n="0054" xml:id="_9da97c0466" data-pdm="p" class="pdm-p" data-id="_9da97c0466" name="_9da97c0466">It is also possible let the pens and passages of the locking means extend in a direction perpendicular to the
+                                    direction indicated by arrow P<sub>7</sub>, wherein additional means are provided to transfer the movement of the cable 6o in the
                                     direction indicated by arrow P
-                                    <hi rend="subscript">7</hi>
-                                    into a movement in a direction perpendicular to the direction indicated by arrow P<hi rend="subscript">7</hi>.
-                                </p>
-                                <p n="0055" xml:id="_9da97c0470">Instead of rods<hi rend="subscript">7</hi>, 8 and locking element 6 it is also possible to detachably connect the
-                                    push rods<hi rend="subscript">2</hi>,
-                                    <hi rend="subscript">3</hi>
-                                    near the handles<hi rend="subscript">4</hi>,
-                                    <hi rend="subscript">5</hi>
+                                    <sub>7</sub>
+                                    into a movement in a direction perpendicular to the direction indicated by arrow P<sub>7</sub>.
+                                </div>
+                                <div n="0055" xml:id="_9da97c0470" data-pdm="p" class="pdm-p" data-id="_9da97c0470" name="_9da97c0470">Instead of rods<sub>7</sub>, 8 and locking element 6 it is also possible to detachably connect the
+                                    push rods<sub>2</sub>,
+                                    <sub>3</sub>
+                                    near the handles<sub>4</sub>,
+                                    <sub>5</sub>
                                     by other means.
-                                </p>
-                                <p n="0056" xml:id="_9da97c0476">It is also possible to use additional locking means near the pivot axes<hi rend="subscript">9</hi>,
-                                    <hi rend="subscript">10</hi>
+                                </div>
+                                <div n="0056" xml:id="_9da97c0476" data-pdm="p" class="pdm-p" data-id="_9da97c0476" name="_9da97c0476">It is also possible to use additional locking means near the pivot axes<sub>9</sub>,
+                                    <sub>10</sub>
                                     or to position the operating element 6
-                                    <hi rend="subscript">1</hi>
-                                    near the pivot axes<hi rend="subscript">9</hi>, 10.
-                                </p>
-                                <head xml:id="_9da97c0481">List of references</head>
-                                <p n="0057" xml:id="_9da97c0482">
-                                    <list type="bulleted" xml:id="_9da97c0483">
-                                        <item>
-                                            <hi rend="subscript">1</hi>
+                                    <sub>1</sub>
+                                    near the pivot axes<sub>9</sub>, 10.
+                                </div>
+                                <h3 xml:id="_9da97c0481" data-id="_9da97c0481" name="_9da97c0481">List of references</h3>
+                                <div n="0057" xml:id="_9da97c0482" data-pdm="p" class="pdm-p" data-id="_9da97c0482" name="_9da97c0482">
+                                    <ul data-pdm="list" type="bulleted" xml:id="_9da97c0483" data-id="_9da97c0483" name="_9da97c0483">
+                                        <li data-pdm="item">
+                                            <sub>1</sub>
                                             stroller
-                                        </item>
-                                        <item>
-                                            <hi rend="subscript">2</hi>
+                                        </li>
+                                        <li data-pdm="item">
+                                            <sub>2</sub>
                                             push rod
-                                        </item>
-                                        <item>3 push rod</item>
-                                        <item>4 handle</item>
+                                        </li>
+                                        <li data-pdm="item">3 push rod</li>
+                                        <li data-pdm="item">4 handle</li>
 
 
-                                        <item>5 handle</item>
-                                        <item>6 locking element</item>
-                                        <item>
-                                            <hi rend="subscript">7</hi>
+                                        <li data-pdm="item">5 handle</li>
+                                        <li data-pdm="item">6 locking element</li>
+                                        <li data-pdm="item">
+                                            <sub>7</sub>
                                             interconnected rod
-                                        </item>
-                                        <item>8 interconnected rod</item>
-                                        <item>9 first pivot axis</item>
-                                        <item><hi rend="subscript">1</hi>0 first pivot axis
-                                        </item>
-                                        <item>11 rod</item>
-                                        <item><hi rend="subscript">1</hi>2 rod
-                                        </item>
-                                        <item>13 support</item>
-                                        <item>
-                                            <hi rend="subscript">14</hi>
+                                        </li>
+                                        <li data-pdm="item">8 interconnected rod</li>
+                                        <li data-pdm="item">9 first pivot axis</li>
+                                        <li data-pdm="item">
+<sub>1</sub>0 first pivot axis
+                                        </li>
+                                        <li data-pdm="item">11 rod</li>
+                                        <li data-pdm="item">
+<sub>1</sub>2 rod
+                                        </li>
+                                        <li data-pdm="item">13 support</li>
+                                        <li data-pdm="item">
+                                            <sub>14</sub>
                                             front wheel
-                                        </item>
-                                        <item>15 end part</item>
-                                        <item><hi rend="subscript">1</hi>6 end part
-                                        </item>
-                                        <item>1
-                                            <hi rend="subscript">7</hi>
+                                        </li>
+                                        <li data-pdm="item">15 end part</li>
+                                        <li data-pdm="item">
+<sub>1</sub>6 end part
+                                        </li>
+                                        <li data-pdm="item">1
+                                            <sub>7</sub>
                                             second pivot axis
-                                        </item>
-                                        <item>18 second pivot axis</item>
-                                        <item>19 J-shaped rod</item>
-                                        <item>
-                                            <hi rend="subscript">20</hi>
+                                        </li>
+                                        <li data-pdm="item">18 second pivot axis</li>
+                                        <li data-pdm="item">19 J-shaped rod</li>
+                                        <li data-pdm="item">
+                                            <sub>20</sub>
                                             J-shaped rod
-                                        </item>
-                                        <item>
-                                            <hi rend="subscript">21</hi>
+                                        </li>
+                                        <li data-pdm="item">
+                                            <sub>21</sub>
                                             bushing
-                                        </item>
-                                        <item>
-                                            <hi rend="subscript">22</hi>
+                                        </li>
+                                        <li data-pdm="item">
+                                            <sub>22</sub>
                                             wheel supporting rod
-                                        </item>
-                                        <item>
-                                            <hi rend="subscript">23</hi>
+                                        </li>
+                                        <li data-pdm="item">
+                                            <sub>23</sub>
                                             wheel supporting rod
-                                        </item>
-                                        <item>2
-                                            <hi rend="subscript">4</hi>
+                                        </li>
+                                        <li data-pdm="item">2
+                                            <sub>4</sub>
                                             rear wheel
-                                        </item>
-                                        <item>
-                                            <hi rend="subscript">25</hi>
+                                        </li>
+                                        <li data-pdm="item">
+                                            <sub>25</sub>
                                             rear wheel
-                                        </item>
-                                        <item><hi rend="subscript">2</hi>6 intermediate rod
-                                        </item>
-                                        <item>27 intermediate rod</item>
-                                        <item><hi rend="subscript">2</hi>8 third pivot axes
-                                        </item>
-                                        <item>2
-                                            <hi rend="subscript">9</hi>
+                                        </li>
+                                        <li data-pdm="item">
+<sub>2</sub>6 intermediate rod
+                                        </li>
+                                        <li data-pdm="item">27 intermediate rod</li>
+                                        <li data-pdm="item">
+<sub>2</sub>8 third pivot axes
+                                        </li>
+                                        <li data-pdm="item">2
+                                            <sub>9</sub>
                                             third pivot axes
-                                        </item>
-                                        <item>30 rod</item>
-                                        <item>41 stroller</item>
-                                        <item>42 imaginary axis</item>
-                                        <item>43 central joint</item>
-                                        <item>
-                                            <hi rend="subscript">51</hi>
+                                        </li>
+                                        <li data-pdm="item">30 rod</li>
+                                        <li data-pdm="item">41 stroller</li>
+                                        <li data-pdm="item">42 imaginary axis</li>
+                                        <li data-pdm="item">43 central joint</li>
+                                        <li data-pdm="item">
+                                            <sub>51</sub>
                                             cross shaped linkage system
-                                        </item>
+                                        </li>
 
 
-                                        <item>52 protrusion</item>
-                                        <item>53 end</item>
-                                        <item>54 bevelled edge</item>
-                                        <item>55 passage</item>
-                                        <item>56 hook</item>
-                                        <item>57 locking means</item>
-                                        <item>58 pen</item>
-                                        <item>59 spring</item>
-                                        <item>6
-                                            <hi rend="subscript">0</hi>
+                                        <li data-pdm="item">52 protrusion</li>
+                                        <li data-pdm="item">53 end</li>
+                                        <li data-pdm="item">54 bevelled edge</li>
+                                        <li data-pdm="item">55 passage</li>
+                                        <li data-pdm="item">56 hook</li>
+                                        <li data-pdm="item">57 locking means</li>
+                                        <li data-pdm="item">58 pen</li>
+                                        <li data-pdm="item">59 spring</li>
+                                        <li data-pdm="item">6
+                                            <sub>0</sub>
                                             cable
-                                        </item>
-                                        <item>6
-                                            <hi rend="subscript">1</hi>
+                                        </li>
+                                        <li data-pdm="item">6
+                                            <sub>1</sub>
                                             operating element
-                                        </item>
-                                        <item>155 passage</item>
-                                        <item>157 clocking means</item>
-                                        <item>158 pen</item>
-                                        <item>159 spring</item>
-                                        <item><hi rend="subscript">1</hi>6
-                                            <hi rend="subscript">0</hi>
+                                        </li>
+                                        <li data-pdm="item">155 passage</li>
+                                        <li data-pdm="item">157 clocking means</li>
+                                        <li data-pdm="item">158 pen</li>
+                                        <li data-pdm="item">159 spring</li>
+                                        <li data-pdm="item">
+<sub>1</sub>6
+                                            <sub>0</sub>
                                             slide
-                                        </item>
-                                        <item><hi rend="subscript">1</hi>6
-                                            <hi rend="subscript">1</hi>
+                                        </li>
+                                        <li data-pdm="item">
+<sub>1</sub>6
+                                            <sub>1</sub>
                                             disc-shaped part
-                                        </item>
-                                        <item>255 passage</item>
-                                        <item>257 locking means</item>
-                                        <item>258 pen</item>
-                                        <item><hi rend="subscript">2</hi>6
-                                            <hi rend="subscript">0</hi>
+                                        </li>
+                                        <li data-pdm="item">255 passage</li>
+                                        <li data-pdm="item">257 locking means</li>
+                                        <li data-pdm="item">258 pen</li>
+                                        <li data-pdm="item">
+<sub>2</sub>6
+                                            <sub>0</sub>
                                             slide
-                                        </item>
-                                        <item>P1 arrow</item>
-                                        <item>P<hi rend="subscript">2</hi>arrow
-                                        </item>
-                                        <item>P<hi rend="subscript">3</hi>arrow
-                                        </item>
-                                        <item>P<hi rend="subscript">4</hi>arrow
-                                        </item>
-                                        <item>P<hi rend="subscript">5</hi>arrow
-                                        </item>
-                                        <item>P6 arrow</item>
-                                        <item>P<hi rend="subscript">7</hi>arrow
-                                        </item>
-                                        <item>L
-                                            <hi rend="subscript">1</hi>
+                                        </li>
+                                        <li data-pdm="item">P1 arrow</li>
+                                        <li data-pdm="item">P<sub>2</sub>arrow
+                                        </li>
+                                        <li data-pdm="item">P<sub>3</sub>arrow
+                                        </li>
+                                        <li data-pdm="item">P<sub>4</sub>arrow
+                                        </li>
+                                        <li data-pdm="item">P<sub>5</sub>arrow
+                                        </li>
+                                        <li data-pdm="item">P6 arrow</li>
+                                        <li data-pdm="item">P<sub>7</sub>arrow
+                                        </li>
+                                        <li data-pdm="item">L
+                                            <sub>1</sub>
                                             dimension
-                                        </item>
-                                        <item>L
-                                            <hi rend="subscript">2</hi>
+                                        </li>
+                                        <li data-pdm="item">L
+                                            <sub>2</sub>
                                             dimension
-                                        </item>
-                                        <item>H1 height</item>
+                                        </li>
+                                        <li data-pdm="item">H1 height</li>
 
 
-                                        <item>B1 width</item>
-                                    </list>
-                                </p>
+                                        <li data-pdm="item">B1 width</li>
+                                    </ul>
+                                </div>
                             </div>
-                        </body>
-                    </text>
-                </group>
-            </text>
-        </TEI>
-    </teiCorpus>
-</teiCorpus>
+<div facs="/api/pre-publication/429216588/NL2015402A/facsimiles/RFVNTVkvRVhHVjBOM0I5ODg0MjU1" type="claims" xml:id="f681f4a9be18a48cb1fb9ee3c7f93ea0" xml:lang="nl" data-pdm="div" class="pdm-div" data-id="f681f4a9be18a48cb1fb9ee3c7f93ea0" name="f681f4a9be18a48cb1fb9ee3c7f93ea0">
+
+                                <div n="0001" type="claim" xml:id="_dc1bc90003" data-pdm="div" class="pdm-div" data-id="_dc1bc90003" name="_dc1bc90003">
+                                    <div xml:id="_dc1bc90004" data-pdm="p" class="pdm-p" data-id="_dc1bc90004" name="_dc1bc90004">
+<sub>1</sub>. Wandelwagen (1,<sub>41</sub>) die vouwbaar is van een uitgeklapte naar een
+                                        ingeklapte positie en vice versa, welke wandelwagen (1,<sub>41</sub>) is voorzien van ten minste een inklapbaar
+                                        vouwmechanisme, dat ten minste een duwstang (<sub>2</sub>,<sub>3</sub>) omvat die van een handvat (<sub>4</sub>,<sub>5</sub>) is voorzien, welke duwstang (<sub>2</sub>,<sub>
+                                            3</sub>) scharnierbaar is om een eerste scharnieras (<sub>9</sub>, io) van het vouwmechanisme, welke vouwmechanisme verder
+                                        is voorzien van een aantal stangen, waarbij een eerste stang (<sub>19</sub>,<sub>20</sub>) van het aantal
+                                        stangen (<sub>22</sub>,<sub>23</sub>) scharnierbaar is om een tweede scharnieras (<sub>17</sub>
+                                        ,<sub>1</sub>8) van het vouwmechanisme, met het kenmerk, dat de eerste stang (<sub>19</sub>,<sub>20</sub>) en de duwstang (<sub>2</sub>,<sub>3</sub>) zijn voorzien van samenwerkende
+                                        verbindingselementen (<sub>52</sub>,<sub>5</sub>6), welke verbindingselementen (<sub>52</sub>,
+                                        <sub>5</sub>6) met elkaar verbindbaar zijn door het scharnieren van de duwstang (<sub>2</sub>,<sub>3</sub>) om de eerste scharnieras (<sub>9</sub>, io) naar een uitgeklapte positie van de duwstang (
+                                        <sub>2</sub>,<sub>3</sub>), waarbij in de uitgeklapte positie van de duwstang (<sub>2</sub>,<sub>3</sub>), de verbindingselementen (<sub>52</sub>,<sub>5</sub>6) met elkaar
+                                        vergrendelbaar zijn door vergrendelmiddelen (<sub>57</sub>), terwijl na het ontgrendelen van de vergrendelmiddelen (<sub>57</sub>) alsmede na het ontkoppelen van de verbindingselementen (<sub>52</sub>,<sub>
+                                            5</sub>6) door het scharnieren van de duwstang (<sub>2</sub>,<sub>3</sub>) om de eerste scharnieras (<sub>9</sub>, io) naar de ingeklapte positie van de duwstang (<sub>2</sub>,<sub>3</sub>),
+                                        de eerste stang (<sub>19</sub>,<sub>20</sub>) scharnierbaar is om de tweede scharnieras (<sub>
+                                            17</sub>,<sub>19</sub>) om het vouwmechanisme toe te staan om in te klappen naar de ingeklapte positie van de wandelwagen
+                                        (<sub>1</sub>,<sub>41</sub>).
+                                    </div>
+                                </div>
+                                <div n="0002" type="claim" xml:id="_dc1bc90053" data-pdm="div" class="pdm-div" data-id="_dc1bc90053" name="_dc1bc90053">
+                                    <div xml:id="_dc1bc90054" data-pdm="p" class="pdm-p" data-id="_dc1bc90054" name="_dc1bc90054">
+<sub>2</sub>. Wandelwagen (1,<sub>41</sub>) volgens conclusie i, met het kenmerk, dat de
+                                        eerste en de tweede scharnierassen (<sub>9</sub>,<sub>10</sub>,<sub>17</sub>,<sub>1</sub>8) zijn voorzien nabij een uiteinde van de tweede stang (11,<sub>12</sub>) die zich in
+                                        hoofdzaak parallel aan de duwstang (<sub>2</sub>,<sub>3</sub>) uitstrekt in de uitgeklapte positie van de
+                                        wandelwagen (1,<sub>41</sub>).
+                                    </div>
+                                </div>
+                                <div n="0003" type="claim" xml:id="_dc1bc90065" data-pdm="div" class="pdm-div" data-id="_dc1bc90065" name="_dc1bc90065">
+                                    <div xml:id="_dc1bc90066" data-pdm="p" class="pdm-p" data-id="_dc1bc90066" name="_dc1bc90066">
+<sub>3</sub>. Wandelwagen (1,<sub>41</sub>) volgens conclusie 1 of<sub>
+                                        2</sub>, met het kenmerk, dat aan beide zijden van de wandelwagen (1,<sub>41</sub>) een dergelijke duwstang (<sub>2</sub>,<sub>3</sub>) is voorzien van het handvat (<sub>4</sub>,<sub>
+                                        5</sub>), een dergelijke eerste stang (<sub>19</sub>,<sub>20</sub>) alsmede een dergelijke
+                                        tweede stang (11,<sub>12</sub>) die zich in hoofdzaak parallel aan de duwstang in de uitgeklapte positie van de wandelwagen (
+                                        <sub>I</sub>,<sub>41</sub>), zijn gelegen.
+                                    </div>
+                                </div>
+                                <div n="0004" type="claim" xml:id="_dc1bc90080" data-pdm="div" class="pdm-div" data-id="_dc1bc90080" name="_dc1bc90080">
+                                    <div xml:id="crazyNesting" data-pdm="p" class="pdm-p" data-id="crazyNesting" name="crazyNesting">
+                                        <h3>
+<span class="pdm-bold">Hi <span class="pdm-underline">this is <sup>CRAZY</sup> but here's my number </span> and call me, </span> maybe</h3>
+                                    </div>
+                                </div>
+                                <div n="0005" type="claim" xml:id="_dc1bc90091" data-pdm="div" class="pdm-div" data-id="_dc1bc90091" name="_dc1bc90091">
+                                    <div xml:id="_dc1bc90092" data-pdm="p" class="pdm-p" data-id="_dc1bc90092" name="_dc1bc90092">
+<sub>5</sub>. Wandelwagen (<sub>I</sub>,<sub>41</sub>) volgens een der
+                                        voorgaande conclusies, met het kenmerk, dat de vergrendelmiddelen (<sub>57</sub>) een pen (<sub>5</sub>8)
+                                        omvatten die schuifbaar is gelegen in de duwstang (<sub>2</sub>,<sub>3</sub>) welke pen (<sub>
+                                            5</sub>8) tegen veerkracht in verplaatsbaar is van een eerste vergrendelde positie, waarbij de pen (<sub>5</sub>8) is
+                                        gelegen in een doorgang (55) van de eerste stang (<sub>1</sub>9, 20) naar een tweede ontgrendelde positie, waarin de pen (58)
+                                        is verwijderd uit de doorgang (55) om de duwstang (<sub>2</sub>,<sub>3</sub>) toe te staan om te scharnieren
+                                        om de eerste scharnieras (<sub>9</sub>, io).
+                                    </div>
+                                </div>
+                                <div n="0006" type="claim" xml:id="_dc1bc90106" data-pdm="div" class="pdm-div" data-id="_dc1bc90106" name="_dc1bc90106">
+                                    <div xml:id="_dc1bc90107" data-pdm="p" class="pdm-p" data-id="_dc1bc90107" name="_dc1bc90107">6. Wandelwagen (1,<sub>41</sub>) volgens conclusie<sub>5</sub>, met het kenmerk, dat de
+                                        vergrendelmiddelen (<sub>57</sub>) ontgrendelmiddelen omvatten, welk ontgrendelmiddelen zijn voorzien van een kabel (6<sub>0</sub>) die met een eerste uiteinde met de pen (58) en met een tweede uiteinde met een verplaatsbaar
+                                        bedieningselement (6<sub>1</sub>) die is gelegen op de duwstang (<sub>2</sub>,<sub>3</sub>),
+                                        bij voorkeur op het handvat (<sub>4</sub>,<sub>5</sub>) van de duwstang (2,3).
+                                    </div>
+                                </div>
+                                <div n="0007" type="claim" xml:id="_dc1bc90117" data-pdm="div" class="pdm-div" data-id="_dc1bc90117" name="_dc1bc90117">
+                                    <div xml:id="_dc1bc90118" data-pdm="p" class="pdm-p" data-id="_dc1bc90118" name="_dc1bc90118">
+<sub>7</sub>. Wandelwagen (1,<sub>41</sub>) volgens een der voorgaande conclusies, met het
+                                        kenmerk, dat de wandelwagen (1,<sub>41</sub>) is voorzien van een ondersteuning (<sub>13</sub>), ten minste
+                                        een voorwiel (<sub>14</sub>) die is verbonden met de ondersteuning (<sub>13</sub>) en ten minste een
+                                        achterwiel (<sub>24</sub>,<sub>25</sub>), welke wielen (<sub>14</sub>,<sub>
+                                            24</sub>,<sub>25</sub>) onderling zijn verbonden door middel van het vouwmechanisme, waarbij het vouwmechanisme een
+                                        kruisvormig koppelsysteem (<sub>51</sub>) omvat met ten minste een centrale koppeling (<sub>21</sub>) alsmede
+                                        de
+                                        eerste stang (<sub>19</sub>,<sub>20</sub>) en aanvullende stangen (<sub>22</sub>,<sub>23</sub>) die zich van de centrale koppeling (<sub>21</sub>) uitstrekken, waarbij eerste uiteinden
+                                        van de eerste en de aanvullende stangen (<sub>19</sub>,<sub>20</sub>,<sub>22</sub>,<sub>23</sub>) scharnierbaar zijn verbonden met de centrale koppeling (<sub>21</sub>), terwijl een tweede
+                                        uiteinde van een van de aanvullende stangen (<sub>22</sub>,<sub>23</sub>) op afstand van de centrale koppeling
+                                        (<sub>21</sub>) is verbonden met het achterwiel (<sub>24</sub>,<sub>2</sub>5) en een tweede
+                                        uiteinde van de eerste stang (<sub>19</sub>,<sub>20</sub>) op afstand van de centrale koppeling (<sub>21</sub>) scharnierbaar is om de tweede scharnieras (<sub>17</sub>,<sub>1</sub>8) van
+                                        het vouwmechanisme, welke centrale koppeling (<sub>21</sub>) verplaatsbaar is met betrekking tot de ondersteuning (<sub>13</sub>) over een as (<sub>30</sub>,<sub>42</sub>) die zich uitstrekt tussen de
+                                        centrale koppeling (<sub>21</sub>) en de ondersteuning (<sub>13</sub>) gedurende het uitklappen en inklappen
+                                        van de wandelwagen (<sub>1</sub>,<sub>41</sub>).
+                                    </div>
+                                </div>
+                                <div n="0008" type="claim" xml:id="_dc1bc90160" data-pdm="div" class="pdm-div" data-id="_dc1bc90160" name="_dc1bc90160">
+                                    <div xml:id="_dc1bc90161" data-pdm="p" class="pdm-p" data-id="_dc1bc90161" name="_dc1bc90161">8. Wandelwagen (<sub>I</sub>,<sub>41</sub>) volgens conclusies<sub>7</sub>,
+                                        met het kenmerk, dat het vouwmechanisme verder een stang (<sub>30</sub>) omvat die is verbonden met de ondersteuning (<sub>13</sub>), welke centrale koppeling (<sub>21</sub>) schuifbaar is verbonden met de stang (<sub>30</sub>) nabij een uiteinde op afstand van de ondersteuning (<sub>13</sub>), waarbij de as (<sub>30</sub>) zich uitstrekt door de stang (<sub>30</sub>).
+                                    </div>
+                                </div>
+                                <div n="0009" type="claim" xml:id="_dc1bc90172" data-pdm="div" class="pdm-div" data-id="_dc1bc90172" name="_dc1bc90172">
+                                    <div xml:id="_dc1bc90173" data-pdm="p" class="pdm-p" data-id="_dc1bc90173" name="_dc1bc90173">
+<sub>9</sub>. Wandelwagen (<sub>I</sub>,<sub>41</sub>) volgens conclusies
+                                        8, met het kenmerk, dat centrale koppeling een bus (<sub>21</sub>) omvat, welke bus (<sub>21</sub>) schuifbaar
+                                        is over de stang (<sub>30</sub>) die is verbonden met de ondersteuning (<sub>13</sub>).
+                                    </div>
+                                </div>
+                                <div n="0010" type="claim" xml:id="_dc1bc90181" data-pdm="div" class="pdm-div" data-id="_dc1bc90181" name="_dc1bc90181">
+                                    <div xml:id="_dc1bc90182" data-pdm="p" class="pdm-p" data-id="_dc1bc90182" name="_dc1bc90182">
+<sub>10</sub>. Wandelwagen (<sub>I</sub>,<sub>41</sub>) volgens conclusies
+                                        <sub>7</sub>, met het kenmerk, dat de as (<sub>30</sub>,<sub>42</sub>) een imaginaire as (<sub>42</sub>) is en die zich uitstrekt door de ondersteuning (<sub>13</sub>) en door de centrale
+                                        koppeling (<sub>21</sub>).
+                                    </div>
+                                </div>
+                            </div>
+</div>

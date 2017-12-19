@@ -3,38 +3,30 @@
  */
 package io.crnk.example.springboot.domain.repository;
 
-import io.crnk.core.queryspec.QuerySpec;
-import io.crnk.core.repository.ResourceRepositoryBase;
-import io.crnk.example.springboot.domain.model.ReadDossierResponse;
-import org.springframework.stereotype.Component;
-
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicLong;
 
+import org.springframework.stereotype.Component;
 
-
+import io.crnk.core.exception.ResourceNotFoundException;
+import io.crnk.core.queryspec.QuerySpec;
+import io.crnk.core.resource.list.ResourceList;
+import io.crnk.example.springboot.domain.model.ReadDossierResponse;
 
 /**
  * ResourceRepositoryBase-based example with the base class providing some base functionality.
  */
 @Component
-public class ReadDossierResponseRepositoryImpl extends ResourceRepositoryBase<ReadDossierResponse, String> implements ReadDossierResponseRepository {
+public class ReadDossierResponseRepositoryImpl implements ReadDossierResponseRepository {
 
 	private static final AtomicLong ID_GENERATOR = new AtomicLong(124);
 
 	private Map<String, ReadDossierResponse> myHashMap = new HashMap<>();
 
 	public ReadDossierResponseRepositoryImpl() {
-		super(ReadDossierResponse.class);
-
-		save(new ReadDossierResponse("121"));
-
-	}
-
-	@Override
-	public synchronized void delete(String aNumber) {
-		myHashMap.remove(aNumber);
 	}
 
 	@Override
@@ -43,18 +35,50 @@ public class ReadDossierResponseRepositoryImpl extends ResourceRepositoryBase<Re
 			Long l = ID_GENERATOR.getAndIncrement();
 			e.setJsonApiId(l.toString());
 		}
-		e.setEtag (String.valueOf ( System.currentTimeMillis() ) );
+		e.seteTag(String.valueOf ( System.currentTimeMillis() ) );
 		myHashMap.put(e.getJsonApiId(), e);
 		return e;
 	}
 
 	@Override
-	public synchronized ReadDossierResponseList findAll(QuerySpec querySpec) {
-		ReadDossierResponseList list = new ReadDossierResponseList();
-		list.setMeta(new ReadDossierResponseListMeta());
-		list.setLinks(new ReadDossierResponseListLinks());
-		querySpec.apply(myHashMap.values(), list);
-		return list;
+	public ResourceList<ReadDossierResponse> findAll(QuerySpec querySpec) {
+		return querySpec.apply(myHashMap.values());
+	}
+	
+	@Override
+	public ResourceList<ReadDossierResponse> findAll(Iterable<String> taskIds, QuerySpec querySpec) {
+		List<ReadDossierResponse> foundTasks = new ArrayList<>();
+		for (Map.Entry<String, ReadDossierResponse> entry : myHashMap.entrySet()) {
+			for (String id : taskIds) {
+				if (id.equals(entry.getKey())) {
+					foundTasks.add(entry.getValue());
+				}
+			}
+		}
+		return querySpec.apply(foundTasks);
+	}
+	
+	@Override
+	public <S extends ReadDossierResponse> S create(S entity) {
+		return save(entity);
 	}
 
+	@Override
+	public Class<ReadDossierResponse> getResourceClass() {
+		return ReadDossierResponse.class;
+	}
+
+	@Override
+	public ReadDossierResponse findOne(String id, QuerySpec querySpec) {
+		ReadDossierResponse readDossierResponse = myHashMap.get(id);
+		if (readDossierResponse == null) {
+			throw new ResourceNotFoundException("ReadDossierResponse not found!");
+		}
+		return readDossierResponse;
+	}
+
+	@Override
+	public synchronized void delete(String aNumber) {
+		myHashMap.remove(aNumber);
+	}
 }

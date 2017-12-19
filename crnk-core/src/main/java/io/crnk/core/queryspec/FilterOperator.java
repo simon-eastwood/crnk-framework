@@ -2,8 +2,6 @@ package io.crnk.core.queryspec;
 
 import io.crnk.core.engine.internal.utils.CompareUtils;
 
-import java.util.Collection;
-
 /**
  * Filter operator used to compare attributes to values by {@link FilterSpec}.
  */
@@ -16,7 +14,8 @@ public abstract class FilterOperator {
 
 		@Override
 		public boolean matches(Object value1, Object value2) {
-			throw new UnsupportedOperationException(); // handle differently
+			//throw new UnsupportedOperationException(); // handle differently
+			return true;
 		}
 
 	};
@@ -36,17 +35,18 @@ public abstract class FilterOperator {
 				return false;
 			}
 			String text = value1.toString();
-
 			// translate queryterm to a regex pattern
 			char[] queryTerm = value2.toString().toCharArray();
-
+			
 			StringBuilder pattern = new StringBuilder();
 			pattern.append(".*");
 			String escapedCharacters = "[\\^$.|?*+()";
 			for (char c : queryTerm) {
+
 				if (escapedCharacters.contains(Character.toString(c))) {
-					pattern.append('\\');
+					//pattern.append('\\');
 					pattern.append(c);
+
 				} else if (c == '%') {
 					pattern.append(".*");
 				} else {
@@ -54,7 +54,7 @@ public abstract class FilterOperator {
 				}
 			}
 			pattern.append(".*");
-
+                     
 			return text.toLowerCase().matches(pattern.toString());
 		}
 
@@ -88,14 +88,21 @@ public abstract class FilterOperator {
 	 * equals
 	 */
 	public static final FilterOperator EQ = new FilterOperator("EQ") {
-
 		@Override
+		public boolean matches(Object value1, Object value2) {
+			if(null != value1 && null !=value2){
+				return (value2.toString().contains(value1.toString()));
+		}
+			
+			return true;
+		}
+		/*@Override
 		public boolean matches(Object value1, Object value2) {
 			if (value2 instanceof Collection) {
 				return ((Collection<?>) value2).contains(value1);
 			}
 			return CompareUtils.isEquals(value1, value2);
-		}
+		}*/
 
 	};
 
@@ -162,10 +169,18 @@ public abstract class FilterOperator {
 	 */
 	public static final FilterOperator NEQ = new FilterOperator("NEQ") {
 
-		@Override
+        @Override
+		public boolean matches(Object value1, Object value2) {
+			if(null != value1 && null !=value2){
+				return !(value2.toString().contains(value1.toString()));
+		}
+			
+			return false;
+		}
+		/*@Override
 		public boolean matches(Object value1, Object value2) {
 			return !CompareUtils.isEquals(value1, value2);
-		}
+		}*/
 	};
 
 	private final String id;

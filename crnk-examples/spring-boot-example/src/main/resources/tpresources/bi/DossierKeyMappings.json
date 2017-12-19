@@ -98,7 +98,7 @@
                   "TrimmedApplicationNumber":"%s",
                   "CaseID":{
                      "@type":"number",
-                     "#text":"1345395"
+                     "#text":"%s"
                   },
                   "LAL_taskId":"EPA    13185007-EP     13185007-001"
                }

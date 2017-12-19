@@ -1,12 +1,5 @@
 package io.crnk.example.springboot.domain.model;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import io.crnk.core.resource.annotations.JsonApiId;
-import io.crnk.core.resource.annotations.JsonApiResource;
-import io.crnk.core.resource.annotations.JsonApiToMany;
-import io.crnk.core.resource.annotations.JsonApiToOne;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Date;
 
 
 public class DossierEvent {
@@ -18,7 +11,31 @@ public class DossierEvent {
                 
 	@JsonProperty("KindOfEventCode")
 	public String code;
-                
+          
 	@JsonProperty("DateTimeStamp")
-	public Date date;
+	public String date;
+	
+	public String getLabel() {
+		return label;
+	}
+
+	public void setLabel(String label) {
+		this.label = label;
+	}
+
+	public String getCode() {
+		return code;
+	}
+
+	public void setCode(String code) {
+		this.code = code;
+	}
+
+	public String getDate() {
+		return date;
+	}
+
+	public void setDate(String date) {
+		this.date = date;
+	}
 }

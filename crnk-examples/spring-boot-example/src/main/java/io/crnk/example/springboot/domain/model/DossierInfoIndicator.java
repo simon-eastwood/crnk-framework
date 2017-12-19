@@ -1,12 +1,5 @@
 package io.crnk.example.springboot.domain.model;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import io.crnk.core.resource.annotations.JsonApiId;
-import io.crnk.core.resource.annotations.JsonApiResource;
-import io.crnk.core.resource.annotations.JsonApiToMany;
-import io.crnk.core.resource.annotations.JsonApiToOne;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Date;
 
 
 public class DossierInfoIndicator {
@@ -21,4 +14,28 @@ public class DossierInfoIndicator {
         
 	@JsonProperty("dossierIndicatorValue")
 	public String dossierIndicatorDescription;
+	
+	public String getDossierIndicatorType() {
+		return dossierIndicatorType;
+	}
+
+	public void setDossierIndicatorType(String dossierIndicatorType) {
+		this.dossierIndicatorType = dossierIndicatorType;
+	}
+
+	public String getDossierIndicatorLabel() {
+		return dossierIndicatorLabel;
+	}
+
+	public void setDossierIndicatorLabel(String dossierIndicatorLabel) {
+		this.dossierIndicatorLabel = dossierIndicatorLabel;
+	}
+
+	public String getDossierIndicatorDescription() {
+		return dossierIndicatorDescription;
+	}
+
+	public void setDossierIndicatorDescription(String dossierIndicatorDescription) {
+		this.dossierIndicatorDescription = dossierIndicatorDescription;
+	}
 }

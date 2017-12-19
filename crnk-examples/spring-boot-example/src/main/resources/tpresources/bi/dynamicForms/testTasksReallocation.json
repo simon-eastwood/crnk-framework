@@ -22,22 +22,46 @@
         "href": "/BPRSearch/tempUpdateTimeLimit/195018"
       },
       {
-        "name": "reallocation",
-        "title": "Reallocation",
+        "name": "assignexaminersandchairman",
+        "title": "Assign examiners and chairman",
         "method": "POST",
-        "href": "/BPRSearch/reallocation/195018"
-      },
-      {
-        "name": "technicalacceptance",
-        "title": "Redistribution",
-        "method": "POST",
-        "href": "/BPRSearch/technicalacceptance/195018"
+        "href": "/BPRSearch/assignexaminersandchairman/195018"
       },
       {
         "name": "ta",
         "title": "Technical acceptance",
         "method": "POST",
         "href": "/BPRSearch/ta/195018"
+      },
+      {
+        "name": "RemoveHistoryRecordsFrm",
+        "title": "Remove history records",
+        "method": "POST",
+        "href": "/BPRSearch/RemoveHistoryRecordsFrm/195018"
+      },
+      {
+        "href": "/BPRSearch/UnMarkToInspectMenu/61646",
+        "method": "POST",
+        "name": "UnMarkToInspectMenu",
+        "title": "Unmark to inspect"
+      },
+      {
+        "name": "ReloadOffLoad",
+        "title": "Reload off-load",
+        "method": "POST",
+        "href": "/BPRSearch/ReloadOffLoad/195018"
+      },
+      {
+        "name": "Preallocate",
+        "title": "Preallocate",
+        "method": "POST",
+        "href": "/BPRSearch/Preallocate/195018"
+      },
+      {
+        "name": "Undopreallocation",
+        "title": "Undo preallocation",
+        "method": "POST",
+        "href": "/BPRSearch/Undopreallocation/62822"
       }
     ]
   }

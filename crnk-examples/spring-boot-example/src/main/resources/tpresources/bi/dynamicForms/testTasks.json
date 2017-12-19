@@ -38,6 +38,30 @@
         "title": "Technical acceptance",
         "method": "POST",
         "href": "/BPRSearch/ta/195018"
+      },
+      {
+        "name": "RemoveHistoryRecordsFrm",
+        "title": "Remove history records",
+        "method": "POST",
+        "href": "/BPRSearch/RemoveHistoryRecordsFrm/195018"
+      },
+      {
+        "name": "MarkToInspectMenu",
+        "title": "Mark to inspect",
+        "method": "POST",
+        "href": "/BPRSearch/MarkToInspectMenu/195018"
+      },
+      {
+        "name": "OffLoad",
+        "title": "Off-load",
+        "method": "POST",
+        "href": "/BPRSearch/OffLoad/195018"
+      },
+      {
+        "name": "Preallocate",
+        "title": "Preallocate",
+        "method": "POST",
+        "href": "/BPRSearch/Preallocate/195018"
       }
     ]
   }
