@@ -1,0 +1,33 @@
+#  Generate model beans
+#
+# This script iterates through the Typescript files in the variable TSFILES
+# It converts the @FIELD annotated fields in the ts files in @JsonProperty annotated fields in java format
+#
+# For a subset of the files (those that match the ENDPOINT case statement below) it also adds: 
+# JsonApiId  annotation and property  :  a "technical id" is added. This is probably the application number, but no assumptions are made about that.
+# eTag property: This is a technical field to track the version of the entities. The RepositoryImpl class should set this each time it saves data
+#
+echo "Generating repo classes"
+
+rm -rf repository
+mkdir repository
+
+TSFILES="dossier/Tunnel.ts, dossier/DossierBI.ts, dossier/DossierBiblio.ts, dossier/ReadDossierResponse.ts, dossier/DossierAssociateFiling.ts, dossier/DossierClass.ts, dossier/DossierCommentsResponse.ts, dossier/DossierKeyMapping.ts, dossier/WorkList.ts, dossier/Tray.ts"
+
+
+echo iterating through: $TSFILES 
+
+for i in $TSFILES
+ do  
+echo "$i"   
+TYPE=`echo "$i" | awk -F. '{gsub(/.*\//, "");print tolower($1)}'`  
+FILE=`echo "$i" | awk -F. '{gsub(/.*\//, "");print $1}'`  
+echo "$TYPE"   
+echo file is "$FILE"
+
+
+
+cat repositoryinterface.java |  sed "s/TTTT/$FILE/g" > repository/"$FILE"Repository.java
+cat repositoryimpl.java |  sed "s/TTTT/$FILE/g" > repository/"$FILE"RepositoryImpl.java
+
+done
