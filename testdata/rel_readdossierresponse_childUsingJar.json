@@ -1,0 +1,128 @@
+﻿{
+  "data" :  {
+    "id" : "FRA1670195",
+    "type" : "readdossierresponse",
+	 "attributes" : {
+"involvements" : [
+    {
+      "dossierInvolvementAccountId": "EDOEX10",
+      "accountFullname": "Examiner 10 eDossier Testing",
+      "dossierInvolvementType": "SL_RTE_FirstExaminer",
+      "roleTypeDescription": "First examiner",
+      "dossierInvolvementStartDate": "2017-07-13",
+      "dossierInvolvementEndDate": ""
+    },
+    {
+      "dossierInvolvementAccountId": "AT51421",
+      "accountFullname": "Ana Abel Tortosa Masiá",
+      "dossierInvolvementType": "SL_RTE_SecondExaminer",
+      "roleTypeDescription": "Second examiner",
+      "dossierInvolvementStartDate": "2017-07-13",
+      "dossierInvolvementEndDate": ""
+    },
+    {
+      "dossierInvolvementAccountId": "EDOEX11",
+      "accountFullname": "Examiner 11 eDossier Testing",
+      "dossierInvolvementType": "SL_RTE_Chairman",
+      "roleTypeDescription": "Chairman",
+      "dossierInvolvementStartDate": "2017-07-13",
+      "dossierInvolvementEndDate": ""
+    }],
+"events" : [
+    {
+      "CompletedEventLabel": "DUMMYDATA",
+      "DateTimeStamp": "2017-07-10",
+      "KindOfEventCode": "DUMMYDATA"
+    }
+    ],
+"indicators" : [
+    {
+      "dossierIndicatorType": "DUMMYDATA",
+      "dossierIndicatorValue": "DUMMYDATA",
+      "dossierIndicatorLabel": "DUMMYDATA"
+    }
+],
+"timeLimits" : [
+   {
+      "TimeLimitType": "TLT_TechnicalAcceptance",
+      "TimeLimitStatus": "TLT_Expired",
+      "StatusDateTime": "2017-02-15",
+      "CreatedDateTime": "2017-02-15",
+      "CreatedDate": "2017-02-15",
+      "LastUpdatedBy": "",
+      "ExpirationDate": "2017-03-02",
+      "SignalDate": "2017-02-27",
+      "LimitDateType": "System",
+      "ChangeDateTime": "2017-02-15",
+      "Reason": "ID_ISS_Created",
+      "LastChange": "20170302073515",
+      "ExpirationDateColor": "OR2",
+      "TaskProgress": "TSK_Overdue",
+      "TriggeredByEvent": "Update Time Limit"
+    },
+    {
+      "TimeLimitType": "TLT_Allocation",
+      "TimeLimitStatus": "TLT_Started",
+      "StatusDateTime": "2017-02-15",
+      "CreatedDateTime": "2017-02-15",
+      "CreatedDate": "2017-02-15",
+      "LastUpdatedBy": "",
+      "ExpirationDate": "2017-03-17",
+      "SignalDate": "2017-03-14",
+      "LimitDateType": "System",
+      "ChangeDateTime": "2017-02-15",
+      "Reason": "ID_ISS_Created",
+      "LastChange": "20170215100541",
+      "ExpirationDateColor": "OR2",
+      "TaskProgress": "TSK_InProgress",
+      "TriggeredByEvent": "Update Time Limit"
+    }
+]
+   },
+    "relationships" : {
+
+      "dossierBi" : {
+
+        "data" : {
+
+          "id" : "tpresources/bi/dossierBi.json",
+
+          "type" : "tunnel"
+	  }
+
+        },
+		
+      "dossierBiblio" : {
+
+        "data" : {
+
+          "id" : "tpresources/dsl/biblio/biblio.json",
+
+          "type" : "tunnel"
+	  }
+
+        },
+		 "dossierClass" : {
+
+        "data" : {
+
+          "id" : "tpresources/dsl/getClasses.json",
+
+          "type" : "tunnel"
+	  }
+
+        },
+		"dossierAssociateFiling" : {
+
+        "data" : {
+
+          "id" : "tpresources/bi/associatedfilings.json",
+
+          "type" : "tunnel"
+	  }
+
+        }
+      }
+
+    }  
+}

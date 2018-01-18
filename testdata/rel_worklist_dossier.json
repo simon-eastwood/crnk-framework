@@ -1,0 +1,20 @@
+{
+  "data" : {
+    "id":"WORKMANAGER_789319_FALSE_1662_directorate_1_1st_Examiner",
+    "type":"worklist",
+    "attributes" : { 
+          "etag":"1511534707519"
+    },
+    "relationships" : {
+
+      "dossierSnippet" : {
+        "data" : {
+
+         "id": "USW  2016051232",
+		 "type": "dossiersnippet"
+	  }
+
+     }   
+		}
+		}
+		}
