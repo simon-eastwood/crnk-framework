@@ -6,37 +6,14 @@ import java.util.List;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import io.crnk.core.resource.annotations.JsonApiId;
-import io.crnk.core.resource.annotations.JsonApiIncludeByDefault;
 import io.crnk.core.resource.annotations.JsonApiResource;
-import io.crnk.core.resource.annotations.JsonApiToOne;
 
 @JsonApiResource(type = "dossiersnippet")
 public class DossierSnippet {
 
-	public DossierSnippet() {}; 
-
-	public DossierSnippet(String id) {
-		this.jsonApiId = id;
-	}
-	
-	@JsonApiToOne
-	@JsonApiIncludeByDefault
-	private WorkList workList; 
-	
 	@JsonApiId
 	private String jsonApiId;
-	
-	public String getJsonApiId() {
-		return this.jsonApiId;
-	}
-	
-	public void setJsonApiId(String id) {
-		this.jsonApiId = id;
-	}
-	
-	@JsonProperty
-	private int rowno;
-	
+
 	@JsonProperty
 	private String eTag = null;
 	
@@ -55,7 +32,6 @@ public class DossierSnippet {
                 
 	@JsonProperty("DossierIsRead")
 	private boolean dossierIsRead;
-
                  
 	@JsonProperty("dossierType")
 	private String dossierType;
@@ -268,7 +244,6 @@ public class DossierSnippet {
 	@JsonProperty("Examiner2Fullname")
 	private String secondExaminerFullName;
 
-                
 	@JsonProperty("ChairmanFullname")
 	private String chairmanFullName;
                 
@@ -278,25 +253,21 @@ public class DossierSnippet {
 	@JsonProperty("ProposedExaminerFromSameDir")
 	private boolean proposedExaminerFromSameDir;
 
-                
 	@JsonProperty("DatePreallocated")
 	private Date datePreallocated;
 
-                
 	@JsonProperty("FullnamePreAllocatedBy")
 	private String fullNamePreAllocatedBy;
                 
 	@JsonProperty("Preallocated")
 	private boolean isPreallocated;
 
-                
 	@JsonProperty("MarkedToInspect")
 	private String markedForInspection;
                 
 	@JsonProperty("DateMarked")
 	private Date dateMarked;
 
-                
 	@JsonProperty("MarkedBy")
 	private String markedBy;
                 
@@ -306,35 +277,29 @@ public class DossierSnippet {
 	@JsonProperty("AssociatedFilingsPresent")
 	private boolean isAssociatedFilingsPresent;
 
-                
 	@JsonProperty("RoleName")
 	private String roleNameId;
                 
 	@JsonProperty("DateTimeMarked")
 	private Date dateTimeMarked;
-
                 
 	@JsonProperty("InspectionComment")
 	private String inspectionComment;
 
+	public DossierSnippet() {}; 
 
-	public WorkList getWorkList() {
-		return workList;
+	public DossierSnippet(String id) {
+		this.jsonApiId = id;
 	}
 
-
-	public void setWorkList(WorkList workList) {
-		this.workList = workList;
+	public String getJsonApiId() {
+		return this.jsonApiId;
 	}
-
-	public int getRowno() {
-		return rowno;
+	
+	public void setJsonApiId(String id) {
+		this.jsonApiId = id;
 	}
-
-	public void setRowno(int rowno) {
-		this.rowno = rowno;
-	}
-
+	
 	public String geteTag() {
 		return eTag;
 	}
@@ -347,11 +312,9 @@ public class DossierSnippet {
 		return lalTaskId;
 	}
 
-
 	public void setLalTaskId(String lalTaskId) {
 		this.lalTaskId = lalTaskId;
 	}
-
 
 	public String getApplicantName() {
 		return applicantName;

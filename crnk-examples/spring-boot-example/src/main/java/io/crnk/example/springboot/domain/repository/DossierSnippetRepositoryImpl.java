@@ -28,7 +28,7 @@ public class DossierSnippetRepositoryImpl extends ResourceRepositoryBase<Dossier
 			e.setJsonApiId(l.toString());
 		}
 		e.seteTag(String.valueOf ( System.currentTimeMillis() ) );
-		dossierSnippetMap.put(e.getLalTaskId(), e);
+		dossierSnippetMap.put(e.getJsonApiId(), e);
 		return e;
 	}
 

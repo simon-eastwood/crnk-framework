@@ -6,20 +6,21 @@ import io.crnk.core.resource.annotations.JsonApiResource;
 
 @JsonApiResource(type = "tunnel")
 public class Tunnel {
+	
 	@JsonApiId
 	private String jsonApiId;
 	
+	@JsonProperty
+	private String eTag;
+	
+	@JsonProperty("payload")
+	public String payload;
+	
+	public Tunnel() {};
+        
 	public Tunnel(String id) {
 		this.jsonApiId = id;
 	}
-
-	@JsonProperty
-	private String eTag = null;
-
-	public Tunnel() {};
-        
-	@JsonProperty("payload")
-	public String payload;
 	
 	public String geteTag() {
 		return eTag;

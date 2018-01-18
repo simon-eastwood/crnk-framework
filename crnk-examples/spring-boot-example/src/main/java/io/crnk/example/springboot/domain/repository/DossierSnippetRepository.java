@@ -25,7 +25,6 @@ public interface DossierSnippetRepository extends ResourceRepositoryV2<DossierSn
 		public void setTotalResourceCount(Long totalResourceCount) {
 			this.totalResourceCount = totalResourceCount;
 		}
-
 	}
 
 	class DossierSnippetListLinks implements PagedLinksInformation {
