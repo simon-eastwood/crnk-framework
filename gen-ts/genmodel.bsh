@@ -1,0 +1,113 @@
+#  Generate model beans
+#
+# This script iterates through the Typescript files in the variable TSFILES
+# It converts the @FIELD annotated fields in the ts files in @JsonProperty annotated fields in java format
+#
+# For a subset of the files (those that match the ENDPOINT case statement below) it also adds: 
+# JsonApiId  annotation and property  :  a "technical id" is added. This is probably the application number, but no assumptions are made about that.
+# eTag property: This is a technical field to track the version of the entities. The RepositoryImpl class should set this each time it saves data
+#
+echo "Generating model beans"
+
+rm -rf model
+mkdir model
+
+TSFILES=dossier/*.ts
+
+
+
+for i in $TSFILES
+ do  
+echo "$i"   
+TYPE=`echo "$i" | awk -F. '{gsub(/.*\//, "");print tolower($1)}'`  
+FILE=`echo "$i" | awk -F. '{gsub(/.*\//, "");print $1}'`  
+echo "$TYPE"   
+echo "$FILE"
+
+# Some model class are endpoints: they can be called standalone. Others are just embedded in other objects and cannot be obtained sepeartedl
+case $TYPE in
+    dossierbi|dossierbiblio|readdossierresponse|dossierassociatefiling|dossierclass|dossierclassesresponse|dossiercommentsresponse|dossierkeymapping|worklist|tray|tunnel) echo ENDPOINT; ENDPOINT=1;;
+    *)             echo not an endpoint; ENDPOINT=0;;
+esac
+
+ 
+
+cat "$i" | sed "s/?//" | sed "s/@SchemaField()//" | sed "s/@StringifiedJsonField()//" | awk  -v endpoint="$ENDPOINT" '
+BEGIN {
+print "package io.crnk.example.springboot.domain.model;"
+print "import com.fasterxml.jackson.annotation.JsonProperty;"
+print "import io.crnk.core.resource.annotations.JsonApiId;"
+print "import io.crnk.core.resource.annotations.JsonApiResource;"
+print "import io.crnk.core.resource.annotations.JsonApiToMany;"
+print "import io.crnk.core.resource.annotations.JsonApiToOne;"
+
+print "import java.util.ArrayList;"
+print "import java.util.List;"
+print "import java.util.Date;"
+print ""
+print ""
+
+if (endpoint == 1) {
+	print "@JsonApiResource(type = \"'"$TYPE"'\")\npublic class '"$FILE"' {"
+	print "\t@JsonApiId\n\tprivate String jsonApiId;"
+	print "\tpublic String getJsonApiId() {return this.jsonApiId;}"
+	print "\tpublic void setJsonApiId(String id) { this.jsonApiId = id;}"
+	print "\tpublic '"$FILE"'(String id) {this.jsonApiId = id;}\n"
+
+
+	print "\n\t@JsonProperty\n\tprivate String eTag = null;"
+	print "\tpublic String getEtag() {return this.eTag;}"
+	print "\tpublic void setEtag(String etag) { this.eTag  = etag ;}"
+
+	
+} else {
+	print "public class '"$FILE"' {"
+	
+}
+
+print "\n\tpublic '"$FILE"'() {};"
+
+
+}
+
+/@Field/ {	
+	gsub(/public /, "");
+	gsub(/private /, "");
+	gsub(/,[ \t]true\)/, ")");
+	gsub(/string[ ,\n]/, "String"); gsub(/number[ ,\n]/, "int "); 
+	gsub(/constructor\(/, "");
+
+		gsub(/@Field\(/, "@JsonProperty(");  
+ 		a = gensub(/@JsonProperty([^)]*)\) ([^:]*): ([^,\) =;]*);?/, "\n\t@JsonProperty\\1)\n\tpublic \\3 \\2", "g", $0)
+		gsub (/,/,";\n", a)
+
+
+      	print a ";"
+ 
+	}
+
+
+/@ArrayField/ {
+	a = gensub(/^[^@]*@ArrayField\(\"([^"]*)\", ([^,)]*).*$/, "\n\t@JsonProperty\n\tpublic List<\\2> \\1 = new ArrayList<\\2>();", "g", $0)
+	print a 
+}
+
+/@HeterogenousArrayField/ {
+	gsub(/public /, "");
+	gsub(/private /, "");
+	gsub(/constructor\(/, "");
+	a = gensub(/@HeterogenousArrayField\(\"[^"]*\", [^,)]*\) ([^:]*): ([^,\) =;]*),?/, "\n\n\t@JsonProperty\n\tpublic \\2 \\1;", "g", $0)
+	print a 
+}
+
+END {
+	print "}"
+}
+' | sed "s/^;//" | sed "s/ string / String /" > model/"$FILE".java
+
+
+done
+
+
+
+
