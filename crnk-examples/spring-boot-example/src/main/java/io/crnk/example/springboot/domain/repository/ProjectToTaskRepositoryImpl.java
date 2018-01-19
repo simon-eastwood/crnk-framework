@@ -133,6 +133,7 @@ public class ProjectToTaskRepositoryImpl implements RelationshipRepositoryV2<Pro
 
 	@Override
 	public ResourceList<Task> findManyTargets(Long projectId, String fieldName, QuerySpec requestParams) {
+	System.out.format ("ProjectToTaskRepositoryImpl: findManyTargets (%d, %s, %s)" , projectId , fieldName, requestParams.toString() );
 		Project project = projectRepository.findOne(projectId, requestParams);
 		return requestParams.apply((Iterable<Task>) PropertyUtils.getProperty(project, fieldName));
 	}
