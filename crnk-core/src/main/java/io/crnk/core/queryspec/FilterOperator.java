@@ -29,7 +29,7 @@ public abstract class FilterOperator {
 	 */
 	public static final FilterOperator LIKE = new FilterOperator("LIKE") {
 
-		@Override
+		/*@Override
 		public boolean matches(Object value1, Object value2) {
 			if (value2 == null) {
 				return false;
@@ -37,12 +37,11 @@ public abstract class FilterOperator {
 			String text = value1.toString();
 			// translate queryterm to a regex pattern
 			char[] queryTerm = value2.toString().toCharArray();
-			
 			StringBuilder pattern = new StringBuilder();
-			pattern.append(".*");
+			//pattern.append(".*");
+			pattern.append("^.*");
 			String escapedCharacters = "[\\^$.|?*+()";
 			for (char c : queryTerm) {
-
 				if (escapedCharacters.contains(Character.toString(c))) {
 					//pattern.append('\\');
 					pattern.append(c);
@@ -54,7 +53,27 @@ public abstract class FilterOperator {
 				}
 			}
 			pattern.append(".*");
-                     
+			return text.toLowerCase().matches(pattern.toString());
+		}*/
+		
+		@Override
+		public boolean matches(Object value1, Object value2) {
+			if (value2 == null) {
+				return false;
+			}
+			String text = value1.toString();
+			// translate queryterm to a regex pattern
+			char[] queryTerm = value2.toString().toCharArray();
+			StringBuilder pattern = new StringBuilder();
+			pattern.append("^.*");
+			for (char c : queryTerm) {
+				if ("|".contains(Character.toString(c))) {
+					pattern.append(".*"+c+".*");
+				} else {
+					pattern.append(Character.toLowerCase(c));
+				}
+			}
+			pattern.append(".*");
 			return text.toLowerCase().matches(pattern.toString());
 		}
 
