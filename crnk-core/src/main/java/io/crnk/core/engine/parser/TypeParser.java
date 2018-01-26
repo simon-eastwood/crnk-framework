@@ -12,6 +12,8 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.Callable;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import io.crnk.core.engine.internal.utils.ExceptionUtil;
 import io.crnk.core.engine.internal.utils.MethodCache;
@@ -98,18 +100,22 @@ public class TypeParser {
 
 	@SuppressWarnings("unchecked")
 	private <T> T parseInput(final String input, final Class<T> clazz) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
+		//Regex for special characters (|,)
+		Pattern regex = Pattern.compile("[|,]");
 		if (String.class.equals(clazz)) {
+			return (T) input;
+		}
+		//Only for int and Long 
+		else if((int.class.equals(clazz) || Long.class.equals(clazz)) && regex.matcher(input).find()){
 			return (T) input;
 		} else if (parsers.containsKey(clazz)) {
 			StringParser standardTypeParser = parsers.get(clazz);
-
 			return (T) standardTypeParser.parse(input);
 		} else if (isEnum(clazz)) {
 			return (T) Enum.valueOf((Class<Enum>) clazz.asSubclass(Enum.class), input.trim());
 		} else if (containsStringConstructor(clazz)) {
 			return clazz.getDeclaredConstructor(String.class).newInstance(input);
-		}
-
+		} 
 		Optional<Method> method = methodCache.find(clazz, "parse", String.class);
 		if (!method.isPresent()) {
 			method = methodCache.find(clazz, "parse", CharSequence.class);
